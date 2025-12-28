@@ -1,0 +1,152 @@
+import { Link, useLocation } from "wouter";
+import { useState, useEffect } from "react";
+import { Menu, X, Dna, FlaskConical, Users, BookOpen, Newspaper, UserPlus, Mail, FileText } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
+import { labInfo } from "@/data/content";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [location] = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/research", label: "Research" },
+    { href: "/people", label: "People" },
+    { href: "/publications", label: "Publications" },
+    { href: "/news", label: "News" },
+    { href: "/join", label: "Join" },
+    // { href: "/resources", label: "Resources" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background text-foreground font-sans selection:bg-primary/30">
+      <header
+        className={cn(
+          "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
+          scrolled ? "bg-background/80 backdrop-blur-md border-white/5 py-3" : "bg-transparent py-5"
+        )}
+      >
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <Link href="/">
+            <a className="flex items-center gap-2 group">
+              <div className="w-8 h-8 rounded bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center text-background font-bold shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
+                K
+              </div>
+              <span className="font-display font-bold text-xl tracking-tight group-hover:text-primary transition-colors">
+                {labInfo.name}
+              </span>
+            </a>
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex gap-1 items-center">
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <a
+                  className={cn(
+                    "px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:text-primary",
+                    location === item.href
+                      ? "bg-white/5 text-primary shadow-inner border border-white/5"
+                      : "text-muted-foreground hover:bg-white/5"
+                  )}
+                >
+                  {item.label}
+                </a>
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden p-2 text-muted-foreground hover:text-primary"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+        </div>
+      </header>
+
+      {/* Mobile Nav Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed inset-0 top-16 z-40 bg-background/95 backdrop-blur-xl md:hidden flex flex-col p-8 gap-4 border-t border-white/10"
+          >
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <a
+                  className={cn(
+                    "text-2xl font-display font-medium py-2 border-b border-white/5",
+                    location === item.href ? "text-primary pl-4 border-l-2 border-primary" : "text-muted-foreground"
+                  )}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </a>
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <main className="flex-grow pt-16">
+        {children}
+      </main>
+
+      <footer className="border-t border-white/5 bg-black/20 py-12 mt-20">
+        <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+          <div className="col-span-2">
+            <h3 className="font-display font-bold text-xl mb-4 text-white">Kadener Lab</h3>
+            <p className="text-muted-foreground max-w-sm mb-6">
+              {labInfo.mission}
+            </p>
+            <div className="flex gap-4">
+              <a href={labInfo.contact.twitter} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                Twitter
+              </a>
+              <a href={labInfo.contact.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                GitHub
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="font-bold text-white mb-4">Navigation</h4>
+            <ul className="space-y-2">
+              {navItems.slice(0, 4).map(item => (
+                <li key={item.href}>
+                  <Link href={item.href}><a className="text-sm text-muted-foreground hover:text-primary transition-colors">{item.label}</a></Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-4">Contact</h4>
+            <address className="not-italic text-sm text-muted-foreground space-y-2">
+              <p>{labInfo.contact.address}</p>
+              <a href={`mailto:${labInfo.contact.email}`} className="block hover:text-primary transition-colors">{labInfo.contact.email}</a>
+            </address>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 mt-12 pt-8 border-t border-white/5 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Kadener Lab. Built with Replit.
+        </div>
+      </footer>
+    </div>
+  );
+}
