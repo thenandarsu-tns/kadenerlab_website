@@ -6,7 +6,7 @@ export const labInfo = {
   tagline: "Unraveling the molecular logic of time and RNA",
   mission: "We explore the molecular mechanisms of circadian rhythms, circRNAs, and RNA regulation in the brain, using Drosophila and mammalian systems to understand how molecular clocks drive behavior and physiology.",
   contact: {
-    address: "Department of Biology, Brandeis University, Waltham, MA 02453",
+    address: "Department of Biology, Brandeis University, Waltham, MA 02453 [PLACEHOLDER: Verify Address]",
     email: "kadener@brandeis.edu",
     twitter: "https://twitter.com/KadenerLab",
     github: "https://github.com/kadenerlab"
@@ -18,7 +18,7 @@ export const researchThemes = [
     id: "circadian-clocks",
     title: "Circadian Clocks Beyond Neurons",
     shortDescription: "Investigating how molecular clocks operate in non-neuronal tissues and their organismal impact.",
-    description: "While the central clock resides in the brain, nearly every cell has a molecular oscillator. We study how these peripheral clocks coordinate with the central pacemaker and regulate tissue-specific physiology, metabolism, and aging.",
+    description: "While the central clock resides in the brain, nearly every cell has a molecular oscillator. We study how these peripheral clocks coordinate with the central pacemaker and regulate tissue-specific physiology, metabolism, and aging. [PLACEHOLDER: Add specific projects]",
     image: "theme-circadian", // Placeholder ID for mapping
     points: [
       "Peripheral clock synchronization",
@@ -54,7 +54,7 @@ export const researchThemes = [
     id: "spatial-omics",
     title: "Spatial Transcriptomics",
     shortDescription: "Mapping gene expression in the Drosophila brain with high spatial resolution.",
-    description: "Using cutting-edge spatial transcriptomics technologies to map gene expression patterns across the complex architecture of the fly brain, revealing spatially restricted circadian programs.",
+    description: "Using cutting-edge spatial transcriptomics technologies to map gene expression patterns across the complex architecture of the fly brain, revealing spatially restricted circadian programs. [PLACEHOLDER: Mention specific techniques used]",
     image: "theme-spatial",
     points: [
       "Stereo-seq in Drosophila",
@@ -148,21 +148,21 @@ export const news = [
     id: 1,
     date: "2024-12-15",
     title: "New paper out in Nature Communications!",
-    summary: "Our latest work on spatial transcriptomics in the fly brain is now online. Congrats to the team!",
+    summary: "Our latest work on spatial transcriptomics in the fly brain is now online. Congrats to the team! [PLACEHOLDER]",
     tags: ["Publication"]
   },
   {
     id: 2,
     date: "2024-10-01",
     title: "Welcome new rotation students",
-    summary: "We are excited to welcome three new rotation students this fall semester.",
+    summary: "We are excited to welcome three new rotation students this fall semester. [PLACEHOLDER]",
     tags: ["Lab Life"]
   },
   {
     id: 3,
     date: "2024-08-20",
     title: "Sebastian speaks at CSHL",
-    summary: "Sebastian gave a talk at the Circadian Rhythms meeting at Cold Spring Harbor Laboratory.",
+    summary: "Sebastian gave a talk at the Circadian Rhythms meeting at Cold Spring Harbor Laboratory. [PLACEHOLDER]",
     tags: ["Conference"]
   }
 ];
@@ -172,3 +172,27 @@ export const recruiting = {
   message: "We are looking for motivated postdocs and graduate students interested in RNA biology and circadian rhythms.",
   link: "/join"
 };
+
+export const resources = [
+  {
+    id: "circ-pipeline",
+    title: "circRNA Detection Pipeline",
+    description: "A computational pipeline for detecting and quantifying circular RNAs from RNA-seq data. [PLACEHOLDER: Add real description]",
+    link: "https://github.com/kadenerlab",
+    category: "Software"
+  },
+  {
+    id: "spatial-atlas",
+    title: "Fly Brain Spatial Atlas",
+    description: "Interactive browser for our Drosophila brain spatial transcriptomics dataset. [PLACEHOLDER: Add real description]",
+    link: "#",
+    category: "Dataset"
+  },
+  {
+    id: "protocol-clip",
+    title: "iCLIP Protocol",
+    description: "Optimized protocol for iCLIP in Drosophila S2 cells and adult heads. [PLACEHOLDER: Add real description]",
+    link: "#",
+    category: "Protocol"
+  }
+];

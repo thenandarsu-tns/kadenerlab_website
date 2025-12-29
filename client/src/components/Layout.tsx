@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, Dna, FlaskConical, Users, BookOpen, Newspaper, UserPlus, Mail, FileText } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { labInfo } from "@/data/content";
@@ -24,8 +24,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { href: "/people", label: "People" },
     { href: "/publications", label: "Publications" },
     { href: "/news", label: "News" },
+    { href: "/resources", label: "Resources" },
     { href: "/join", label: "Join" },
-    // { href: "/resources", label: "Resources" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -50,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-1 items-center">
+          <nav className="hidden lg:flex gap-1 items-center">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <a
@@ -69,8 +69,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-muted-foreground hover:text-primary"
+            className="lg:hidden p-2 text-muted-foreground hover:text-primary"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Menu"
           >
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -84,7 +85,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 top-16 z-40 bg-background/95 backdrop-blur-xl md:hidden flex flex-col p-8 gap-4 border-t border-white/10"
+            className="fixed inset-0 top-16 z-40 bg-background/95 backdrop-blur-xl lg:hidden flex flex-col p-8 gap-4 border-t border-white/10"
           >
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
@@ -132,6 +133,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Link href={item.href}><a className="text-sm text-muted-foreground hover:text-primary transition-colors">{item.label}</a></Link>
                 </li>
               ))}
+              <li>
+                <Link href="/admin-guide"><a className="text-sm text-muted-foreground hover:text-primary transition-colors">Admin Guide</a></Link>
+              </li>
             </ul>
           </div>
 
