@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/custom-button";
 export default function People() {
   const [filter, setFilter] = useState("All");
   
-  const categories = ["All", "PI", "Postdoc", "Grad Student", "Staff", "Alumni"];
+  const categories = ["All", "PI", "Postdoc", "Grad Student", "Undergrad", "Staff", "Alumni"];
   
   const filteredPeople = filter === "All" 
     ? people 

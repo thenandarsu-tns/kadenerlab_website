@@ -1,0 +1,164 @@
+Project: Kadener Web Lab
+Action: Replace placeholder content with the text below.
+Do not invent content. Do not summarize. Paste exactly.
+
+⸻
+
+GLOBAL RULES
+	•	Do NOT add any spatial transcriptomics data.
+	•	Spatial Transcriptomics page must contain ONLY:
+Content forthcoming.
+	•	Do not change layout or navigation.
+	•	Only update content text.
+	•	Use existing page structure.
+	•	If a page already exists, overwrite its text with the content below.
+
+⸻
+
+HOME PAGE — MAIN TEXT
+
+Hero / Mission Statement
+
+The Kadener Lab studies how post-transcriptional regulation of RNA shapes neural function, physiology, and behavior. We focus on two interconnected biological problems: the regulation and function of circular RNAs (circRNAs), and the molecular and neural mechanisms that ensure robustness and adaptability of circadian rhythms. Using Drosophila as a genetically tractable model system, we combine molecular biology, genomics, computational analysis, and neurogenetics to understand how RNA processing contributes to stable yet flexible biological systems.
+
+Our work emphasizes mechanisms that operate beyond transcription alone, including alternative splicing, RNA stability, translation, and RNA–protein interactions. By integrating experimental and computational approaches, we aim to uncover general principles by which RNA regulation supports long-term brain function, aging, and adaptation to environmental change.
+
+⸻
+
+Home Highlights (3 blocks)
+
+Circular RNAs in the Nervous System
+Circular RNAs are highly stable RNA molecules enriched in the brain. We study how circRNAs are generated, how they function in cis and in trans, and how their exceptional stability allows them to accumulate over time and encode biological history.
+
+Post-transcriptional Control of Circadian Rhythms
+Circadian clocks must remain precise across changing environmental conditions. Our work focuses on RNA-level regulation of core clock components and how post-transcriptional mechanisms contribute to temperature compensation, robustness, and network-level coordination.
+
+Quantitative Genomics and RNA Biology
+We develop and apply computational and experimental tools to measure RNA processing, circular RNA expression, and rhythmic gene regulation with high accuracy and reproducibility.
+
+⸻
+
+RESEARCH PAGE — CIRCULAR RNA BIOLOGY
+
+Circular RNA Biosynthesis
+
+Circular RNAs (circRNAs) are produced by a non-canonical splicing reaction known as back-splicing, in which a downstream splice donor is joined to an upstream splice acceptor. This process competes directly with linear splicing and is influenced by both cis-acting intronic features and trans-acting RNA-binding proteins. Our work has shown that circRNA biogenesis is tightly coupled to transcription and conventional splicing decisions, allowing circRNA production to directly influence expression of the host gene.
+
+A central focus of the lab has been the role of RNA-binding proteins, such as Muscleblind/MBNL family proteins, in regulating circRNA formation. These proteins can promote or inhibit circularization depending on context, establishing feedback relationships between RNA processing and gene regulation.
+
+⸻
+
+circRNAs and Aging
+
+CircRNAs are exceptionally stable molecules due to their covalently closed structure, which renders them resistant to exonuclease-mediated degradation. In post-mitotic tissues such as the brain, this stability leads to progressive accumulation of circRNAs with age. Our work has demonstrated that age-dependent increases in circRNA abundance are driven primarily by accumulation rather than increased transcription.
+
+This property allows circRNAs to serve as accurate molecular markers of chronological age in neural tissue. Importantly, circRNA accumulation is not uniform across genes or cell types, suggesting regulated production and selective functional relevance rather than passive buildup.
+
+⸻
+
+Role of circRNAs in the Brain
+
+CircRNAs are strongly enriched in the nervous system and, in some cases, localized to synaptic compartments. We study both cis-acting functions, in which circRNA production affects expression of the host gene, and trans-acting functions, in which circRNAs influence cellular physiology independently of the linear transcript.
+
+Using genetic manipulation and behavioral assays, we investigate how specific circRNAs contribute to neural function and organismal physiology. These studies reveal that circRNAs are not merely byproducts of splicing but can have biologically meaningful roles in the brain.
+
+⸻
+
+circRNAs as Experience Markers
+
+Because circRNAs are long-lived and can be selectively induced by environmental stimuli, they provide a unique molecular record of prior physiological states. We have shown that specific circRNAs respond to changes in temperature, light conditions, metabolic stress, and other environmental challenges, and that these changes can persist long after the stimulus is removed.
+
+This combination of inducibility and stability positions circRNAs as molecular “experience markers” that integrate environmental history over extended timescales. We are exploring how these properties can be used to reconstruct past exposures and physiological states from RNA profiles.
+
+⸻
+
+Disease and Human Relevance
+
+Altered circRNA expression has been observed in multiple neurological and neurodegenerative contexts. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. Rather than focusing on therapeutic claims, we emphasize circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.
+
+⸻
+
+RESEARCH PAGE — CIRCADIAN BIOLOGY
+
+Post-transcriptional Regulation of the Clock
+
+Circadian rhythms are commonly described as transcriptional–translational feedback loops, but their accuracy and robustness depend heavily on post-transcriptional regulation. Our work focuses on how RNA processing, splicing, stability, and translation regulate core clock components, including Clock (clk), period (per), and timeless (tim).
+
+We study how RNA-binding proteins and small RNAs influence clock gene expression and how post-transcriptional control contributes to precise timing, amplitude regulation, and responsiveness to environmental cues. Recent work from the lab highlights previously underappreciated RNA-level regulation of clk as a critical determinant of clock function.
+
+⸻
+
+Temperature Compensation and Robustness
+
+Circadian clocks maintain a nearly constant period across a range of temperatures, a property known as temperature compensation. We have shown that alternative splicing of timeless generates temperature-dependent isoforms that contribute to seasonal adaptation and clock robustness.
+
+These mechanisms allow the circadian system to adjust its molecular architecture without compromising overall timing, providing a powerful example of how RNA processing supports physiological stability in fluctuating environments.
+
+⸻
+
+Neural Network and Remote Clocks
+
+Beyond cell-autonomous oscillators, circadian timing emerges from interactions within neural networks. Our work has revealed that many neurons lacking canonical molecular clocks nonetheless display rhythmic gene expression driven by network inputs. These “remote” or “partial” clocks expand the circadian system beyond traditional pacemaker neurons and highlight the importance of intercellular communication in temporal regulation.
+
+⸻
+
+RESEARCH PAGE — GENOMICS & COMPUTATIONAL BIOLOGY
+
+We use bulk and single-cell RNA sequencing to study RNA processing, circRNA expression, and rhythmic gene regulation across tissues and cell types. A major focus of the lab is developing computational pipelines that accurately quantify circular RNAs and distinguish them from linear transcripts.
+
+Our work emphasizes reproducibility, careful normalization, and explicit modeling of RNA processing events. These approaches allow us to extract biologically meaningful signals from complex transcriptomic data and to integrate experimental and computational analyses.
+
+Spatial transcriptomics approaches are under development and will be described in the future.
+
+⸻
+
+SPATIAL TRANSCRIPTOMICS PAGE
+
+Content forthcoming.
+
+⸻
+
+PEOPLE PAGE — CURRENT MEMBERS
+
+Principal Investigator
+
+Sebastian Kadener
+Professor of Biology, Brandeis University
+Research interests: RNA biology, circadian rhythms, circular RNAs, genomics
+
+Postdoctoral Fellows
+
+Yingshi Peng — Post-transcriptional regulation of circadian rhythms (since 01/2024)
+Nathan Browstein — Postdoctoral fellow (since 05/2025); circadian genomics and RNA regulation
+
+PhD Students
+
+Jazmin Morales — circRNAs in the fly brain
+Sayan Biswas — circRNAs as biomarkers of Parkinson’s disease; computational tools for circRNA analysis
+Michael Canori — circMbl function in the brain
+Shruti Ja — circRNAs in neural function
+Iris Nava — circRNAs and miRNA pathways
+
+Undergraduate Researchers
+
+Japhy Theobald — circRNAs and aging
+Susie Shi — circRNAs in aging
+Helen Chen — [PLACEHOLDER PROJECT]
+Jack Chen — [PLACEHOLDER PROJECT]
+
+⸻
+
+JOIN THE LAB PAGE (DO NOT CHANGE STRUCTURE, ONLY TEXT)
+
+We are always interested in motivated students and postdoctoral fellows who are excited about RNA biology, circadian rhythms, and quantitative genomics. Our lab values intellectual independence, rigorous experimentation, and collaborative science.
+
+Prospective postdoctoral fellows should contact Sebastian Kadener directly with a CV and a brief description of research interests. Graduate students are encouraged to apply through the Brandeis University PhD program in Biology. Undergraduate students interested in research opportunities should reach out to discuss availability and potential projects.
+
+⸻
+
+FINAL INSTRUCTIONS
+	•	Replace existing placeholder text with this content.
+	•	Ensure pages render correctly.
+	•	Do not shorten or summarize.
+	•	Do not ask questions.
+	•	Commit changes.

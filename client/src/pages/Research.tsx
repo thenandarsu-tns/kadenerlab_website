@@ -27,7 +27,7 @@ export default function Research() {
                     <span className="text-primary font-medium tracking-wider uppercase text-sm">Theme 0{index + 1}</span>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-display font-bold">{theme.title}</h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
                     {theme.description}
                   </p>
                   
