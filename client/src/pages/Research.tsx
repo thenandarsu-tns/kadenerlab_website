@@ -2,66 +2,69 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { researchThemes } from "@/data/content";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import heroImage from '@assets/generated_images/drosophila_head_spatial_transcriptomics.png';
+import { ArrowRight, Microscope, Clock, Dna, FlaskConical, LayoutGrid } from "lucide-react";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/custom-button";
+
+// Import generated images
+import circImage from '@assets/generated_images/mechanism_of_circular_rna_biogenesis_and_back-splicing.png';
+import clockImage from '@assets/generated_images/molecular_mechanism_of_circadian_clock_regulation.png';
+import genomicsImage from '@assets/generated_images/computational_genomics_pipeline_and_rna_sequencing_analysis.png';
+import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
+
+const imageMap: Record<string, string> = {
+  "theme-circ": circImage,
+  "theme-circadian": clockImage,
+  "theme-rna": genomicsImage,
+  "theme-spatial": spatialImage
+};
 
 export default function Research() {
   return (
     <div>
       <PageHeader 
-        title="Research Themes" 
+        title="Research Areas" 
         description="Our lab takes a multidisciplinary approach to understand the molecular mechanisms of time and RNA regulation."
-        image={heroImage}
       />
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="space-y-32">
+        <div className="grid md:grid-cols-2 gap-8">
           {researchThemes.map((theme, index) => (
-            <Section key={theme.id} id={theme.id} className="py-0">
-              <div className={`flex flex-col lg:flex-row gap-12 lg:items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                
-                {/* Text Content */}
-                <div className="flex-1 space-y-6">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="w-12 h-[1px] bg-primary"></span>
-                    <span className="text-primary font-medium tracking-wider uppercase text-sm">Theme 0{index + 1}</span>
-                  </div>
-                  <h2 className="text-3xl md:text-4xl font-display font-bold">{theme.title}</h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
-                    {theme.description}
-                  </p>
-                  
-                  <div className="pt-4">
-                    <h4 className="text-sm font-bold uppercase tracking-wider mb-4 text-white/80">Key Areas</h4>
-                    <ul className="space-y-3">
-                      {theme.points.map((point, i) => (
-                        <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                          <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Visual Content Placeholder */}
-                <div className="flex-1">
-                  <div className="relative aspect-video lg:aspect-square rounded-2xl overflow-hidden glass-card group">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue-600/20 mix-blend-overlay z-10" />
-                    {/* Placeholder for actual scientific figure */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                      <div className="text-center p-8">
-                        <span className="block text-4xl font-bold text-white/20 mb-2">Figure</span>
-                        <p className="text-sm text-white/40 uppercase tracking-widest">
-                          Visualization for <br/> {theme.title}
-                        </p>
+            <Link key={theme.id} href={`/research/${theme.id}`}>
+              <motion.div 
+                whileHover={{ y: -5 }}
+                className="group cursor-pointer h-full"
+              >
+                <div className="glass-card h-full rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                  {/* Image Area */}
+                  <div className="relative h-64 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
+                    <img 
+                      src={imageMap[theme.image]} 
+                      alt={theme.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-4 left-4 z-20">
+                      <div className="w-10 h-10 rounded-lg bg-primary/20 backdrop-blur-md flex items-center justify-center text-primary border border-white/10">
+                        {index === 0 ? <Dna /> : index === 1 ? <Clock /> : index === 2 ? <LayoutGrid /> : <Microscope />}
                       </div>
                     </div>
                   </div>
-                </div>
 
-              </div>
-            </Section>
+                  {/* Content Area */}
+                  <div className="p-8 flex flex-col flex-grow">
+                    <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{theme.title}</h2>
+                    <p className="text-muted-foreground mb-6 flex-grow leading-relaxed line-clamp-3">
+                      {theme.shortDescription}
+                    </p>
+                    
+                    <div className="flex items-center text-primary font-medium text-sm mt-auto">
+                      Explore Topic <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
