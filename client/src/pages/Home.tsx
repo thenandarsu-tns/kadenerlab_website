@@ -36,20 +36,20 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-6 backdrop-blur-sm">
               RNA Biology & Circadian Rhythms
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/70">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/70">
               The Molecular Logic <br /> of Time
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
               {labInfo.mission}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/research">
-                <Button size="lg" className="text-lg h-14 px-8">
-                  Explore Research <ArrowRight className="ml-2 w-5 h-5" />
+                <Button size="lg" className="text-base h-12 px-8">
+                  Explore Research <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
               <Link href="/join">
-                <Button variant="outline" size="lg" className="text-lg h-14 px-8 backdrop-blur-sm bg-white/5 border-white/10 hover:bg-white/10">
+                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/10 hover:bg-white/10">
                   Join the Lab
                 </Button>
               </Link>
