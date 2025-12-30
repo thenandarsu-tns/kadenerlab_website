@@ -3,15 +3,22 @@ import { Section } from "@/components/ui/Section";
 import { publications } from "@/data/content";
 import { useState } from "react";
 import { Button } from "@/components/ui/custom-button";
-import { Search, Filter, Download, BookOpen, Clock } from "lucide-react";
+import { Search, Filter, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Publications() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTopic, setSelectedTopic] = useState<string | "All">("All");
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  // Extract unique topics
-  const topics = ["All", ...Array.from(new Set(publications.flatMap(p => p.tags))).sort()];
+  // Extract unique topics and sort "Circular RNAs" first
+  const allTopics = Array.from(new Set(publications.flatMap(p => p.tags))).sort();
+  // Move Circular RNAs to top if exists, otherwise normal sort
+  const sortedTopics = allTopics.filter(t => t !== "Circular RNAs");
+  if (allTopics.includes("Circular RNAs")) {
+    sortedTopics.unshift("Circular RNAs");
+  }
+  const topics = ["All", ...sortedTopics];
 
   const filteredPubs = publications.filter(pub => {
     const matchesSearch = pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -55,37 +62,68 @@ export default function Publications() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.98 }}
                     layout
-                    className="glass-card p-6 rounded-xl border-l-4 border-l-transparent hover:border-l-primary group"
+                    className="glass-card rounded-xl border-l-4 border-l-transparent hover:border-l-primary group overflow-hidden"
                   >
-                    <div className="flex flex-col md:flex-row justify-between gap-6">
-                      <div className="flex-1">
-                        <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors leading-tight">
-                          {pub.title}
-                        </h3>
-                        <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
-                          {pub.authors}
-                        </p>
-                        <div className="flex flex-wrap gap-3 items-center text-sm">
-                          <span className="font-semibold text-foreground bg-white/5 px-2 py-1 rounded border border-white/5">
-                            {pub.journal}
-                          </span>
-                          <span className="text-muted-foreground">{pub.year}</span>
-                          {pub.tags?.map(tag => (
-                            <span key={tag} className="text-xs text-primary/80 px-2 py-0.5 rounded-full border border-primary/20">
-                              {tag}
+                    <div className="p-6 md:p-8">
+                      <div className="flex flex-col md:flex-row justify-between gap-6">
+                        <div className="flex-1">
+                          <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors leading-tight">
+                            {pub.title}
+                          </h3>
+                          <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                            {pub.authors}
+                          </p>
+                          <div className="flex flex-wrap gap-3 items-center text-sm">
+                            <span className="font-semibold text-foreground bg-white/5 px-2 py-1 rounded border border-white/5">
+                              {pub.journal}
                             </span>
-                          ))}
+                            <span className="text-muted-foreground">{pub.year}</span>
+                            {pub.tags?.map(tag => (
+                              <span key={tag} className="text-xs text-primary/80 px-2 py-0.5 rounded-full border border-primary/20">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-col items-end gap-2 shrink-0">
+                          {pub.doi && (
+                            <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noreferrer">
+                              <Button variant="outline" size="sm" className="gap-2 h-8 text-xs w-full">
+                                DOI
+                              </Button>
+                            </a>
+                          )}
+                          
+                          {pub.summary && (
+                            <button 
+                              onClick={() => setExpandedId(expandedId === pub.id ? null : pub.id)}
+                              className="text-xs text-primary hover:underline flex items-center gap-1 mt-2"
+                            >
+                              {expandedId === pub.id ? "Hide Summary" : "Read Summary"}
+                              {expandedId === pub.id ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+                            </button>
+                          )}
                         </div>
                       </div>
-                      
-                      <div className="flex items-start gap-2 shrink-0">
-                        <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noreferrer">
-                          <Button variant="outline" size="sm" className="gap-2 h-8 text-xs">
-                            DOI
-                          </Button>
-                        </a>
-                      </div>
                     </div>
+                    
+                    {/* Expandable Summary */}
+                    <AnimatePresence>
+                      {expandedId === pub.id && pub.summary && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="bg-primary/5 px-6 md:px-8 border-t border-primary/10"
+                        >
+                          <p className="py-4 text-sm text-muted-foreground leading-relaxed">
+                            <span className="font-semibold text-primary block mb-1">Summary:</span>
+                            {pub.summary}
+                          </p>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </motion.div>
                 ))}
               </AnimatePresence>

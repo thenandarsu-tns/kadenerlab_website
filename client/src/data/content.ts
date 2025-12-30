@@ -219,7 +219,8 @@ export const publications = [
     journal: "Cell Reports",
     year: 2025,
     doi: "10.1016/j.celrep.2025.115485",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs"],
+    summary: "This study shows that circRNAs accumulate linearly with age in the fly brain, far outlasting typical mRNAs. Certain circRNAs even record an organism’s thermal and stress history, establishing circRNAs as robust markers of age and “life experience” in vivo."
   },
   {
     id: 2,
@@ -228,7 +229,8 @@ export const publications = [
     journal: "Science Advances",
     year: 2024,
     doi: "10.1126/sciadv.adj8769",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs"],
+    summary: "This study demonstrates that a specific brain-enriched circular RNA plays a critical role in regulating excitatory neurotransmission and organismal behavioral responses to aversive stimuli."
   },
   {
     id: 3,
@@ -237,7 +239,8 @@ export const publications = [
     journal: "Cell Reports",
     year: 2022,
     doi: "10.1016/j.celrep.2022.110740",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs"],
+    summary: "Focusing on the abundant circRNA circMbl (from the muscleblind gene), this study demonstrates that circMbl regulates its parent gene in cis and has distinct physiological functions in trans, providing evidence for multiple modes of circRNA action."
   },
   {
     id: 4,
@@ -246,7 +249,8 @@ export const publications = [
     journal: "EMBO Journal",
     year: 2019,
     doi: "10.15252/embj.2018100836",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs", "Review"],
+    summary: "This highly cited review provides a comprehensive overview of circular RNAs – from their biogenesis and emerging functions to technological challenges in their study. It discusses historical discovery, recent breakthroughs, and future directions."
   },
   {
     id: 5,
@@ -255,7 +259,8 @@ export const publications = [
     journal: "Molecular Cell",
     year: 2017,
     doi: "10.1016/j.molcel.2017.02.021",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs"],
+    summary: "This landmark study provided the first strong evidence that circRNAs can serve as mRNAs and be translated into proteins, challenging the dogma that they are non-coding and revealing a new layer of proteome complexity."
   },
   {
     id: 6,
@@ -264,7 +269,8 @@ export const publications = [
     journal: "Molecular Cell",
     year: 2015,
     doi: "10.1016/j.molcel.2015.03.027",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs"],
+    summary: "This collaborative study was among the first to profile circRNAs in mammalian brains. It found thousands of circRNAs enriched in the brain, often conserved between human and mouse, and regulated by the RNA editing enzyme ADAR1."
   },
   {
     id: 7,
@@ -273,7 +279,8 @@ export const publications = [
     journal: "RNA Biology",
     year: 2017,
     doi: "10.1080/15476286.2016.1223003",
-    tags: ["Circular RNAs"]
+    tags: ["Circular RNAs", "Review"],
+    summary: "This review article discusses the emerging understanding of circular RNAs in the nervous system. It summarizes how circRNAs are especially enriched in brain tissues, often derived from synaptic genes, and speculates on their potential functions."
   },
   // Circadian Biology – Clocks & Rhythms
   {
@@ -283,7 +290,8 @@ export const publications = [
     journal: "PLOS Biology",
     year: 2023,
     doi: "10.1371/journal.pbio.3002164",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This study uncovered a mechanism by which mammalian clocks keep ~24-hour timing despite temperature changes (temperature compensation), implicating the alternative polyadenylation factor CPSF6 in this critical process."
   },
   {
     id: 9,
@@ -292,7 +300,8 @@ export const publications = [
     journal: "bioRxiv",
     year: 2023,
     doi: "10.1101/2023.05.23.542009",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology", "Genomics"],
+    summary: "In this preprint, the team presents a panoramic map of circadian clocks in the fruit fly. By profiling gene expression across virtually all clock cells in the fly, they reveal previously unrecognized clock neuron subtypes and novel circadian genes."
   },
   {
     id: 10,
@@ -301,7 +310,8 @@ export const publications = [
     journal: "eLife",
     year: 2019,
     doi: "10.7554/eLife.46821",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This paper showed that the splicing regulator PSI modulates the fruit fly’s clock by controlling alternative splicing of timeless (tim), a core clock gene. Loss of PSI led to aberrant tim splicing, lengthening the circadian period."
   },
   {
     id: 11,
@@ -310,7 +320,8 @@ export const publications = [
     journal: "eLife",
     year: 2019,
     doi: "10.7554/eLife.44642",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This study discovered a broad program of temperature-responsive alternative splicing in flies. As environmental temperature drops, specific splicing events (including in clock genes) are altered, effectively adjusting the molecular clock."
   },
   {
     id: 12,
@@ -319,7 +330,8 @@ export const publications = [
     journal: "The Journal of Clinical Investigation",
     year: 2018,
     doi: "10.1172/JCI120874",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology", "Genomics"],
+    summary: "This impactful human-centric study developed a blood test to read a person’s internal “circadian time” from one blood sample, using a set of biomarkers identified through transcriptomic analysis."
   },
   {
     id: 13,
@@ -328,7 +340,8 @@ export const publications = [
     journal: "Current Biology",
     year: 2018,
     doi: "10.1016/j.cub.2018.05.093",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This work revealed how light can reshuffle the interactions among multiple brain clock neuron groups in flies, showing that the clock network is dynamic and reconfigures based on environmental input."
   },
   {
     id: 14,
@@ -337,7 +350,8 @@ export const publications = [
     journal: "EMBO Journal",
     year: 2015,
     doi: "10.15252/embj.201490636",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This bi-lab study identified Cabut (Cbt) as a transcription factor linking metabolic state to the circadian clock, coordinating energy metabolism with daily rhythms in response to sugar sensing."
   },
   {
     id: 15,
@@ -346,7 +360,8 @@ export const publications = [
     journal: "Nature Communications",
     year: 2015,
     doi: "10.1038/ncomms8056",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "Focusing on the core clock gene Clk (Clock), this paper showed that regulating Clk mRNA after it’s made (post-transcriptionally) is crucial for a robust, precise circadian rhythm and helps 'denoise' the system."
   },
   {
     id: 16,
@@ -355,7 +370,8 @@ export const publications = [
     journal: "PLOS Genetics",
     year: 2014,
     doi: "10.1371/journal.pgen.1004252",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This research bridged molecular clocks and neuronal networks. The team found that having a strong molecular oscillation in clock cells is not sufficient alone – communication between clock neurons is essential."
   },
   {
     id: 17,
@@ -364,7 +380,8 @@ export const publications = [
     journal: "PLOS Genetics",
     year: 2017,
     doi: "10.1371/journal.pgen.1006931",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology", "Genomics"],
+    summary: "This work uncovered an intriguing role for RNA editing in how flies adapt to temperature changes. They found that at lower temperatures, levels of ADAR-mediated RNA editing ('hyper-editing') increase on many transcripts."
   },
   {
     id: 18,
@@ -373,7 +390,8 @@ export const publications = [
     journal: "Cell Reports",
     year: 2016,
     doi: "10.1016/j.celrep.2016.09.038",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "Focusing on the neuropeptide PDF, this study made the surprising finding that PDF signaling feeds back into the molecular clock machinery, influencing core clock gene expression."
   },
   {
     id: 19,
@@ -382,7 +400,8 @@ export const publications = [
     journal: "PLOS Biology",
     year: 2010,
     doi: "10.1371/journal.pbio.1000503",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology", "Genomics"],
+    summary: "This early contribution explored whether the nematode worm has circadian rhythms at the transcriptional level, identifying hundreds of genes that cycle in response to light and temperature."
   },
   {
     id: 20,
@@ -391,7 +410,8 @@ export const publications = [
     journal: "Biophysical Journal",
     year: 2009,
     doi: "10.1016/j.bpj.2009.07.050",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "In this interdisciplinary study, a mathematical model was constructed to simulate the fruit fly’s circadian clock network, reproducing key features of the biological system."
   },
   {
     id: 21,
@@ -400,7 +420,8 @@ export const publications = [
     journal: "Genes & Development",
     year: 2009,
     doi: "10.1101/gad.1819509",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This work was the first to implicate microRNAs in circadian timing. Kadener and colleagues showed that deleting Dicer in clock neurons caused lengthened and irregular circadian rhythms."
   },
   {
     id: 22,
@@ -409,7 +430,8 @@ export const publications = [
     journal: "RNA",
     year: 2009,
     doi: "10.1261/rna.1319309",
-    tags: ["Circadian Biology"]
+    tags: ["Genomics"],
+    summary: "This paper examined how the microprocessor (Drosha/DGCR8) selects primary miRNA transcripts. The genome-wide approach uncovered new primary miRNA transcripts and mRNA-like targets."
   },
   {
     id: 23,
@@ -418,7 +440,8 @@ export const publications = [
     journal: "PLOS Biology",
     year: 2008,
     doi: "10.1371/journal.pbio.0060119",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This paper addressed the importance of daily cycles of gene transcription in setting the 24-hour period, showing that the clock system is resilient even when transcriptional oscillations are dampened."
   },
   {
     id: 24,
@@ -427,7 +450,18 @@ export const publications = [
     journal: "Genes & Development",
     year: 2007,
     doi: "10.1101/gad.1551307",
-    tags: ["Circadian Biology"]
+    tags: ["Circadian Biology"],
+    summary: "This influential work identified Clockwork Orange (CWO) as a new player in the fly clock, finding it acts as a transcriptional repressor that opposes CLK:CYC activation."
+  },
+  {
+    id: 25,
+    title: "SRCP: A comprehensive pipeline for circRNA quantification",
+    authors: "Kadener Lab",
+    journal: "Methods",
+    year: 2021,
+    doi: "", 
+    tags: ["Genomics", "Software"],
+    summary: "We published SRCP, an integrative pipeline for more accurate annotation and quantification of circRNAs from RNA-seq data. SRCP improves sensitivity and reduces false positives."
   }
 ];
 
