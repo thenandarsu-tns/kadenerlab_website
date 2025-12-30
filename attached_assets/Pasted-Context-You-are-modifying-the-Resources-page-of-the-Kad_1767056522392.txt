@@ -1,0 +1,131 @@
+Context
+You are modifying the Resources page of the Kadener Lab website.
+This page should list only lab-defining tools, datasets, and community resources developed or curated by the Kadener Lab.
+Do not add placeholders beyond what is explicitly requested.
+ 
+WHAT TO REMOVE / CHANGE
+
+❌ Remove: 
+iCLIP Protocol
+
+Reason (do not display on site, for your internal logic only):
+•	iCLIP is not a Kadener-lab–defining resource
+•	It is a general technique, not a uniquely branded or widely distributed Kadener Lab protocol
+•	It dilutes the focus of the Resources page
+
+Action:
+•	Completely remove the iCLIP Protocol card from the Resources page.
+ 
+⏳ Change: 
+Fly Brain Spatial Atlas → Coming Soon
+
+Action:
+•	Keep the resource visible but clearly marked as Coming Soon
+•	Do not include links, images, datasets, or technical details
+•	This resource must remain minimal
+ 
+WHAT TO ADD (CORE RESOURCES)
+
+1️⃣ Software — circRNA Detection & Quantification
+
+Title:
+SRCP: circRNA Detection and Quantification Pipeline
+
+Description (use exactly this text):
+SRCP is a computational pipeline developed in the Kadener Lab for accurate annotation and quantification of circular RNAs from RNA-seq data. It integrates multiple circRNA detection strategies with stringent filtering to reduce false positives and provides robust circRNA expression estimates across samples and conditions. SRCP has been used extensively in our studies of circRNA biogenesis, aging, and disease.
+
+Link target:
+•	Link to GitHub repository if available
+•	Otherwise display: Documentation coming soon
+
+Category:
+Software
+ 
+2️⃣ Protocols & Guides — circRNA Knockdown (HIGH PRIORITY)
+
+Title:
+Guide to circRNA Knockdown Using Junction-Specific shRNAs
+
+Description (use exactly this text):
+A detailed experimental and conceptual guide for designing, validating, and using short hairpin RNAs (shRNAs) to specifically knock down circular RNAs in vivo without affecting their linear host transcripts. This approach, developed in the Kadener Lab, targets the unique back-splice junction of circRNAs and has enabled functional studies of circRNAs in Drosophila development, neural function, aging, and disease models.
+
+Category:
+Protocol / Guide
+
+Notes for implementation:
+•	This resource should visually stand out as a flagship protocol
+•	Do not add sub-bullets on the page (details can live on a linked page later)
+ 
+3️⃣ Dataset — Fly Head Spatial Transcriptomics (Coming Soon)
+
+Title:
+Fly Head Spatial Transcriptomics Atlas
+
+Description (use exactly this text):
+A spatial transcriptomic atlas of the adult Drosophila head integrating gene expression with anatomical context. This resource is currently under development in the Kadener Lab and will be released in the future.
+
+Category:
+Dataset
+
+Status:
+Coming soon
+
+Restrictions:
+•	No links
+•	No images
+•	No technical details
+ 
+ADDITIONAL RESOURCES FROM LAB HISTORY
+
+4️⃣ Dataset — circRNA Catalogs
+
+Title:
+Drosophila circRNA Catalogs (Brain, Aging, and Disease)
+
+Description (use exactly this text):
+Curated catalogs of circular RNAs expressed in the Drosophila brain and across aging time points, generated in the Kadener Lab using stringent detection and validation criteria. These datasets have been used to study circRNA biogenesis, accumulation with age, cell-type specificity, and functional relevance in neural and disease contexts.
+
+Link behavior:
+•	If accession links exist, link to GEO / ArrayExpress
+•	Otherwise display: Datasets available upon request
+
+Category:
+Dataset
+ 
+5️⃣ Community Resource — circRNA Standards
+
+Title:
+Best-Practice Standards for circRNA Research
+
+Description (use exactly this text):
+Community-endorsed best-practice guidelines for the experimental and computational study of circular RNAs, co-authored by the Kadener Lab. These standards address circRNA detection, validation, quantification, and reporting, and provide a framework for reproducible circRNA research.
+
+Link:
+•	Journal link to the Nature Methods circRNA standards paper
+
+Category:
+Resource / Guidelines
+ 
+FINAL REQUIRED LAYOUT
+
+Restructure the Resources page into five cards grouped by section:
+
+Software
+•	SRCP: circRNA Detection & Quantification Pipeline
+
+Protocols & Guides
+•	Guide to circRNA Knockdown Using Junction-Specific shRNAs
+
+Datasets
+•	Drosophila circRNA Catalogs (Brain, Aging, and Disease)
+•	Fly Head Spatial Transcriptomics Atlas (Coming Soon)
+
+Community Resources
+•	Best-Practice Standards for circRNA Research
+ 
+STYLE REQUIREMENTS
+•	Clean, modern, academic look
+•	No marketing language
+•	No emojis
+•	No unnecessary placeholders
+•	The page should feel curated, authoritative, and lab-defining

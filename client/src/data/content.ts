@@ -282,6 +282,16 @@ export const publications = [
     tags: ["Circular RNAs", "Review"],
     summary: "This review article discusses the emerging understanding of circular RNAs in the nervous system. It summarizes how circRNAs are especially enriched in brain tissues, often derived from synaptic genes, and speculates on their potential functions."
   },
+  {
+    id: 101,
+    title: "circRNA biogenesis competes with pre-mRNA splicing",
+    authors: "Ashwal-Fluss, R., Meyer, M., Pamudurti, N. R., Ivanov, A., Bartok, O., Hanan, M., Evantal, N., Memczak, S., Rajewsky, N., & Kadener, S.",
+    journal: "Molecular Cell",
+    year: 2014,
+    doi: "10.1016/j.molcel.2014.08.019",
+    tags: ["Circular RNAs"],
+    summary: "This landmark paper discovered that circRNA biogenesis competes directly with linear splicing. It demonstrated that Muscleblind (Mbl) regulates its own circular RNA, creating a feedback loop. This was a fundamental study establishing the mechanism of circRNA formation and its interplay with canonical splicing."
+  },
   // Circadian Biology – Clocks & Rhythms
   {
     id: 8,
@@ -422,6 +432,16 @@ export const publications = [
     doi: "10.1101/gad.1819509",
     tags: ["Circadian Biology"],
     summary: "This work was the first to implicate microRNAs in circadian timing. Kadener and colleagues showed that deleting Dicer in clock neurons caused lengthened and irregular circadian rhythms."
+  },
+  {
+    id: 102,
+    title: "Defining the 5' and 3' landscape of the Drosophila transcriptome with Exo-seq and RNaseH-seq",
+    authors: "Afik, S., Bartok, O., Artyomov, M. N., Shishkin, A. A., Kadri, S., Hanan, M., Zhu, X., Garber, M., & Kadener, S.",
+    journal: "Nucleic Acids Research",
+    year: 2017,
+    doi: "10.1093/nar/gkx133",
+    tags: ["Genomics"],
+    summary: "This paper developed Exo-seq and RNaseH-seq to accurately map 5' and 3' ends of transcripts in Drosophila, distinguishing real polyA sites from internal A-rich regions. It provided a high-resolution view of the transcriptome landscape, enabling better annotation of alternative isoforms."
   },
   {
     id: 22,
