@@ -31,32 +31,6 @@ export default function Publications() {
       <div className="container mx-auto px-4 pb-20">
         <div className="grid lg:grid-cols-4 gap-8">
           
-          {/* Sidebar Filters */}
-          <div className="lg:col-span-1 space-y-6">
-            <div className="glass-card p-6 rounded-xl sticky top-24">
-              <h3 className="font-bold mb-4 uppercase tracking-wider text-sm text-primary flex items-center gap-2">
-                <Filter className="w-4 h-4" /> Filter by Topic
-              </h3>
-              
-              <div className="space-y-2">
-                {topics.map(topic => (
-                  <button
-                    key={topic}
-                    onClick={() => setSelectedTopic(topic)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 flex items-center justify-between ${
-                      selectedTopic === topic 
-                        ? "bg-primary/20 text-primary font-medium border border-primary/20" 
-                        : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
-                    }`}
-                  >
-                    <span>{topic}</span>
-                    {selectedTopic === topic && <div className="w-1.5 h-1.5 rounded-full bg-primary" />}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
           {/* Main Content */}
           <div className="lg:col-span-3">
             {/* Search Bar */}
@@ -123,6 +97,33 @@ export default function Publications() {
               )}
             </div>
           </div>
+
+          {/* Sidebar Filters (Right Side) */}
+          <div className="lg:col-span-1 space-y-6 order-first lg:order-last">
+            <div className="glass-card p-6 rounded-xl sticky top-24">
+              <h3 className="font-bold mb-4 uppercase tracking-wider text-sm text-primary flex items-center gap-2">
+                <Filter className="w-4 h-4" /> Filter by Topic
+              </h3>
+              
+              <div className="space-y-2">
+                {topics.map(topic => (
+                  <button
+                    key={topic}
+                    onClick={() => setSelectedTopic(topic)}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 flex items-center justify-between ${
+                      selectedTopic === topic 
+                        ? "bg-primary/20 text-primary font-medium border border-primary/20" 
+                        : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                    }`}
+                  >
+                    <span>{topic}</span>
+                    {selectedTopic === topic && <div className="w-1.5 h-1.5 rounded-full bg-primary" />}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
