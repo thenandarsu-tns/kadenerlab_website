@@ -1,0 +1,137 @@
+CONTEXT
+
+You are designing custom schematic images to replace the four images on the “Research Areas” page of the Kadener Lab website.
+
+The four tiles are:
+	1.	Circular RNA Biology
+	2.	Circadian Biology
+	3.	Genomics & Computational Biology
+	4.	Spatial Transcriptomics
+
+These images must feel like a matched visual set, designed together for a single academic lab website.
+
+Ignore all other slides, papers, or figures in this notebook.
+
+⸻
+
+GLOBAL DESIGN RULES (MANDATORY)
+	•	Schematics only (no photos, no microscopy, no 3D renders)
+	•	No text inside the images
+	•	White or very light neutral background
+	•	Clean, modern, high-end scientific illustration
+	•	Vector-like style, suitable for SVG / Figma / Illustrator
+	•	No human anatomy
+	•	Organism context: Drosophila
+	•	No data plots (no heatmaps, no PCA, no charts)
+	•	Use one unified color system across all four images:
+	•	RNA / exons: blue tones
+	•	Circular RNAs: closed blue rings
+	•	Proteins / regulators: warm accent color
+	•	Computational elements: neutral gray / cyan
+	•	All four images must look like they belong to the same design family
+
+⸻
+
+IMAGE 1 — Circular RNA Biology (Tile 1)
+
+Concept:
+Back-splicing and circRNA formation as a regulated RNA fate.
+
+Visual requirements:
+	•	One nascent pre-mRNA with multiple exons
+	•	Canonical linear splicing shown as background/secondary
+	•	Circular RNA emerging as a closed, stable ring
+	•	Introns shaping RNA geometry
+	•	Emphasis on structure and stability, not outcomes
+
+Avoid:
+	•	Lariat cartoons with labels
+	•	Molecular clutter
+	•	Any human brain imagery
+
+Goal:
+Instantly communicates “circRNAs are stable, structured RNA products of regulated splicing.”
+
+⸻
+
+IMAGE 2 — Circadian Biology (Tile 2)
+
+Concept:
+Post-transcriptional control and network robustness of circadian clocks.
+
+Visual requirements:
+	•	Abstract clock motif built from RNA elements (not clock faces)
+	•	RNA processing steps feeding into rhythmic output
+	•	Network-like flow between RNA, protein, and feedback
+	•	Suggest robustness and temperature compensation visually (loops, buffering)
+
+Avoid:
+	•	Mammalian PER/CRY cartoons
+	•	Cellular cross-sections
+	•	Text labels or arrows with words
+
+Goal:
+Conveys “circadian timing is regulated at the RNA level and distributed across networks.”
+
+⸻
+
+IMAGE 3 — Genomics & Computational Biology (Tile 3)
+
+Concept:
+Quantitative RNA analysis pipelines and reproducible genomics.
+
+Visual requirements:
+	•	RNA molecules flowing through a simplified computational pipeline
+	•	Abstract representations of:
+	•	detection
+	•	filtering
+	•	integration
+	•	Use clean geometric shapes to imply computation (grids, nodes, flow)
+
+Avoid:
+	•	Code screenshots
+	•	Heatmaps
+	•	Real plots
+
+Goal:
+Signals “rigorous, quantitative, computational RNA biology” without looking like a software ad.
+
+⸻
+
+IMAGE 4 — Spatial Transcriptomics (Tile 4)
+
+Concept:
+Spatially resolved RNA information — without showing data.
+
+Visual requirements:
+	•	Abstract fly head or tissue silhouette
+	•	RNA signals mapped spatially as dots or gradients
+	•	No gene names, no regions labeled
+	•	Subtle “coming soon” feel through restraint, not text
+
+Hard restriction:
+	•	Do NOT include real spatial transcriptomics results
+	•	Do NOT show detailed brain anatomy
+
+Goal:
+Hints at spatial context while clearly not revealing content.
+
+⸻
+
+COMPOSITION RULES (CRITICAL)
+	•	All four images should:
+	•	Use similar framing
+	•	Have comparable visual density
+	•	Align well in a 2×2 grid
+	•	No image should visually dominate the others
+	•	Think “editorial illustration”, not “figure from a paper”
+
+⸻
+
+OUTPUT REQUIREMENT
+
+Produce four separate schematic images, one per research area, designed as a cohesive visual set for a lab website.
+
+No captions.
+No annotations.
+No extra slides.

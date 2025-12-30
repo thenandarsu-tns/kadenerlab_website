@@ -7,17 +7,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/custom-button";
 
 // Import generated images
-import circImage from '@assets/generated_images/mechanism_of_circular_rna_biogenesis_and_back-splicing.png';
-import clockImage from '@assets/generated_images/molecular_mechanism_of_circadian_clock_regulation.png';
-import genomicsImage from '@assets/generated_images/computational_genomics_pipeline_and_rna_sequencing_analysis.png';
-import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
-
-const imageMap: Record<string, string> = {
-  "theme-circ": circImage,
-  "theme-circadian": clockImage,
-  "theme-rna": genomicsImage,
-  "theme-spatial": spatialImage
-};
+// (Images are now imported directly in content.ts)
 
 export default function Research() {
   return (
@@ -40,7 +30,7 @@ export default function Research() {
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
                     <img 
-                      src={imageMap[theme.image]} 
+                      src={theme.image} 
                       alt={theme.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />

@@ -4,6 +4,12 @@ import catalogsImage from '@assets/generated_images/scientific_database_network.
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_brain_map.png';
 import standardsImage from '@assets/generated_images/scientific_standards_documentation.png';
 
+// New Research Theme Images
+import circRnaTheme from '@assets/generated_images/circular_rna_biology_schematic.png';
+import circadianTheme from '@assets/generated_images/circadian_biology_rna_clock_schematic.png';
+import genomicsTheme from '@assets/generated_images/computational_genomics_pipeline_schematic.png';
+import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
+
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
 
@@ -46,7 +52,7 @@ This combination of inducibility and stability positions circRNAs as molecular �
 
 Disease and Human Relevance
 Altered circRNA expression has been observed in multiple neurological and neurodegenerative contexts. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. Rather than focusing on therapeutic claims, we emphasize circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.`,
-    image: "theme-circ",
+    image: circRnaTheme,
     points: [
       "Circular RNA Biosynthesis",
       "circRNAs and Aging",
@@ -71,7 +77,7 @@ These mechanisms allow the circadian system to adjust its molecular architecture
 
 Neural Network and Remote Clocks
 Beyond cell-autonomous oscillators, circadian timing emerges from interactions within neural networks. Our work has revealed that many neurons lacking canonical molecular clocks nonetheless display rhythmic gene expression driven by network inputs. These “remote” or “partial” clocks expand the circadian system beyond traditional pacemaker neurons and highlight the importance of intercellular communication in temporal regulation.`,
-    image: "theme-circadian",
+    image: circadianTheme,
     points: [
       "Post-transcriptional Regulation",
       "Temperature Compensation",
@@ -87,7 +93,7 @@ Beyond cell-autonomous oscillators, circadian timing emerges from interactions w
 Our work emphasizes reproducibility, careful normalization, and explicit modeling of RNA processing events. These approaches allow us to extract biologically meaningful signals from complex transcriptomic data and to integrate experimental and computational analyses.
 
 Spatial transcriptomics approaches are under development and will be described in the future.`,
-    image: "theme-rna",
+    image: genomicsTheme,
     points: [
       "Bulk and single-cell RNA-seq",
       "Computational pipelines",
@@ -99,7 +105,7 @@ Spatial transcriptomics approaches are under development and will be described i
     title: "Spatial Transcriptomics",
     shortDescription: "Content forthcoming.",
     description: "Content forthcoming.",
-    image: "theme-spatial",
+    image: spatialOmicsTheme,
     points: []
   }
 ];
