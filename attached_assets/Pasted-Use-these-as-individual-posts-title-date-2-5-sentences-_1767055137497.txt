@@ -1,0 +1,41 @@
+Use these as individual posts (title + date + 2–5 sentences). Adjust dates or details if you want.
+
+1) circRNAs as age and experience indicators (Cell Reports)
+
+Date: April 22, 2025
+We published a paper showing that circular RNAs (circRNAs) accumulate linearly with age in the fly brain due to exceptional stability, and that specific circRNAs can retain signatures of past environmental exposure. The work establishes circRNAs as robust markers of age and “life experience” in vivo.
+
+2) Kadener Lab at EMBL circRNA course
+
+Date: June 1–7, 2025
+Sebastian Kadener taught at the EMBO Practical Workshop “Methods for analysis of circular RNAs,” presenting mechanistic and functional approaches to study circRNAs, including biosynthesis, brain function, and aging.
+
+3) circMbl cis/trans function paper
+
+Date: April 26, 2022
+Our work on circMbl showed that circRNAs can act both in cis (competing with linear isoforms) and in trans (producing distinct physiological phenotypes). This paper provided in vivo evidence for multiple modes of circRNA action.
+
+4) SRCP pipeline for circRNA quantification
+
+Date: September 23, 2021
+We published SRCP, an integrative pipeline for more accurate annotation and quantification of circRNAs from RNA-seq data. SRCP improves sensitivity and reduces false positives by combining multiple detection strategies into a robust workflow.
+
+5) circRNAs and Parkinson’s disease resource
+
+Date: July 26, 2020
+We generated a resource of circRNA profiles across brain regions from Parkinson’s disease and control donors, identifying circSLC8A1 as linked to oxidative stress. This work supports the use of circRNAs as disease-relevant markers and mechanistic entry points.
+
+6) Viral protein Nsp14 remodels host transcriptome
+
+Date: March 16, 2022
+We showed that SARS-CoV-2 Nsp14 drives large-scale changes in host gene expression and splicing, including a substantial increase in circRNAs. The findings identify host pathways mediating these effects and suggest mechanistic targets for intervention.
+
+7) New work in progress: circRNAs as physiological recorders
+
+Date: December 2025
+We are expanding the “circRNA recorders” framework to map how multiple environmental challenges shape long-lived circRNA signatures, and how these relate to healthspan. More details and preprints forthcoming.
+
+8) Lab recognition: major awards (PI)
+
+Date: (evergreen)
+Sebastian Kadener has received multiple major honors including the Humboldt Friedrich Wilhelm Bessel Research Award, ERC Starting and Consolidator Grants, and HFSP Career Development support. These awards reflect long-term investment in RNA biology and circadian research.

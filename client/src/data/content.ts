@@ -251,25 +251,60 @@ export const publications = [
 
 export const news = [
   {
-    id: 1,
-    date: "2024-12-15",
-    title: "New paper out in Nature Communications!",
-    summary: "Our latest work on spatial transcriptomics in the fly brain is now online. Congrats to the team! [PLACEHOLDER]",
-    tags: ["Publication"]
+    id: 7,
+    date: "2025-12-01", // Future date as per input
+    title: "New work in progress: circRNAs as physiological recorders",
+    summary: "We are expanding the “circRNA recorders” framework to map how multiple environmental challenges shape long-lived circRNA signatures, and how these relate to healthspan. More details and preprints forthcoming.",
+    tags: ["Research"]
   },
   {
     id: 2,
-    date: "2024-10-01",
-    title: "Welcome new rotation students",
-    summary: "We are excited to welcome three new rotation students this fall semester. [PLACEHOLDER]",
-    tags: ["Lab Life"]
+    date: "2025-06-01", 
+    title: "Kadener Lab at EMBL circRNA course",
+    summary: "Sebastian Kadener taught at the EMBO Practical Workshop “Methods for analysis of circular RNAs,” presenting mechanistic and functional approaches to study circRNAs, including biosynthesis, brain function, and aging.",
+    tags: ["Conference", "Teaching"]
+  },
+  {
+    id: 1,
+    date: "2025-04-22",
+    title: "circRNAs as age and experience indicators (Cell Reports)",
+    summary: "We published a paper showing that circular RNAs (circRNAs) accumulate linearly with age in the fly brain due to exceptional stability, and that specific circRNAs can retain signatures of past environmental exposure. The work establishes circRNAs as robust markers of age and “life experience” in vivo.",
+    tags: ["Publication"]
   },
   {
     id: 3,
-    date: "2024-08-20",
-    title: "Sebastian speaks at CSHL",
-    summary: "Sebastian gave a talk at the Circadian Rhythms meeting at Cold Spring Harbor Laboratory. [PLACEHOLDER]",
-    tags: ["Conference"]
+    date: "2022-04-26",
+    title: "circMbl cis/trans function paper",
+    summary: "Our work on circMbl showed that circRNAs can act both in cis (competing with linear isoforms) and in trans (producing distinct physiological phenotypes). This paper provided in vivo evidence for multiple modes of circRNA action.",
+    tags: ["Publication"]
+  },
+  {
+    id: 6,
+    date: "2022-03-16",
+    title: "Viral protein Nsp14 remodels host transcriptome",
+    summary: "We showed that SARS-CoV-2 Nsp14 drives large-scale changes in host gene expression and splicing, including a substantial increase in circRNAs. The findings identify host pathways mediating these effects and suggest mechanistic targets for intervention.",
+    tags: ["Publication"]
+  },
+  {
+    id: 4,
+    date: "2021-09-23",
+    title: "SRCP pipeline for circRNA quantification",
+    summary: "We published SRCP, an integrative pipeline for more accurate annotation and quantification of circRNAs from RNA-seq data. SRCP improves sensitivity and reduces false positives by combining multiple detection strategies into a robust workflow.",
+    tags: ["Publication", "Software"]
+  },
+  {
+    id: 5,
+    date: "2020-07-26",
+    title: "circRNAs and Parkinson’s disease resource",
+    summary: "We generated a resource of circRNA profiles across brain regions from Parkinson’s disease and control donors, identifying circSLC8A1 as linked to oxidative stress. This work supports the use of circRNAs as disease-relevant markers and mechanistic entry points.",
+    tags: ["Publication", "Resource"]
+  },
+  {
+    id: 8,
+    date: "2025-01-01", // Evergreen
+    title: "Lab recognition: major awards (PI)",
+    summary: "Sebastian Kadener has received multiple major honors including the Humboldt Friedrich Wilhelm Bessel Research Award, ERC Starting and Consolidator Grants, and HFSP Career Development support. These awards reflect long-term investment in RNA biology and circadian research.",
+    tags: ["Awards"]
   }
 ];
 
