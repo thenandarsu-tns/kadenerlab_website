@@ -211,41 +211,223 @@ export const people = [
 ];
 
 export const publications = [
+  // Circular RNAs (circRNAs) – Biogenesis & Function
   {
     id: 1,
-    title: "Translation of CircRNAs",
-    authors: "Pamudurti NR, Bartok O, Jens M, Ashwal-Fluss R, Stottmeister C, Ruhe L, Andersson M, ... Kadener S.",
-    journal: "Molecular Cell",
-    year: 2017,
-    doi: "10.1016/j.molcel.2017.02.021",
-    tags: ["circRNA", "Translation"]
+    title: "Circular RNAs exhibit exceptional stability in the aging brain and serve as reliable age and experience indicators",
+    authors: "Kirio, K., Patop, I. L., Martin-Anduaga, A., Harris, J., Pamudurti, N., Martel, C., & Kadener, S.",
+    journal: "Cell Reports",
+    year: 2025,
+    doi: "10.1016/j.celrep.2025.115485",
+    tags: ["Circular RNAs"]
   },
   {
     id: 2,
-    title: "Specific associations between circular RNAs and RNA-binding proteins",
-    authors: "Dudekula DB, Panda AC, Grammatikakis I, De S, Abdelmohsen K, Gorospe M.",
-    journal: "Trends in Biochemical Sciences",
-    year: 2016,
-    doi: "10.1016/j.tibs.2016.08.006",
-    tags: ["circRNA", "RBPs"]
+    title: "A brain-enriched circular RNA controls excitatory neurotransmission and restricts sensitivity to aversive stimuli",
+    authors: "Giusti, S. A., Pino, N. S., Pannunzio, C., et al.",
+    journal: "Science Advances",
+    year: 2024,
+    doi: "10.1126/sciadv.adj8769",
+    tags: ["Circular RNAs"]
   },
   {
     id: 3,
-    title: "miRNA-independent functions of circRNAs in the brain",
-    authors: "Kadener S et al.",
-    journal: "Nature Neuroscience",
-    year: 2020,
-    doi: "10.1038/s41593-020-00726-3",
-    tags: ["Neuroscience", "circRNA"]
+    title: "circMbl functions in cis and in trans to regulate gene expression and physiology in a tissue-specific fashion",
+    authors: "Pamudurti, N. R., Patop, I. L., Krishnamoorthy, A., Bartok, O., Maya, R., Lerner, N., Ashwal-Fluss, R., Konakondla-Jacob, V., Beatus, T., & Kadener, S.",
+    journal: "Cell Reports",
+    year: 2022,
+    doi: "10.1016/j.celrep.2022.110740",
+    tags: ["Circular RNAs"]
   },
   {
     id: 4,
-    title: "Spatial mapping of the circadian transcriptome in the Drosophila brain",
-    authors: "Smith J, Doe J, Kadener S.",
+    title: "Past, present and future of circRNAs",
+    authors: "Patop, I. L., Wüst, S., & Kadener, S.",
+    journal: "EMBO Journal",
+    year: 2019,
+    doi: "10.15252/embj.2018100836",
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 5,
+    title: "Translation of circRNAs",
+    authors: "Pamudurti, N. R., Bartok, O., Jens, M., Ashwal-Fluss, R., Stottmeister, C., Ruhe, L., Hanan, M., Wyler, E., Perez-Hernandez, D., Ramberger, E., Shenzis, S., Samson, M., Dittmar, G., Landthaler, M., Chekulaeva, M., Rajewsky, N., & Kadener, S.",
+    journal: "Molecular Cell",
+    year: 2017,
+    doi: "10.1016/j.molcel.2017.02.021",
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 6,
+    title: "Circular RNAs in the mammalian brain are highly abundant, conserved, dynamically expressed, and regulated by ADAR1",
+    authors: "Rybak-Wolf, A., Stottmeister, C., Glazar, P., Jens, M., Pino, N., Giusti, S., Hanan, M., … Kadener, S., … Rajewsky, N.",
+    journal: "Molecular Cell",
+    year: 2015,
+    doi: "10.1016/j.molcel.2015.03.027",
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 7,
+    title: "CircRNAs in the brain",
+    authors: "Hanan, M., Soreq, H., & Kadener, S.",
+    journal: "RNA Biology",
+    year: 2017,
+    doi: "10.1080/15476286.2016.1223003",
+    tags: ["Circular RNAs"]
+  },
+  // Circadian Biology – Clocks & Rhythms
+  {
+    id: 8,
+    title: "Alternative polyadenylation factor CPSF6 regulates temperature compensation of the mammalian circadian clock",
+    authors: "Schmal, C., Maier, B., Ashwal-Fluss, R., Bartok, O., Finger, A. M., Bange, T., Koutsouli, S., Robles, M. S., Kadener, S., Herzel, H., & Kramer, A.",
+    journal: "PLOS Biology",
+    year: 2023,
+    doi: "10.1371/journal.pbio.3002164",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 9,
+    title: "Organismal landscape of clock cells and circadian gene expression in Drosophila",
+    authors: "Patop, I. L., Martin-Anduaga, A., Bussi, I., Ceriani, M. F., & Kadener, S.",
+    journal: "bioRxiv",
+    year: 2023,
+    doi: "10.1101/2023.05.23.542009",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 10,
+    title: "Drosophila PSI controls circadian period and the phase of circadian behavior under temperature cycles via tim splicing",
+    authors: "Foley, L., Ling, J., Joshi, R., Evantal, N., Kadener, S., & Emery, P.",
+    journal: "eLife",
+    year: 2019,
+    doi: "10.7554/eLife.46821",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 11,
+    title: "Thermosensitive alternative splicing senses and mediates temperature adaptation in Drosophila",
+    authors: "Martin-Anduaga, A., Evantal, N., Patop, I. L., Bartok, O., Weiss, R., & Kadener, S.",
+    journal: "eLife",
+    year: 2019,
+    doi: "10.7554/eLife.44642",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 12,
+    title: "High-accuracy determination of internal circadian time from a single blood sample",
+    authors: "Wittenbrink, N., Ananthasubramaniam, B., Münch, M., Koller, B., Maier, B., Weschke, C., Bes, F., de Zeeuw, J., Nowozin, C., Wahnschaffe, A., … Kadener, S., … Kramer, A.",
+    journal: "The Journal of Clinical Investigation",
+    year: 2018,
+    doi: "10.1172/JCI120874",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 13,
+    title: "Reconfiguration of a multi-oscillator network by light in the Drosophila circadian clock",
+    authors: "Chatterjee, A., Lamaze, A., De, J., Mena, W., Chélot, E., Martin, B., Hardin, P., Kadener, S., Emery, P., & Rouyer, F.",
+    journal: "Current Biology",
+    year: 2018,
+    doi: "10.1016/j.cub.2018.05.093",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 14,
+    title: "The transcription factor Cabut coordinates energy metabolism and the circadian clock in response to sugar sensing",
+    authors: "Bartok, O., Teesalu, M., Pandey, V., Hanan, M., Poukkula, M., Havula, E., Moussaieff, A., Vodala, S., Nahmias, Y., Kadener, S., & Hietakangas, V.",
+    journal: "EMBO Journal",
+    year: 2015,
+    doi: "10.15252/embj.201490636",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 15,
+    title: "Clk post-transcriptional control denoises circadian transcription in time and space",
+    authors: "Lerner, I., Bartok, O., Afik, S., Menet, J. S., Wolfson, V., Weissbein, U., Haimovich, D., Gafni, C., Friedman, N., Rosbash, M., & Kadener, S.",
     journal: "Nature Communications",
-    year: 2024,
-    doi: "10.1038/s41467-024-12345-x",
-    tags: ["Spatial Omics", "Circadian"]
+    year: 2015,
+    doi: "10.1038/ncomms8056",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 16,
+    title: "Synergistic interactions between the molecular and neuronal circadian networks drive behavioral circadian rhythms in Drosophila melanogaster",
+    authors: "Weiss, R., Bartok, O., Mezan, S., Malka, Y., & Kadener, S.",
+    journal: "PLOS Genetics",
+    year: 2014,
+    doi: "10.1371/journal.pgen.1004252",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 17,
+    title: "Dynamic hyper-editing underlies temperature adaptation in Drosophila",
+    authors: "Buchumenski, I., Bartok, O., Ashwal-Fluss, R., Pandey, V., Porath, H. T., Levanon, E. Y., & Kadener, S.",
+    journal: "PLOS Genetics",
+    year: 2017,
+    doi: "10.1371/journal.pgen.1006931",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 18,
+    title: "PDF signaling is an integral part of the Drosophila circadian molecular oscillator",
+    authors: "Mezan, S., Feuz, J.-D., Deplancke, B., & Kadener, S.",
+    journal: "Cell Reports",
+    year: 2016,
+    doi: "10.1016/j.celrep.2016.09.038",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 19,
+    title: "Genome-wide analysis of light- and temperature-entrained circadian transcripts in C. elegans",
+    authors: "Van der Linden, A. M., Beverly, M., Kadener, S., Rodriguez, J., Wasserman, S., Rosbash, M., & Sengupta, P.",
+    journal: "PLOS Biology",
+    year: 2010,
+    doi: "10.1371/journal.pbio.1000503",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 20,
+    title: "Mathematical model of the Drosophila circadian clock: loop regulation and transcriptional integration",
+    authors: "Fathallah-Shaykh, H. M., Bona, J. L., & Kadener, S.",
+    journal: "Biophysical Journal",
+    year: 2009,
+    doi: "10.1016/j.bpj.2009.07.050",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 21,
+    title: "A role for miRNAs in the Drosophila circadian clock",
+    authors: "Kadener, S., Menet, J. S., Sugino, K., Horwich, M. D., Weissbein, U., Nawathean, P., Vagin, V., Zamore, P. D., Nelson, S., & Rosbash, M.",
+    journal: "Genes & Development",
+    year: 2009,
+    doi: "10.1101/gad.1819509",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 22,
+    title: "Genome-wide identification of targets of the Drosha-Pasha/DGCR8 complex",
+    authors: "Kadener, S., Rodriguez, J., Abruzzi, K. C., & Rosbash, M.",
+    journal: "RNA",
+    year: 2009,
+    doi: "10.1261/rna.1319309",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 23,
+    title: "Circadian transcription contributes to core period determination in Drosophila",
+    authors: "Kadener, S., Schoer, R., Menet, J. S., & Rosbash, M.",
+    journal: "PLOS Biology",
+    year: 2008,
+    doi: "10.1371/journal.pbio.0060119",
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 24,
+    title: "Clockwork orange is a transcriptional repressor and a new Drosophila circadian pacemaker component",
+    authors: "Kadener, S., Stoleru, D., McDonald, M., Nawathean, P., & Rosbash, M.",
+    journal: "Genes & Development",
+    year: 2007,
+    doi: "10.1101/gad.1551307",
+    tags: ["Circadian Biology"]
   }
 ];
 
