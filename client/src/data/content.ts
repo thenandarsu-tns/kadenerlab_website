@@ -1,3 +1,9 @@
+import srcpImage from '@assets/generated_images/bioinformatics_pipeline_data_visualization.png';
+import knockdownImage from '@assets/generated_images/rna_interference_shrna_mechanism.png';
+import catalogsImage from '@assets/generated_images/scientific_database_network.png';
+import spatialImage from '@assets/generated_images/spatial_transcriptomics_brain_map.png';
+import standardsImage from '@assets/generated_images/scientific_standards_documentation.png';
+
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
 
@@ -557,7 +563,8 @@ export const resources = [
     description: "SRCP is a computational pipeline developed in the Kadener Lab for accurate annotation and quantification of circular RNAs from RNA-seq data. It integrates multiple circRNA detection strategies with stringent filtering to reduce false positives and provides robust circRNA expression estimates across samples and conditions. SRCP has been used extensively in our studies of circRNA biogenesis, aging, and disease.",
     link: "https://github.com/kadenerlab",
     linkText: "GitHub Repository",
-    category: "Software"
+    category: "Software",
+    image: srcpImage
   },
   {
     id: "circ-knockdown",
@@ -566,7 +573,8 @@ export const resources = [
     link: "#",
     linkText: "Read Guide",
     category: "Protocols & Guides",
-    featured: true
+    featured: true,
+    image: knockdownImage
   },
   {
     id: "circ-catalogs",
@@ -574,7 +582,8 @@ export const resources = [
     description: "Curated catalogs of circular RNAs expressed in the Drosophila brain and across aging time points, generated in the Kadener Lab using stringent detection and validation criteria. These datasets have been used to study circRNA biogenesis, accumulation with age, cell-type specificity, and functional relevance in neural and disease contexts.",
     link: "https://www.ncbi.nlm.nih.gov/geo/",
     linkText: "Access Datasets (GEO)",
-    category: "Datasets"
+    category: "Datasets",
+    image: catalogsImage
   },
   {
     id: "spatial-atlas",
@@ -583,7 +592,8 @@ export const resources = [
     link: "#",
     linkText: "Coming Soon",
     category: "Datasets",
-    comingSoon: true
+    comingSoon: true,
+    image: spatialImage
   },
   {
     id: "circ-standards",
@@ -591,6 +601,7 @@ export const resources = [
     description: "Community-endorsed best-practice guidelines for the experimental and computational study of circular RNAs, co-authored by the Kadener Lab. These standards address circRNA detection, validation, quantification, and reporting, and provide a framework for reproducible circRNA research.",
     link: "https://www.nature.com/nmeth/",
     linkText: "View Guidelines",
-    category: "Community Resources"
+    category: "Community Resources",
+    image: standardsImage
   }
 ];

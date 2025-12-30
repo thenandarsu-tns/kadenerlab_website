@@ -1,15 +1,8 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { resources } from "@/data/content";
 import { Button } from "@/components/ui/custom-button";
-import { ExternalLink, Book, Database, Code, FileText, Lock } from "lucide-react";
+import { ExternalLink, Lock } from "lucide-react";
 import { motion } from "framer-motion";
-
-const iconMap: Record<string, any> = {
-  "Software": Code,
-  "Protocols & Guides": Book,
-  "Datasets": Database,
-  "Community Resources": FileText
-};
 
 export default function Resources() {
   // Define the section order as requested
@@ -34,13 +27,11 @@ export default function Resources() {
       />
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-16">
           
           {sectionOrder.map((category, index) => {
             const categoryResources = groupedResources[category];
             if (!categoryResources || categoryResources.length === 0) return null;
-
-            const Icon = iconMap[category] || FileText;
 
             return (
               <motion.div 
@@ -50,37 +41,57 @@ export default function Resources() {
                 transition={{ delay: index * 0.1 }}
                 className="space-y-6"
               >
-                <div className="flex items-center gap-3 border-b border-white/10 pb-2">
-                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <h2 className="text-xl font-bold tracking-tight text-foreground">{category}</h2>
+                <div className="flex items-center gap-3 border-b border-white/10 pb-2 mb-6">
+                  <h2 className="text-2xl font-bold tracking-tight text-foreground">{category}</h2>
                 </div>
 
-                <div className="grid gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {categoryResources.map((resource) => (
                     <div 
                       key={resource.id} 
-                      className={`glass-card p-6 rounded-xl border-l-4 transition-all ${
+                      className={`glass-card rounded-xl overflow-hidden flex flex-col h-full border-t-0 transition-all hover:shadow-xl hover:shadow-primary/5 ${
                         resource.featured 
-                          ? "border-l-primary bg-primary/5 shadow-lg shadow-primary/5" 
-                          : "border-l-white/10 hover:border-l-primary/50"
+                          ? "ring-1 ring-primary/50" 
+                          : "border-white/10 hover:border-primary/30"
                       }`}
                     >
-                      <div className="flex flex-col md:flex-row justify-between gap-6">
-                        <div className="flex-1 space-y-3">
-                          <h3 className="text-xl font-bold leading-tight">{resource.title}</h3>
-                          <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                      {/* Image Area */}
+                      <div className="h-48 w-full bg-black/50 overflow-hidden relative group">
+                        {resource.image ? (
+                          <img 
+                            src={resource.image} 
+                            alt={resource.title} 
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-primary/10 flex items-center justify-center">
+                            <span className="text-primary/40 font-mono text-sm">No Preview</span>
+                          </div>
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60" />
+                        
+                        {resource.featured && (
+                          <div className="absolute top-3 right-3 bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded shadow-lg">
+                            Featured
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Content Area */}
+                      <div className="p-6 flex flex-col flex-grow">
+                        <div className="flex-grow space-y-3 mb-6">
+                          <h3 className="text-xl font-bold leading-tight line-clamp-2">{resource.title}</h3>
+                          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-4">
                             {resource.description}
                           </p>
                         </div>
                         
-                        <div className="shrink-0 pt-1">
+                        <div className="mt-auto pt-4 border-t border-white/5">
                           {resource.comingSoon ? (
                             <Button 
-                              variant="outline" 
+                              variant="ghost" 
                               disabled 
-                              className="w-full md:w-auto opacity-70 cursor-not-allowed gap-2"
+                              className="w-full justify-center opacity-70 cursor-not-allowed gap-2 bg-white/5 hover:bg-white/5"
                             >
                               <Lock className="w-4 h-4" />
                               Coming Soon
@@ -93,8 +104,8 @@ export default function Resources() {
                               className="block"
                             >
                               <Button 
-                                variant={resource.featured ? "default" : "outline"} 
-                                className="w-full md:w-auto gap-2"
+                                variant={resource.featured ? "default" : "secondary"} 
+                                className="w-full justify-center gap-2"
                               >
                                 {resource.linkText || "View Resource"}
                                 <ExternalLink className="w-4 h-4" />
