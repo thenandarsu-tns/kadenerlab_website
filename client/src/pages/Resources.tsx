@@ -1,58 +1,115 @@
 import { PageHeader } from "@/components/ui/PageHeader";
-import { Section } from "@/components/ui/Section";
 import { resources } from "@/data/content";
-import { motion } from "framer-motion";
-import { Code, Database, FileText, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/custom-button";
-import heroImage from '@assets/generated_images/bioinformatics_code_and_genomic_data_visualization.png';
+import { ExternalLink, Book, Database, Code, FileText, Lock } from "lucide-react";
+import { motion } from "framer-motion";
+
+const iconMap: Record<string, any> = {
+  "Software": Code,
+  "Protocols & Guides": Book,
+  "Datasets": Database,
+  "Community Resources": FileText
+};
 
 export default function Resources() {
+  // Define the section order as requested
+  const sectionOrder = [
+    "Software",
+    "Protocols & Guides",
+    "Datasets",
+    "Community Resources"
+  ];
+
+  // Group resources by category
+  const groupedResources = sectionOrder.reduce((acc, category) => {
+    acc[category] = resources.filter(r => r.category === category);
+    return acc;
+  }, {} as Record<string, typeof resources>);
+
   return (
     <div>
       <PageHeader 
         title="Resources" 
-        description="Software, datasets, and protocols developed by the Kadener Lab."
-        image={heroImage}
+        description="Tools, datasets, and protocols developed by the Kadener Lab for the scientific community."
       />
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {resources.map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="glass-card p-6 rounded-xl flex flex-col h-full hover:border-primary/50 transition-colors group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                  {item.category === "Software" ? <Code /> : 
-                   item.category === "Dataset" ? <Database /> : <FileText />}
+        <div className="max-w-4xl mx-auto space-y-12">
+          
+          {sectionOrder.map((category, index) => {
+            const categoryResources = groupedResources[category];
+            if (!categoryResources || categoryResources.length === 0) return null;
+
+            const Icon = iconMap[category] || FileText;
+
+            return (
+              <motion.div 
+                key={category}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="space-y-6"
+              >
+                <div className="flex items-center gap-3 border-b border-white/10 pb-2">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h2 className="text-xl font-bold tracking-tight text-foreground">{category}</h2>
                 </div>
-                <span className="text-xs font-medium px-2 py-1 rounded-full bg-white/5 border border-white/5 text-muted-foreground">
-                  {item.category}
-                </span>
-              </div>
-              
-              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                {item.title}
-              </h3>
-              
-              <p className="text-muted-foreground mb-6 flex-grow text-sm">
-                {item.description}
-              </p>
-              
-              <div className="mt-auto">
-                <a href={item.link} target="_blank" rel="noreferrer" className="w-full">
-                  <Button variant="outline" className="w-full gap-2">
-                    Access Resource <ArrowUpRight className="w-4 h-4" />
-                  </Button>
-                </a>
-              </div>
-            </motion.div>
-          ))}
+
+                <div className="grid gap-6">
+                  {categoryResources.map((resource) => (
+                    <div 
+                      key={resource.id} 
+                      className={`glass-card p-6 rounded-xl border-l-4 transition-all ${
+                        resource.featured 
+                          ? "border-l-primary bg-primary/5 shadow-lg shadow-primary/5" 
+                          : "border-l-white/10 hover:border-l-primary/50"
+                      }`}
+                    >
+                      <div className="flex flex-col md:flex-row justify-between gap-6">
+                        <div className="flex-1 space-y-3">
+                          <h3 className="text-xl font-bold leading-tight">{resource.title}</h3>
+                          <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                            {resource.description}
+                          </p>
+                        </div>
+                        
+                        <div className="shrink-0 pt-1">
+                          {resource.comingSoon ? (
+                            <Button 
+                              variant="outline" 
+                              disabled 
+                              className="w-full md:w-auto opacity-70 cursor-not-allowed gap-2"
+                            >
+                              <Lock className="w-4 h-4" />
+                              Coming Soon
+                            </Button>
+                          ) : (
+                            <a 
+                              href={resource.link} 
+                              target="_blank" 
+                              rel="noreferrer"
+                              className="block"
+                            >
+                              <Button 
+                                variant={resource.featured ? "default" : "outline"} 
+                                className="w-full md:w-auto gap-2"
+                              >
+                                {resource.linkText || "View Resource"}
+                                <ExternalLink className="w-4 h-4" />
+                              </Button>
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            );
+          })}
+
         </div>
       </div>
     </div>

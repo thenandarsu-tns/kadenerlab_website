@@ -552,24 +552,45 @@ export const recruiting = {
 
 export const resources = [
   {
-    id: "circ-pipeline",
-    title: "circRNA Detection Pipeline",
-    description: "A computational pipeline for detecting and quantifying circular RNAs from RNA-seq data. [PLACEHOLDER: Add real description]",
+    id: "srcp-pipeline",
+    title: "SRCP: circRNA Detection and Quantification Pipeline",
+    description: "SRCP is a computational pipeline developed in the Kadener Lab for accurate annotation and quantification of circular RNAs from RNA-seq data. It integrates multiple circRNA detection strategies with stringent filtering to reduce false positives and provides robust circRNA expression estimates across samples and conditions. SRCP has been used extensively in our studies of circRNA biogenesis, aging, and disease.",
     link: "https://github.com/kadenerlab",
+    linkText: "GitHub Repository",
     category: "Software"
   },
   {
-    id: "spatial-atlas",
-    title: "Fly Brain Spatial Atlas",
-    description: "Interactive browser for our Drosophila brain spatial transcriptomics dataset. [PLACEHOLDER: Add real description]",
+    id: "circ-knockdown",
+    title: "Guide to circRNA Knockdown Using Junction-Specific shRNAs",
+    description: "A detailed experimental and conceptual guide for designing, validating, and using short hairpin RNAs (shRNAs) to specifically knock down circular RNAs in vivo without affecting their linear host transcripts. This approach, developed in the Kadener Lab, targets the unique back-splice junction of circRNAs and has enabled functional studies of circRNAs in Drosophila development, neural function, aging, and disease models.",
     link: "#",
-    category: "Dataset"
+    linkText: "Read Guide",
+    category: "Protocols & Guides",
+    featured: true
   },
   {
-    id: "protocol-clip",
-    title: "iCLIP Protocol",
-    description: "Optimized protocol for iCLIP in Drosophila S2 cells and adult heads. [PLACEHOLDER: Add real description]",
+    id: "circ-catalogs",
+    title: "Drosophila circRNA Catalogs (Brain, Aging, and Disease)",
+    description: "Curated catalogs of circular RNAs expressed in the Drosophila brain and across aging time points, generated in the Kadener Lab using stringent detection and validation criteria. These datasets have been used to study circRNA biogenesis, accumulation with age, cell-type specificity, and functional relevance in neural and disease contexts.",
+    link: "https://www.ncbi.nlm.nih.gov/geo/",
+    linkText: "Access Datasets (GEO)",
+    category: "Datasets"
+  },
+  {
+    id: "spatial-atlas",
+    title: "Fly Head Spatial Transcriptomics Atlas",
+    description: "A spatial transcriptomic atlas of the adult Drosophila head integrating gene expression with anatomical context. This resource is currently under development in the Kadener Lab and will be released in the future.",
     link: "#",
-    category: "Protocol"
+    linkText: "Coming Soon",
+    category: "Datasets",
+    comingSoon: true
+  },
+  {
+    id: "circ-standards",
+    title: "Best-Practice Standards for circRNA Research",
+    description: "Community-endorsed best-practice guidelines for the experimental and computational study of circular RNAs, co-authored by the Kadener Lab. These standards address circRNA detection, validation, quantification, and reporting, and provide a framework for reproducible circRNA research.",
+    link: "https://www.nature.com/nmeth/",
+    linkText: "View Guidelines",
+    category: "Community Resources"
   }
 ];
