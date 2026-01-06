@@ -93,7 +93,7 @@ export default function People() {
             >
               <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-white/5 group-hover:border-primary/50 transition-colors relative">
                 <img 
-                   src={`https://ui-avatars.com/api/?name=${member.name.replace(' ', '+')}&background=random&color=fff&size=128`}
+                   src={member.image && member.image !== "member-placeholder" ? member.image : `https://ui-avatars.com/api/?name=${member.name.replace(' ', '+')}&background=random&color=fff&size=128`}
                    alt={member.name}
                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                 />

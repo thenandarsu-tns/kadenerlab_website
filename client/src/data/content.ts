@@ -10,6 +10,8 @@ import circadianTheme from '@assets/generated_images/circadian_biology_rna_clock
 import genomicsTheme from '@assets/generated_images/computational_genomics_pipeline_schematic.png';
 import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
 
+import irisImage from '@assets/Iris_1767739801837.jpg';
+
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
 
@@ -163,7 +165,7 @@ export const people = [
     name: "Iris Nava",
     role: "Ph.D Candidate",
     bio: "circRNAs and miRNA pathways",
-    image: "member-placeholder",
+    image: irisImage,
     email: "",
     category: "Grad Student"
   },
