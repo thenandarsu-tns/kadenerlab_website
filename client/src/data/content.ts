@@ -171,6 +171,15 @@ export const people = [
     category: "Grad Student"
   },
   {
+    id: "tns",
+    name: "The Nandar Su",
+    role: "Research Technician/Lab Manager",
+    bio: "Nandar joined the Kadener lab after completing her B.S in Biology and M.S in Bioinformatics at Juniata College in 2023. She works mainly on maintaining and running the lab and helps with projects that need an extra hand. She enjoys reading books and going on trips whenever she is free.",
+    image: nandarImage,
+    email: "",
+    category: "Staff"
+  },
+  {
     id: "jt",
     name: "Japhy Theobald",
     role: "Undergraduate Researcher",
@@ -205,15 +214,6 @@ export const people = [
     image: "member-placeholder",
     email: "",
     category: "Undergrad"
-  },
-  {
-    id: "tns",
-    name: "The Nandar Su",
-    role: "Research Technician/Lab Manager",
-    bio: "Nandar joined the Kadener lab after completing her B.S in Biology and M.S in Bioinformatics at Juniata College in 2023. She works mainly on maintaining and running the lab and helps with projects that need an extra hand. She enjoys reading books and going on trips whenever she is free.",
-    image: nandarImage,
-    email: "",
-    category: "Staff"
   }
 ];
 
