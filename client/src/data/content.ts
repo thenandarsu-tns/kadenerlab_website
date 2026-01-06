@@ -107,7 +107,7 @@ export const people = [
   {
     id: "yp",
     name: "Yingshi Peng",
-    role: "Postdoctoral Fellow",
+    role: "Postdoctoral Researcher",
     bio: "Post-transcriptional regulation of circadian rhythms (since 01/2024)",
     image: "member-placeholder",
     email: "",
@@ -116,7 +116,7 @@ export const people = [
   {
     id: "nb",
     name: "Nathan Browstein",
-    role: "Postdoctoral Fellow",
+    role: "Postdoctoral Researcher",
     bio: "Postdoctoral fellow (since 05/2025); circadian genomics and RNA regulation",
     image: "member-placeholder",
     email: "",
