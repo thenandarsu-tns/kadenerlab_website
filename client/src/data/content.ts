@@ -182,7 +182,7 @@ export const people = [
   {
     id: "al",
     name: "Alex Luo",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate",
     bio: "[PLACEHOLDER BIO]",
     image: "member-placeholder",
     email: "",
@@ -191,7 +191,7 @@ export const people = [
   {
     id: "bs",
     name: "Bee Silverman",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate",
     bio: "[PLACEHOLDER BIO]",
     image: "member-placeholder",
     email: "",
@@ -200,7 +200,7 @@ export const people = [
   {
     id: "jt",
     name: "Japhy Theobald",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate",
     bio: "circRNAs and aging",
     image: "member-placeholder",
     email: "",
@@ -209,7 +209,7 @@ export const people = [
   {
     id: "kc",
     name: "Kat Chin",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate",
     bio: "[PLACEHOLDER BIO]",
     image: "member-placeholder",
     email: "",
@@ -218,7 +218,7 @@ export const people = [
   {
     id: "shj",
     name: "Shirley Jin",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate",
     bio: "[PLACEHOLDER BIO]",
     image: "member-placeholder",
     email: "",
@@ -227,7 +227,7 @@ export const people = [
   {
     id: "ss",
     name: "Susie Shi",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate",
     bio: "circRNAs in aging",
     image: "member-placeholder",
     email: "",
