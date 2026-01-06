@@ -115,9 +115,9 @@ export const people = [
   },
   {
     id: "nb",
-    name: "Nathan Browstein",
+    name: "Nathan Brownstein",
     role: "Postdoctoral Researcher",
-    bio: "Postdoctoral fellow (since 05/2025); circadian genomics and RNA regulation",
+    bio: "Nathan completed their Ph.D in the Kadener lab at Brandeis in June 2024! They are originally from southern Connecticut and studied biochemistry and molecular biology at the College of Wooster in Wooster, Ohio. Their research focuses on mechanisms underlying post-transcriptional regulation in the Drosophila molecular clock utilizing techniques which include proximity interactome mapping, fluorescent imaging, standard molecular techniques and cell culture. In their spare time, Nathan enjoys podcasts, music, and painting miniatures.",
     image: "member-placeholder",
     email: "",
     category: "Postdoc"
