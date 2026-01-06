@@ -154,9 +154,9 @@ export const people = [
   },
   {
     id: "sj",
-    name: "Shruti Ja",
+    name: "Shruti Jha",
     role: "Ph.D Candidate",
-    bio: "circRNAs in neural function",
+    bio: "Shruti is a joint student between the Kadener and Griffith labs, with a strong passion for cell and molecular biology, particularly RNA biology in neurons. Her research focuses on investigating the role of circular RNAs in synaptic function and plasticity, using Drosophila as a model organism. To address her research questions, she utilizes a variety of advanced techniques, including single-molecule imaging, proteomics, sequencing, and behavioral monitoring of the flies.",
     image: "member-placeholder",
     email: "",
     category: "Grad Student"
