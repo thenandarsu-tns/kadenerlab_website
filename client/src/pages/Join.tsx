@@ -14,36 +14,8 @@ export default function Join() {
       />
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="max-w-3xl mx-auto">
           
-          {/* Values & Culture */}
-          <Section className="py-0">
-            <h2 className="text-2xl font-bold mb-6">Lab Philosophy</h2>
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
-              <p>
-                We believe in a collaborative, inclusive, and rigorous scientific environment. 
-                Our lab values curiosity-driven research and interdisciplinary approaches.
-              </p>
-              <p>
-                Mentorship is a key priority. We aim to support trainees at all levels to reach 
-                their career goals, whether in academia or industry.
-              </p>
-              <ul className="space-y-3 mt-4">
-                {[
-                  "Collaborative Environment",
-                  "Interdisciplinary Research",
-                  "Rigorous Training",
-                  "Career Development Support"
-                ].map(item => (
-                  <li key={item} className="flex items-center gap-3 text-foreground font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-primary" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </Section>
-
           {/* Open Positions */}
           <div className="bg-card/30 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
             <h2 className="text-2xl font-bold mb-6">Open Positions</h2>
