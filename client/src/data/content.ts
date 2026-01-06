@@ -47,19 +47,19 @@ Additionally, altered circRNA profiles have been observed in multiple neurodegen
   {
     id: "circadian-clocks",
     title: "Circadian Biology",
-    shortDescription: "Circadian clocks must remain precise across changing environmental conditions. Our work focuses on RNA-level regulation of core clock components and how post-transcriptional mechanisms contribute to temperature compensation, robustness, and network-level coordination.",
-    description: `Post-transcriptional Regulation of the Clock
-Circadian rhythms are commonly described as transcriptional–translational feedback loops, but their accuracy and robustness depend heavily on post-transcriptional regulation. Our work focuses on how RNA processing, splicing, stability, and translation regulate core clock components, including Clock (clk), period (per), and timeless (tim).
+    shortDescription: "Circadian rhythms are internal, autonomous biological clocks which organize cellular, physiological, and behavioral timing into 24-hour cycles. Our lab works with the model organism Drosophila melanogaster to understand several aspects of the molecular clock.",
+    description: `The cellular basis of circadian rhythms lies in cell autonomous molecular clocks located in many tissues throughout the body, but notably in so-called “clock neurons” which act as the master pacemaker cells organizing circadian physiological and behavioral adaptations. The molecular clock itself consists of a transcription-translation feedback loop subject to complex regulations at the molecular and network level which allow the maintenance of 24-hour rhythms despite stochastic molecular changes, and also permits certain environmental cues to alter the timing of the clock. Our lab works with the model organism Drosophila melanogaster to understand several aspects of the molecular clock:
 
-We study how RNA-binding proteins and small RNAs influence clock gene expression and how post-transcriptional control contributes to precise timing, amplitude regulation, and responsiveness to environmental cues. Recent work from the lab highlights previously underappreciated RNA-level regulation of clk as a critical determinant of clock function.
+- How does alternative splicing and different isoforms of clock genes affect the timing and plasticity of the clock?
+- What is the neural and molecular basis of temperature adaptation of the clock?
+- What proteins and non-coding RNAs play a role in the instability of several core clock genes? What is the mechanism of their action?
+- What is the extent of diversity among neurons with oscillating gene expression, and how these oscillations are informed by the clock, or not?
 
-Temperature Compensation and Robustness
-Circadian clocks maintain a nearly constant period across a range of temperatures, a property known as temperature compensation. We have shown that alternative splicing of timeless generates temperature-dependent isoforms that contribute to seasonal adaptation and clock robustness.
+Work from our lab, and others, has identified alternative splicing products of the Drosophila core clock gene timeless (tim) which are expressed in a temperature dependent manner. These protein-encoding isoforms play a critical role in adaptation of the clock to low temperatures which typically would slow down the biochemical processes ensuring the 24-hour circadian rhythm. Currently we are working to understand the mechanistic basis of these isoforms contribution to temperature adaptation and how exactly changes in temperature affect splicing to produce these novel forms of tim.
 
-These mechanisms allow the circadian system to adjust its molecular architecture without compromising overall timing, providing a powerful example of how RNA processing supports physiological stability in fluctuating environments.
+Certain genes that make up the core of the molecular clock produce inherently unstable mRNAs. Our lab uses high-throughput reporters and proximity labeling to identify molecules that interact with these mRNAs and drive their instability. We also seek to understand the precise role this instability has in the timing and robustness of the molecular clock.
 
-Neural Network and Remote Clocks
-Beyond cell-autonomous oscillators, circadian timing emerges from interactions within neural networks. Our work has revealed that many neurons lacking canonical molecular clocks nonetheless display rhythmic gene expression driven by network inputs. These “remote” or “partial” clocks expand the circadian system beyond traditional pacemaker neurons and highlight the importance of intercellular communication in temporal regulation.`,
+Using single cell sequencing data, our lab has identified neurons that express certain genes in an oscillating manner, in the apparent absence of a molecular clock. One project in our lab aims to confirm where these neurons are located, what mechanism drives the oscillating gene expression they exhibit, and determine whether they are linked in any way to circadian rhythms. Similarly, we seek to understand glial cells that express the molecular clock, and what affect that has on glial function.`,
     image: circadianTheme,
     points: [
       "Post-transcriptional Regulation",
