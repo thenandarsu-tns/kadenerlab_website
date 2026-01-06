@@ -178,42 +178,6 @@ export const people = [
     image: nandarImage,
     email: "",
     category: "Staff"
-  },
-  {
-    id: "jt",
-    name: "Japhy Theobald",
-    role: "Undergraduate Researcher",
-    bio: "circRNAs and aging",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad" // New category needs to be supported in People.tsx filter
-  },
-  {
-    id: "ss",
-    name: "Susie Shi",
-    role: "Undergraduate Researcher",
-    bio: "circRNAs in aging",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
-  {
-    id: "hc",
-    name: "Helen Chen",
-    role: "Undergraduate Researcher",
-    bio: "[PLACEHOLDER PROJECT]",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
-  {
-    id: "jc",
-    name: "Jack Chen",
-    role: "Undergraduate Researcher",
-    bio: "[PLACEHOLDER PROJECT]",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
   }
 ];
 
