@@ -100,7 +100,7 @@ export default function People() {
               </div>
               <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
               <p className="text-sm font-medium text-primary/80 mb-3">{member.role}</p>
-              <p className="text-sm text-muted-foreground mb-6 line-clamp-3">
+              <p className="text-sm text-muted-foreground mb-6">
                 {member.bio}
               </p>
               
