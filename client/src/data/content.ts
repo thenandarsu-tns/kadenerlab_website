@@ -29,29 +29,16 @@ export const researchThemes = [
   {
     id: "circrnas",
     title: "Circular RNA Biology",
-    shortDescription: "Circular RNAs are highly stable RNA molecules enriched in the brain. We study how circRNAs are generated, how they function in cis and in trans, and how their exceptional stability allows them to accumulate over time and encode biological history.",
-    description: `Circular RNA Biosynthesis
-Circular RNAs (circRNAs) are produced by a non-canonical splicing reaction known as back-splicing, in which a downstream splice donor is joined to an upstream splice acceptor. This process competes directly with linear splicing and is influenced by both cis-acting intronic features and trans-acting RNA-binding proteins. Our work has shown that circRNA biogenesis is tightly coupled to transcription and conventional splicing decisions, allowing circRNA production to directly influence gene expression output.
+    shortDescription: "Circular RNAs (circRNAs) are highly stable RNA molecules enriched in the brain. We study how circRNAs are generated, how they function in cis (i.e. locally) and trans (i.e. at a distance), and how their exceptional stability allows them to accumulate over time and encode biological history.",
+    description: `CircRNAs are produced by a non-canonical splicing event known as back-splicing, in which a downstream 5’ splice site is joined to an upstream 3’ splice site. This process competes directly with linear splicing and is influenced by multiple factors, including intronic features and RNA-binding proteins. Our work has shown that circRNA biogenesis is tightly coupled to transcription and canonical splicing, which in turn can influence gene expression.
 
-A central focus of the lab has been the role of RNA-binding proteins, such as Muscleblind/MBNL family proteins, in regulating circRNA formation. These proteins can promote or inhibit circularization depending on context, establishing feedback relationships between RNA processing and gene regulation.
+A major focus of the lab is discovering the role of RNA-binding proteins, in particular the Muscleblind (MBNL) family proteins, in regulating circRNA formation. These proteins can either promote or inhibit circularization itself, establishing feedback relationships between RNA processing and gene regulation.
 
-circRNAs and Aging
-CircRNAs are exceptionally stable molecules due to their covalently closed structure, which renders them resistant to exonuclease-mediated degradation. In post-mitotic tissues such as the brain, this stability leads to progressive accumulation of circRNAs with age. Our work has demonstrated that age-dependent increases in circRNA abundance are driven primarily by accumulation rather than increased transcription.
+Another interest of our lab is how circRNAs can be used as biomarkers for aging and how they contribute to the aging process itself. Research has shown that circRNAs are exceptionally stable molecules due to their covalently closed structure, which makes them resistant to exonuclease-mediated degradation. They are mainly found enriched in post-mitotic tissues such as the brain. Our work has demonstrated that circRNAs that increase with age are driven primarily by accumulation rather than increased transcription. This allows circRNAs to serve as accurate biomarkers of chronological age in neuronal tissues. Importantly, circRNA accumulation is not uniform across genes or cell types, suggesting production regulation and functional relevance rather than passive buildup.
 
-This property allows circRNAs to serve as accurate molecular markers of chronological age in neural tissue. Importantly, circRNA accumulation is not uniform across genes or cell types, suggesting regulated production and selective functional relevance rather than passive buildup.
+Due to the stability of the circRNAs, we are also curious to know if they can be used as unique experience markers of prior physiological states. We have shown that specific circRNAs respond to changes in temperature, light conditions, metabolic stress, and other environmental stresses, and that these changes can persist long after the stimulus is removed. From this, we are exploring how these properties can be used to reconstruct past exposures and physiological states from the RNA profiles.
 
-Role of circRNAs in the Brain
-CircRNAs are strongly enriched in the nervous system and, in some cases, localized to synaptic compartments. We study both cis-acting functions, in which circRNA production affects expression of the host gene, and trans-acting functions, in which circRNAs influence cellular physiology independently of the linear transcript.
-
-Using genetic manipulation and behavioral assays, we investigate how specific circRNAs contribute to neural function and organismal physiology. These studies reveal that circRNAs are not merely byproducts of splicing but can have biologically meaningful roles in the brain.
-
-circRNAs as Experience Markers
-Because circRNAs are long-lived and can be selectively induced by environmental stimuli, they provide a unique molecular record of prior physiological states. We have shown that specific circRNAs respond to changes in temperature, light conditions, metabolic stress, and other environmental challenges, and that these changes can persist long after the stimulus is removed.
-
-This combination of inducibility and stability positions circRNAs as molecular “experience markers” that integrate environmental history over extended timescales. We are exploring how these properties can be used to reconstruct past exposures and physiological states from RNA profiles.
-
-Disease and Human Relevance
-Altered circRNA expression has been observed in multiple neurological and neurodegenerative contexts. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. Rather than focusing on therapeutic claims, we emphasize circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.`,
+Additionally, altered circRNA profiles have been observed in multiple neurodegenerative diseases, cancer, metabolic diseases, and many more. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. We are exploring circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.`,
     image: circRnaTheme,
     points: [
       "Circular RNA Biosynthesis",
