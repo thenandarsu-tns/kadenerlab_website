@@ -126,7 +126,7 @@ export const people = [
     id: "jm",
     name: "Jazmin Morales",
     role: "PhD Student",
-    bio: "circRNAs in the fly brain",
+    bio: "Jazmin, a native of Queens, NYC, is a PhD candidate in the Kadener Lab. Her research focuses on investigating the neuronal localization and function of circMbl, primarily employing FISH, advanced imaging techniques, and transcriptomics. Outside of the lab, Jazmin enjoys reading, exploring diverse cuisines, and attempting to knit.",
     image: "member-placeholder",
     email: "",
     category: "Grad Student"
