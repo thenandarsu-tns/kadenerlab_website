@@ -22,7 +22,7 @@ export default function People() {
   return (
     <div>
       <PageHeader 
-        title="People" 
+        title="Team" 
         description="Meet the team unraveling the mysteries of biological time."
       />
 
