@@ -17,7 +17,8 @@ export default function People() {
 
   // Separate PI from the rest if showing all or PI
   const pi = people.find(p => p.category === "PI");
-  const members = filteredPeople.filter(p => p.category !== "PI");
+  const undergrads = filteredPeople.filter(p => p.category === "Undergrad");
+  const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad");
 
   return (
     <div>
@@ -82,7 +83,7 @@ export default function People() {
         )}
 
         {/* Lab Members Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {members.map((member) => (
             <motion.div
               key={member.id}
@@ -114,8 +115,26 @@ export default function People() {
             </motion.div>
           ))}
         </div>
+
+        {/* Undergrads Section - Simple List */}
+        {undergrads.length > 0 && (
+          <Section className="mb-20">
+            <h3 className="text-2xl font-display font-bold mb-8 border-b border-white/10 pb-4">Undergraduate Students</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {undergrads.map((student) => (
+                <div 
+                  key={student.id} 
+                  className="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-primary/5 transition-colors"
+                >
+                  <div className="w-2 h-2 rounded-full bg-primary/50" />
+                  <span className="font-medium text-lg">{student.name}</span>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
         
-        {members.length === 0 && filter !== "PI" && (
+        {members.length === 0 && undergrads.length === 0 && filter !== "PI" && (
           <div className="text-center py-20 text-muted-foreground">
             No members found in this category.
           </div>
