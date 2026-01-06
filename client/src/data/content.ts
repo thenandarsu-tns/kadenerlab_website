@@ -11,6 +11,7 @@ import genomicsTheme from '@assets/generated_images/computational_genomics_pipel
 import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
+import nandarImage from '@assets/Nandar_1767740032236.jpeg';
 
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
@@ -204,6 +205,15 @@ export const people = [
     image: "member-placeholder",
     email: "",
     category: "Undergrad"
+  },
+  {
+    id: "tns",
+    name: "The Nandar Su",
+    role: "Research Technician/Lab Manager",
+    bio: "Nandar joined the Kadener lab after completing her B.S in Biology and M.S in Bioinformatics at Juniata College in 2023. She works mainly on maintaining and running the lab and helps with projects that need an extra hand. She enjoys reading books and going on trips whenever she is free.",
+    image: nandarImage,
+    email: "",
+    category: "Staff"
   }
 ];
 
