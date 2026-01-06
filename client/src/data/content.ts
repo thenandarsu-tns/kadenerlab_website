@@ -125,7 +125,7 @@ export const people = [
   {
     id: "jm",
     name: "Jazmin Morales",
-    role: "PhD Student",
+    role: "Ph.D Candidate",
     bio: "Jazmin, a native of Queens, NYC, is a PhD candidate in the Kadener Lab. Her research focuses on investigating the neuronal localization and function of circMbl, primarily employing FISH, advanced imaging techniques, and transcriptomics. Outside of the lab, Jazmin enjoys reading, exploring diverse cuisines, and attempting to knit.",
     image: "member-placeholder",
     email: "",
@@ -134,7 +134,7 @@ export const people = [
   {
     id: "sb",
     name: "Sayan Biswas",
-    role: "PhD Student",
+    role: "Ph.D Candidate",
     bio: "circRNAs as biomarkers of Parkinson’s disease; computational tools for circRNA analysis",
     image: "member-placeholder",
     email: "",
@@ -143,7 +143,7 @@ export const people = [
   {
     id: "mc",
     name: "Michael Canori",
-    role: "PhD Student",
+    role: "Ph.D Candidate",
     bio: "circMbl function in the brain",
     image: "member-placeholder",
     email: "",
@@ -152,7 +152,7 @@ export const people = [
   {
     id: "sj",
     name: "Shruti Ja",
-    role: "PhD Student",
+    role: "Ph.D Candidate",
     bio: "circRNAs in neural function",
     image: "member-placeholder",
     email: "",
@@ -161,7 +161,7 @@ export const people = [
   {
     id: "in",
     name: "Iris Nava",
-    role: "PhD Student",
+    role: "Ph.D Candidate",
     bio: "circRNAs and miRNA pathways",
     image: "member-placeholder",
     email: "",
