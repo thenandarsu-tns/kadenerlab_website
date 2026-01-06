@@ -135,9 +135,9 @@ export const people = [
   },
   {
     id: "sb",
-    name: "Sayan Biswas",
+    name: "Sayan (Shaun) Biswas",
     role: "Ph.D Candidate",
-    bio: "circRNAs as biomarkers of Parkinson’s disease; computational tools for circRNA analysis",
+    bio: "Sayan is originally from India where he completed his undergraduate training in Electrical Enginering at Jadavpur University, Kolkata. Prior to coming to Brandeis, Sayan worked in the Bangalore Life Science Cluster, India as a research fellow. He is a graduate student in the Molecular and Cell Biology program at Brandeis, and he is investigating the role of circRNA in aging and neurodegeneration.",
     image: "member-placeholder",
     email: "",
     category: "Grad Student"
