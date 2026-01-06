@@ -108,7 +108,7 @@ export const people = [
     id: "yp",
     name: "Yingshi Peng",
     role: "Postdoctoral Researcher",
-    bio: "Post-transcriptional regulation of circadian rhythms (since 01/2024)",
+    bio: "Yingshi joined us in 2024, and he studies how circRNAs affect aging in Drosophila in our lab. Before coming to Brandeis, he obtained his Ph.D. degree in the lab of Prof. Elizabeth R. Gavis at Princeton University where he studied translational control of maternal transcripts in developing Drosophila oocytes. Outside of lab, he enjoys running, skiing, and photography.",
     image: "member-placeholder",
     email: "",
     category: "Postdoc"
