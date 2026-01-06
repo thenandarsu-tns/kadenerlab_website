@@ -178,6 +178,60 @@ export const people = [
     image: nandarImage,
     email: "",
     category: "Staff"
+  },
+  {
+    id: "al",
+    name: "Alex Luo",
+    role: "Undergraduate Researcher",
+    bio: "[PLACEHOLDER BIO]",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "bs",
+    name: "Bee Silverman",
+    role: "Undergraduate Researcher",
+    bio: "[PLACEHOLDER BIO]",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "jt",
+    name: "Japhy Theobald",
+    role: "Undergraduate Researcher",
+    bio: "circRNAs and aging",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "kc",
+    name: "Kat Chin",
+    role: "Undergraduate Researcher",
+    bio: "[PLACEHOLDER BIO]",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "shj",
+    name: "Shirley Jin",
+    role: "Undergraduate Researcher",
+    bio: "[PLACEHOLDER BIO]",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "ss",
+    name: "Susie Shi",
+    role: "Undergraduate Researcher",
+    bio: "circRNAs in aging",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
   }
 ];
 
