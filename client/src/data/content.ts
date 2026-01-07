@@ -262,7 +262,7 @@ export const publications: Publication[] = [
     id: 1,
     title: "Neuronal activity-dependent gene expression is stimulus-specific and changes with neuronal maturation",
     authors: "Lukin J., Beckel M.S., Pedroncini O., Giusti S.A., Di Mauro G., Linenberg I.M., Patop I.L., Chernomoretz A., Marin-Burgin A., Kadener S., Refojo D.",
-    journal: "Frontiers in Molecular Neuroscience 18:1609772",
+    journal: "Frontiers in Molecular Neuroscience",
     year: 2025,
     tags: ["Neuronal Maturation"]
   },
