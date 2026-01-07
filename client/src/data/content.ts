@@ -265,7 +265,7 @@ export const people = [
   {
     id: "tr",
     name: "Teddy Rashkover",
-    role: "Master Student (2023)",
+    role: "Master Student (2023-2025)",
     bio: "",
     image: "member-placeholder",
     email: "",
