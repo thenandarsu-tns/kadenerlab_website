@@ -57,7 +57,7 @@ export default function People() {
                   <img 
                     src={pi.image && pi.image !== "sk-placeholder" ? pi.image : `https://ui-avatars.com/api/?name=${pi.name}&background=0D8ABC&color=fff&size=256`}
                     alt={pi.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
                 <div className="text-center md:text-left">
