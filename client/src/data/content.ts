@@ -263,6 +263,15 @@ export const people = [
     category: "Alumni"
   },
   {
+    id: "sn",
+    name: "Sinead Ngyuen",
+    role: "Lab Manager (2017-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
     id: "tr",
     name: "Teddy Rashkover",
     role: "Master Student (2023)",
@@ -329,6 +338,15 @@ export const people = [
     id: "mh",
     name: "Mor Hanan",
     role: "Postdoctoral Researcher (2017-2019)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "avl",
+    name: "Andres Velaz-Lopez",
+    role: "Lab Technician (2017-2019)",
     bio: "",
     image: "member-placeholder",
     email: "",
