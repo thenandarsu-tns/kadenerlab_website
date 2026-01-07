@@ -26,10 +26,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Lab Location</h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground whitespace-pre-line">
                       {labInfo.contact.address}
-                      <br />
-                      Volen Center for Complex Systems
                     </p>
                   </div>
                 </div>
