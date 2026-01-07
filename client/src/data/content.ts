@@ -169,7 +169,7 @@ export const people = [
     id: "in",
     name: "Iris Nava",
     role: "Ph.D Candidate",
-    bio: "circRNAs and miRNA pathways",
+    bio: "Iris received her B.S. in biology with a concentration in Cellular and Molecular Biology from the University of Nevada, Las Vegas. Her work in the Kadener lab focuses on the interactions of circRNAs and RNA degradation proteins. Outside of the lab, she enjoys hiking, crafting, and reading.",
     image: irisImage,
     email: "",
     category: "Grad Student"
