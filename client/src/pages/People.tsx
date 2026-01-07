@@ -21,12 +21,25 @@ export default function People() {
   const alumni = filteredPeople
     .filter(p => p.category === "Alumni")
     .sort((a, b) => {
-      // Helper to extract the last 4 digit year from role string
-      const getYear = (role: string) => {
+      // Helper to extract years from role string
+      const getYears = (role: string) => {
         const matches = role.match(/\d{4}/g);
-        return matches ? parseInt(matches[matches.length - 1]) : 0;
+        if (!matches) return { start: 0, end: 0 };
+        const end = parseInt(matches[matches.length - 1]);
+        const start = parseInt(matches[0]);
+        return { start, end };
       };
-      return getYear(b.role) - getYear(a.role);
+      
+      const yearsA = getYears(a.role);
+      const yearsB = getYears(b.role);
+      
+      // Sort by end year descending
+      if (yearsB.end !== yearsA.end) {
+        return yearsB.end - yearsA.end;
+      }
+      
+      // If end years are equal, sort by start year descending (later start date first)
+      return yearsB.start - yearsA.start;
     });
   const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad" && p.category !== "Alumni");
 
