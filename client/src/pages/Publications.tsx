@@ -78,11 +78,6 @@ export default function Publications() {
                               {pub.journal}
                             </span>
                             <span className="text-muted-foreground">{pub.year}</span>
-                            {pub.tags?.map(tag => (
-                              <span key={tag} className="text-xs text-primary/80 px-2 py-0.5 rounded-full border border-primary/20">
-                                {tag}
-                              </span>
-                            ))}
                           </div>
                         </div>
                         
