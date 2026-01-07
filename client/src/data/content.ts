@@ -15,7 +15,6 @@ import nandarImage from '@assets/Nandar_1767740032236.jpeg';
 import sebastianImage from '@assets/kadener-400_1767801824700.jpg';
 import nathanImage from '@assets/Nathan_1767801861147.jpeg';
 import jazminImage from '@assets/Jazmin_1767802264089.jpg';
-import sayanImage from '@assets/Sayan_1767802302306.jpg';
 
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
@@ -147,7 +146,7 @@ export const people = [
     name: "Sayan (Shaun) Biswas",
     role: "Ph.D Candidate",
     bio: "Sayan is originally from India where he completed his undergraduate training in Electrical Enginering at Jadavpur University, Kolkata. Prior to coming to Brandeis, Sayan worked in the Bangalore Life Science Cluster, India as a research fellow. He is a graduate student in the Molecular and Cell Biology program at Brandeis, and he is investigating the role of circRNA in aging and neurodegeneration.",
-    image: sayanImage,
+    image: "member-placeholder",
     email: "",
     category: "Grad Student"
   },
