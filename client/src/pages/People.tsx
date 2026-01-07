@@ -18,7 +18,16 @@ export default function People() {
   // Separate PI from the rest if showing all or PI
   const pi = people.find(p => p.category === "PI");
   const undergrads = filteredPeople.filter(p => p.category === "Undergrad");
-  const alumni = filteredPeople.filter(p => p.category === "Alumni");
+  const alumni = filteredPeople
+    .filter(p => p.category === "Alumni")
+    .sort((a, b) => {
+      // Helper to extract the last 4 digit year from role string
+      const getYear = (role: string) => {
+        const matches = role.match(/\d{4}/g);
+        return matches ? parseInt(matches[matches.length - 1]) : 0;
+      };
+      return getYear(b.role) - getYear(a.role);
+    });
   const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad" && p.category !== "Alumni");
 
   return (
