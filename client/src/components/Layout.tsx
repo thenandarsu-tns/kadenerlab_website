@@ -118,18 +118,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
           
           <div>
-            <h4 className="font-bold text-white mb-4">Navigation</h4>
-            <ul className="space-y-2">
-              {navItems.slice(0, 4).map(item => (
-                <li key={item.href}>
-                  <Link href={item.href}><a className="text-sm text-muted-foreground hover:text-primary transition-colors">{item.label}</a></Link>
-                </li>
-              ))}
-            </ul>
+            <h4 className="font-bold text-white mb-4">Contact</h4>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <a href="mailto:kadenerlab@brandeis.edu" className="block hover:text-primary transition-colors">kadenerlab@brandeis.edu</a>
+              <a href="mailto:skadener@brandeis.edu" className="block hover:text-primary transition-colors">skadener@brandeis.edu</a>
+              <p>781-736-2445</p>
+            </div>
           </div>
 
           <div>
-            <h4 className="font-bold text-white mb-4">Contact</h4>
+            <h4 className="font-bold text-white mb-4">Location</h4>
             <p className="text-sm text-muted-foreground whitespace-pre-line">
               Brandeis University
               <br />
