@@ -12,7 +12,7 @@ export default function Publications() {
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
   // Extract unique topics and sort "Circular RNAs" first
-  const allTopics = Array.from(new Set(publications.flatMap(p => p.tags))).sort();
+  const allTopics = Array.from(new Set(publications.flatMap(p => p.tags || []))).sort();
   // Move Circular RNAs to top if exists, otherwise normal sort
   const sortedTopics = allTopics.filter(t => t !== "Circular RNAs");
   if (allTopics.includes("Circular RNAs")) {
