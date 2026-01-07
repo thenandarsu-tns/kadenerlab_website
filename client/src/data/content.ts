@@ -13,6 +13,7 @@ import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_
 import irisImage from '@assets/Iris_1767739801837.jpg';
 import nandarImage from '@assets/Nandar_1767740032236.jpeg';
 import sebastianImage from '@assets/kadener-400_1767801824700.jpg';
+import nathanImage from '@assets/Nathan_1767801861147.jpeg';
 
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
@@ -126,7 +127,7 @@ export const people = [
     name: "Nathan Brownstein",
     role: "Postdoctoral Researcher",
     bio: "Nathan completed their Ph.D in the Kadener lab at Brandeis in June 2024! They are originally from southern Connecticut and studied biochemistry and molecular biology at the College of Wooster in Wooster, Ohio. Their research focuses on mechanisms underlying post-transcriptional regulation in the Drosophila molecular clock utilizing techniques which include proximity interactome mapping, fluorescent imaging, standard molecular techniques and cell culture. In their spare time, Nathan enjoys podcasts, music, and painting miniatures.",
-    image: "member-placeholder",
+    image: nathanImage,
     email: "",
     category: "Postdoc"
   },
