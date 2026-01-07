@@ -112,7 +112,7 @@ export const people = [
     id: "sk",
     name: "Sebastian Kadener",
     role: "Principal Investigator",
-    bio: "Professor of Biology, Brandeis University\n\n**Education**\n\nPhD, The University of Buenos Aires, Buenos Aires, Argentina\nLic. Cs. Biol., The University of Buenos Aires, Buenos Aires, Argentina",
+    bio: "Professor of Biology, Brandeis University\n\nEducation\n\nPhD, The University of Buenos Aires, Buenos Aires, Argentina\nLic. Cs. Biol., The University of Buenos Aires, Buenos Aires, Argentina",
     image: sebastianImage,
     email: "kadener@brandeis.edu",
     scholar: "https://scholar.google.com/citations?user=Example",
