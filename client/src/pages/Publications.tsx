@@ -8,25 +8,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Publications() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedTopic, setSelectedTopic] = useState<string | "All">("All");
+  const [selectedYear, setSelectedYear] = useState<string | "All">("All");
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  // Extract unique topics and sort "Circular RNAs" first
-  const allTopics = Array.from(new Set(publications.flatMap(p => p.tags || []))).sort();
-  // Move Circular RNAs to top if exists, otherwise normal sort
-  const sortedTopics = allTopics.filter(t => t !== "Circular RNAs");
-  if (allTopics.includes("Circular RNAs")) {
-    sortedTopics.unshift("Circular RNAs");
-  }
-  const topics = ["All", ...sortedTopics];
+  // Extract unique years
+  const years = Array.from(new Set(publications.map(p => p.year.toString()))).sort((a, b) => b.localeCompare(a));
+  const allYears = ["All", ...years];
 
   const filteredPubs = publications.filter(pub => {
     const matchesSearch = pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           pub.authors.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           pub.journal.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           pub.year.toString().includes(searchTerm.toLowerCase());
-    const matchesTopic = selectedTopic === "All" || pub.tags?.includes(selectedTopic);
-    return matchesSearch && matchesTopic;
+    const matchesYear = selectedYear === "All" || pub.year.toString() === selectedYear;
+    return matchesSearch && matchesYear;
   });
 
   return (
@@ -37,10 +32,35 @@ export default function Publications() {
       />
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           
+          {/* Sidebar */}
+          <div className="lg:col-span-1">
+            <div className="glass-card p-6 rounded-xl sticky top-24">
+              <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                <Filter className="w-4 h-4" />
+                Filter by Year
+              </h3>
+              <div className="flex flex-col gap-2">
+                {allYears.map(year => (
+                  <button
+                    key={year}
+                    onClick={() => setSelectedYear(year)}
+                    className={`text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                      selectedYear === year 
+                        ? "bg-primary text-primary-foreground font-medium" 
+                        : "hover:bg-primary/10 text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {year}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Main Content */}
-          <div className="col-span-1">
+          <div className="lg:col-span-3">
             {/* Search Bar */}
             <div className="mb-8 relative max-w-2xl mx-auto">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
