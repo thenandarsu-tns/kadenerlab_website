@@ -263,15 +263,6 @@ export const people = [
     category: "Alumni"
   },
   {
-    id: "sn",
-    name: "Sinead Ngyuen",
-    role: "Lab Manager (2017-2023)",
-    bio: "",
-    image: "member-placeholder",
-    email: "",
-    category: "Alumni"
-  },
-  {
     id: "tr",
     name: "Teddy Rashkover",
     role: "Master Student (2023)",
@@ -290,18 +281,27 @@ export const people = [
     category: "Alumni"
   },
   {
-    id: "cm",
-    name: "Claire Martel",
-    role: "Undergrad Researcher (2020-2023)",
+    id: "jh",
+    name: "Jenna Harris",
+    role: "Graduate Student (2018-2023)",
     bio: "",
     image: "member-placeholder",
     email: "",
     category: "Alumni"
   },
   {
-    id: "jh",
-    name: "Jenna Harris",
-    role: "Graduate Student (2018-2023)",
+    id: "sn",
+    name: "Sinead Ngyuen",
+    role: "Lab Manager (2017-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "cm",
+    name: "Claire Martel",
+    role: "Undergrad Researcher (2020-2023)",
     bio: "",
     image: "member-placeholder",
     email: "",
