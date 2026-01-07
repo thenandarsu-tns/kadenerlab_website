@@ -21,10 +21,10 @@ export const labInfo = {
   tagline: "Unraveling the molecular logic of time and RNA",
   mission: "Welcome to the Kadener Lab! We are a curiosity-driven research group studying how RNA regulation and biological timing shape brain function and behavior, using Drosophila melanogaster (fruit flies) as our model organism. Our research centers on two main areas: understanding the roles of circular RNAs (circRNAs) and uncovering the neural and molecular mechanisms that control circadian rhythms.\n\nBy combining molecular biology, genetics, advanced imaging, and computational approaches, we investigate how gene expression and neural circuits influence behavior across development and aging. Our goal is to understand how RNA-based regulatory mechanisms contribute to fundamental processes such as neuronal function, aging, and neurodegeneration, and how disruptions in these processes may impact health and disease.",
   contact: {
-    address: `Brandeis University,
-Department of Biology,
+    address: `Brandeis University
 Rosenstiel Basic Medical Sciences Research Center
-Floor 3, Room 333,
+Floor 3, #333
+415 South St
 Waltham, MA 02453
 United States of America`,
     phone: "781-736-2445",
