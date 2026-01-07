@@ -114,7 +114,7 @@ export const people = [
     role: "Principal Investigator",
     bio: "Professor of Biology, Brandeis University\n\n**Education**\n\nPh.D  -  The University of Buenos Aires, Buenos Aires, Argentina\nLic. Cs. Biol.  -  The University of Buenos Aires, Buenos Aires, Argentina",
     image: sebastianImage,
-    email: "kadener@brandeis.edu",
+    email: "skadener@brandeis.edu",
     scholar: "https://scholar.google.com/citations?user=Example",
     category: "PI"
   },

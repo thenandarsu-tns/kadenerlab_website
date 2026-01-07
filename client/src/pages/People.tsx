@@ -65,7 +65,10 @@ export default function People() {
                   <div className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">
                     Principal Investigator
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{pi.name}</h2>
+                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-2">{pi.name}</h2>
+                  <a href={`mailto:${pi.email}`} className="text-primary font-medium text-lg block mb-6 hover:underline w-fit">
+                    {pi.email}
+                  </a>
                   <div className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
                     {pi.bio.split('\n').map((line, i) => (
                       <span key={i} className="block min-h-[1.5em]">
