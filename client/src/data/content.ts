@@ -243,6 +243,132 @@ export const people = [
     image: "member-placeholder",
     email: "",
     category: "Undergrad"
+  },
+  {
+    id: "jg",
+    name: "Jonathan Garrity",
+    role: "Undergrad Researcher (2023-2025)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "ama",
+    name: "Ane Martin Anduaga",
+    role: "Postdoctoral Researcher (2018-2024)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "tr",
+    name: "Teddy Rashkover",
+    role: "Master Student (2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "kk",
+    name: "Ken Kirio",
+    role: "Undergrad Researcher (2021-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "cm",
+    name: "Claire Martel",
+    role: "Undergrad Researcher (2020-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "jh",
+    name: "Jenna Harris",
+    role: "Graduate Student (2018-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "ilp",
+    name: "Ines Lucia Patop",
+    role: "Graduate Student (2018-2022)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "mz",
+    name: "Michela Zaffagni",
+    role: "Graduate Student (2018-2022)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "aj",
+    name: "Aarti Jajoo",
+    role: "Postdoctoral Researcher (2019-2020)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "mh",
+    name: "Mor Hanan",
+    role: "Postdoctoral Researcher (2017-2019)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "sw",
+    name: "Stanislaus Wuest",
+    role: "Postdoctoral Researcher (2018-2019)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "nrp",
+    name: "Nagarjuna Reddy Pamudurti",
+    role: "Postdoctoral Researcher (2015-2018)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "raf",
+    name: "Reut Ashwal-Fluss",
+    role: "Postdoctoral Researcher (2013-2017)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "ob",
+    name: "Osnat Bartok",
+    role: "Postdoctoral Researcher (2013-2017)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
   }
 ];
 

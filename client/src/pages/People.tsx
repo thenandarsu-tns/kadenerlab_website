@@ -18,7 +18,8 @@ export default function People() {
   // Separate PI from the rest if showing all or PI
   const pi = people.find(p => p.category === "PI");
   const undergrads = filteredPeople.filter(p => p.category === "Undergrad");
-  const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad");
+  const alumni = filteredPeople.filter(p => p.category === "Alumni");
+  const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad" && p.category !== "Alumni");
 
   return (
     <div>
@@ -143,8 +144,31 @@ export default function People() {
             </div>
           </Section>
         )}
+
+        {/* Alumni Section - Simple List */}
+        {alumni.length > 0 && (
+          <Section className="mb-20">
+            <h3 className="text-2xl font-display font-bold mb-8 border-b border-white/10 pb-4">Past Lab Members</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {alumni.map((alum) => (
+                <div 
+                  key={alum.id} 
+                  className="glass-card px-6 py-4 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-primary/5 transition-colors"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-muted-foreground/50" />
+                    <span className="font-medium text-lg">{alum.name}</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground bg-white/5 px-3 py-1 rounded-full whitespace-nowrap">
+                    {alum.role}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
         
-        {members.length === 0 && undergrads.length === 0 && filter !== "PI" && (
+        {members.length === 0 && undergrads.length === 0 && alumni.length === 0 && filter !== "PI" && (
           <div className="text-center py-20 text-muted-foreground">
             No members found in this category.
           </div>
