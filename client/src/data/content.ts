@@ -12,6 +12,7 @@ import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
 import nandarImage from '@assets/Nandar_1767740032236.jpeg';
+import sebastianImage from '@assets/kadener-400_1767801824700.jpg';
 
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
@@ -106,7 +107,7 @@ export const people = [
     name: "Sebastian Kadener",
     role: "Principal Investigator",
     bio: "Professor of Biology, Brandeis University. Research interests: RNA biology, circadian rhythms, circular RNAs, genomics",
-    image: "sk-placeholder",
+    image: sebastianImage,
     email: "kadener@brandeis.edu",
     scholar: "https://scholar.google.com/citations?user=Example",
     category: "PI"
