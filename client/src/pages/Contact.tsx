@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { labInfo } from "@/data/content";
-import { Mail, MapPin, Twitter, Github } from "lucide-react";
+import { Mail, MapPin, Twitter, Github, Phone } from "lucide-react";
 import { Button } from "@/components/ui/custom-button";
 
 export default function Contact() {
@@ -29,6 +29,18 @@ export default function Contact() {
                     <p className="text-muted-foreground whitespace-pre-line">
                       {labInfo.contact.address}
                     </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold mb-1">Phone</h3>
+                    <a href={`tel:${labInfo.contact.phone}`} className="text-muted-foreground hover:text-primary transition-colors">
+                      {labInfo.contact.phone}
+                    </a>
                   </div>
                 </div>
 
