@@ -130,7 +130,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div>
             <h4 className="font-bold text-white mb-4">Contact</h4>
-            <p className="text-sm text-muted-foreground">Brandeis University</p>
+            <p className="text-sm text-muted-foreground whitespace-pre-line">
+              Brandeis University
+              <br />
+              Rosenstiel Floor 3, Room 333
+              <br />
+              Waltham, MA 02453
+            </p>
           </div>
         </div>
         <div className="container mx-auto px-4 mt-12 pt-8 border-t border-white/5 text-center text-xs text-muted-foreground">
