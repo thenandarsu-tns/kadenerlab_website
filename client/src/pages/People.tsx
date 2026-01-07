@@ -51,7 +51,7 @@ export default function People() {
         {(filter === "All" || filter === "PI") && pi && (
           <Section className="mb-20">
             <div className="glass-card p-8 md:p-12 rounded-3xl border border-primary/20 bg-gradient-to-br from-card/50 to-primary/5">
-              <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="flex flex-col md:flex-row gap-10 items-start">
                 <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shrink-0 border-4 border-white/5 shadow-2xl relative group">
                   <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
                   <img 
@@ -65,9 +65,19 @@ export default function People() {
                     Principal Investigator
                   </div>
                   <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{pi.name}</h2>
-                  <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed whitespace-pre-line">
-                    {pi.bio}
-                  </p>
+                  <div className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+                    {pi.bio.split('\n').map((line, i) => (
+                      <span key={i} className="block min-h-[1.5em]">
+                        {line.includes('**') ? (
+                          line.split('**').map((part, j) => 
+                            j % 2 === 1 ? <strong key={j} className="text-foreground">{part}</strong> : part
+                          )
+                        ) : (
+                          line
+                        )}
+                      </span>
+                    ))}
+                  </div>
                   <div className="flex gap-4 justify-center md:justify-start">
                     <a href={`mailto:${pi.email}`} className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-colors">
                       <Mail className="w-5 h-5" />
