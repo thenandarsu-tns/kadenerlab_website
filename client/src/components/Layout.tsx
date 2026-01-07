@@ -128,12 +128,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div>
             <h4 className="font-bold text-white mb-4">Location</h4>
-            <p className="text-sm text-muted-foreground whitespace-pre-line">
+            <p className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
               Brandeis University
               <br />
-              Rosenstiel Floor 3, Room 333
+              Rosenstiel Basic Medical Sciences Research Center
+              <br />
+              Floor 3, #333
+              <br />
+              415 South St
               <br />
               Waltham, MA 02453
+              <br />
+              United States of America
             </p>
           </div>
         </div>
