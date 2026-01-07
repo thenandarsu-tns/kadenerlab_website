@@ -46,17 +46,6 @@ export default function Join() {
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-white/10">
-              <div className="flex items-center gap-4 bg-primary/10 p-4 rounded-lg border border-primary/20">
-                <Mail className="w-6 h-6 text-primary shrink-0" />
-                <div>
-                  <h4 className="font-bold text-sm text-primary uppercase tracking-wider mb-1">Contact</h4>
-                  <p className="text-sm text-muted-foreground">
-                    For inquiries, please email <a href="mailto:kadener@brandeis.edu" className="text-foreground hover:underline">kadener@brandeis.edu</a>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
         </div>
