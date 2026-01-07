@@ -146,7 +146,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="font-bold text-white mb-4">Contact</h4>
             <address className="not-italic text-sm text-muted-foreground space-y-2">
               <p>{labInfo.contact.address}</p>
-              <a href={`mailto:${labInfo.contact.email}`} className="block hover:text-primary transition-colors">{labInfo.contact.email}</a>
+              {labInfo.contact.emails.map(email => (
+                <a key={email} href={`mailto:${email}`} className="block hover:text-primary transition-colors">{email}</a>
+              ))}
             </address>
           </div>
         </div>

@@ -50,9 +50,11 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Email</h3>
-                    <a href={`mailto:${labInfo.contact.email}`} className="text-muted-foreground hover:text-primary transition-colors">
-                      {labInfo.contact.email}
-                    </a>
+                    {labInfo.contact.emails.map((email) => (
+                      <a key={email} href={`mailto:${email}`} className="block text-muted-foreground hover:text-primary transition-colors">
+                        {email}
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>

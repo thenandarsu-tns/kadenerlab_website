@@ -28,7 +28,7 @@ Floor 3, Room 333,
 Waltham, MA 02453
 United States of America`,
     phone: "781-736-2445",
-    email: "kadener@brandeis.edu",
+    emails: ["kadenerlab@brandeis.edu", "skadener@brandeis.edu"],
     twitter: "https://twitter.com/KadenerLab",
     github: "https://github.com/kadenerlab"
   }

@@ -77,7 +77,7 @@ export function ChatWidget() {
       return `We are located at: ${labInfo.contact.address}.`;
     }
     if (lower.includes("email") || lower.includes("contact")) {
-      return `You can reach us at ${labInfo.contact.email}.`;
+      return `You can reach us at ${labInfo.contact.emails.join(" or ")}.`;
     }
     if (lower.includes("paper") || lower.includes("publication")) {
       return "Our latest papers cover topics like circRNA translation and spatial transcriptomics. Check out the Publications page for the full list.";
