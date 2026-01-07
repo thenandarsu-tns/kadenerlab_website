@@ -55,7 +55,7 @@ export default function People() {
                 <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shrink-0 border-4 border-white/5 shadow-2xl relative group">
                   <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
                   <img 
-                    src={`https://ui-avatars.com/api/?name=${pi.name}&background=0D8ABC&color=fff&size=256`} 
+                    src={pi.image && pi.image !== "sk-placeholder" ? pi.image : `https://ui-avatars.com/api/?name=${pi.name}&background=0D8ABC&color=fff&size=256`}
                     alt={pi.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
