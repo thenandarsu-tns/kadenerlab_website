@@ -9,7 +9,6 @@ export default function Contact() {
     <div>
       <PageHeader 
         title="Contact Us" 
-        description="Get in touch with the Kadener Lab."
       />
 
       <div className="container mx-auto px-4 pb-20">
