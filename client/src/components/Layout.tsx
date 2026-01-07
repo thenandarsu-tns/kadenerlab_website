@@ -115,9 +115,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <h3 className="font-display font-bold text-xl mb-4 text-white">Kadener Lab</h3>
-            <p className="text-muted-foreground max-w-sm mb-6">
-              {labInfo.mission}
-            </p>
           </div>
           
           <div>
@@ -128,20 +125,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Link href={item.href}><a className="text-sm text-muted-foreground hover:text-primary transition-colors">{item.label}</a></Link>
                 </li>
               ))}
-              <li>
-                <Link href="/admin-guide"><a className="text-sm text-muted-foreground hover:text-primary transition-colors">Admin Guide</a></Link>
-              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-4">Contact</h4>
-            <address className="not-italic text-sm text-muted-foreground space-y-2">
-              <p>{labInfo.contact.address}</p>
-              {labInfo.contact.emails.map(email => (
-                <a key={email} href={`mailto:${email}`} className="block hover:text-primary transition-colors">{email}</a>
-              ))}
-            </address>
+            <p className="text-sm text-muted-foreground">Brandeis University</p>
           </div>
         </div>
         <div className="container mx-auto px-4 mt-12 pt-8 border-t border-white/5 text-center text-xs text-muted-foreground">
