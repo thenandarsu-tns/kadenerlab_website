@@ -23,7 +23,8 @@ export default function Publications() {
   const filteredPubs = publications.filter(pub => {
     const matchesSearch = pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           pub.authors.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          pub.journal.toLowerCase().includes(searchTerm.toLowerCase());
+                          pub.journal.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                          pub.year.toString().includes(searchTerm.toLowerCase());
     const matchesTopic = selectedTopic === "All" || pub.tags?.includes(selectedTopic);
     return matchesSearch && matchesTopic;
   });
@@ -45,7 +46,7 @@ export default function Publications() {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
               <input 
                 type="text" 
-                placeholder="Search authors, titles, journals..." 
+                placeholder="Search authors, titles, journals, years..." 
                 className="w-full pl-10 pr-4 py-3 rounded-xl bg-card/50 border border-white/10 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all text-sm backdrop-blur-sm"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
