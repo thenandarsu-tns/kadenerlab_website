@@ -118,14 +118,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <p className="text-muted-foreground max-w-sm mb-6">
               {labInfo.mission}
             </p>
-            <div className="flex gap-4">
-              <a href={labInfo.contact.twitter} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                Twitter
-              </a>
-              <a href={labInfo.contact.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                GitHub
-              </a>
-            </div>
           </div>
           
           <div>

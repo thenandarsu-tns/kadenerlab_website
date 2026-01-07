@@ -58,22 +58,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-
-              <div className="mt-8 pt-8 border-t border-white/10">
-                <h3 className="font-bold mb-4">Follow Us</h3>
-                <div className="flex gap-4">
-                  <a href={labInfo.contact.twitter} target="_blank" rel="noreferrer">
-                    <Button variant="outline" size="icon" className="rounded-full">
-                      <Twitter className="w-4 h-4" />
-                    </Button>
-                  </a>
-                  <a href={labInfo.contact.github} target="_blank" rel="noreferrer">
-                    <Button variant="outline" size="icon" className="rounded-full">
-                      <Github className="w-4 h-4" />
-                    </Button>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
 
