@@ -158,7 +158,7 @@ export const people = [
     id: "mc",
     name: "Michael Canori",
     role: "Ph.D Candidate",
-    bio: "circMbl function in the brain",
+    bio: "Michael received his B.A in Cell Biology and Neuroscience from the Rutgers University in New Jersey and worked as a research assistant in Clotilde Lagier-Tourenne's Lab at MGH before joining our lab. He is currently investigating the molecular mechanism of muscleblind (Mbl) in the Drosophila nervous system.",
     image: "member-placeholder",
     email: "",
     category: "Grad Student"
