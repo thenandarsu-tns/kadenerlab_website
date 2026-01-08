@@ -74,9 +74,6 @@ export default function Home() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="lg:col-span-4 mb-8 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Research Areas</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our multidisciplinary approach combines genetics, genomics, biochemistry, and computational biology.
-            </p>
           </div>
           
           {researchThemes.slice(0, 4).map((theme, i) => (
