@@ -152,24 +152,6 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* CTA Section */}
-      <section className="py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-primary/5">
-           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
-        </div>
-        <div className="container mx-auto px-4 relative z-10 text-center">
-           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Interested in joining?</h2>
-           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-             We are always looking for passionate scientists to join our team. 
-             Check out our open positions for postdocs and graduate students.
-           </p>
-           <Link href="/join">
-             <Button size="lg" className="h-14 px-10 text-lg shadow-2xl shadow-primary/30">
-               See Open Positions
-             </Button>
-           </Link>
-        </div>
-      </section>
     </div>
   );
 }
