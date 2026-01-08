@@ -12,20 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10" />
-          <motion.img
-            initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.4 }}
-            transition={{ duration: 1.5 }}
-            src={heroImage}
-            alt="Lab Abstract Visualization"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#f5f0e8]">
         {/* Content */}
         <div className="container mx-auto px-4 relative z-20 text-center">
           <motion.div
@@ -33,13 +20,13 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-6 backdrop-blur-sm">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-6">
               RNA Biology & Circadian Rhythms
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/70">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tighter text-black">
               Welcome to the <br /> Kadener Lab!
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
               {labInfo.mission}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -49,7 +36,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/join">
-                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/10 hover:bg-white/10">
+                <Button variant="outline" size="lg" className="text-base h-12 px-8 border-gray-400 text-gray-700 hover:bg-gray-100">
                   Join the Lab
                 </Button>
               </Link>
@@ -62,7 +49,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600"
         >
           <span className="text-xs uppercase tracking-widest">Scroll</span>
           <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent" />
