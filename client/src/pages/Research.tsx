@@ -14,7 +14,7 @@ export default function Research() {
     <div>
       <PageHeader 
         title="Research Areas" 
-        description="Our lab takes a multidisciplinary approach to understand the molecular mechanisms of time and RNA regulation."
+        description=""
       />
 
       <div className="container mx-auto px-4 pb-20">
