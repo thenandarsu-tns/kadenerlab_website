@@ -25,7 +25,7 @@ export default function People() {
     <div>
       <PageHeader 
         title="Team" 
-        description="Meet the team unraveling the mysteries of biological time."
+        description="Meet the Kadener Krew!"
       />
 
       {/* Filter Tabs */}
