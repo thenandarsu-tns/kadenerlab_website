@@ -6,7 +6,7 @@ import { labInfo, researchThemes, publications } from "@/data/content";
 import { motion } from "framer-motion";
 
 // Import generated images
-import heroImage from '@assets/generated_images/faded_subtle_drosophila_background.png';
+import heroImage from '@assets/generated_images/medium_drosophila_hero_background.png';
 
 export default function Home() {
   return (
