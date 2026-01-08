@@ -100,8 +100,8 @@ Spatial transcriptomics approaches are under development and will be described i
   {
     id: "spatial-omics",
     title: "Spatial Transcriptomics",
-    shortDescription: "Content forthcoming.",
-    description: "Content forthcoming.",
+    shortDescription: "Work in progress!",
+    description: "Work in progress!",
     image: spatialOmicsTheme,
     points: []
   }
