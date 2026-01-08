@@ -115,13 +115,6 @@ export default function Home() {
                     <span>{pub.year}</span>
                   </div>
                 </div>
-                <div className="flex gap-2 shrink-0">
-                  <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noreferrer">
-                     <Button variant="outline" size="sm" className="h-8 text-xs">
-                       DOI
-                     </Button>
-                  </a>
-                </div>
               </div>
             </div>
           ))}
