@@ -6,7 +6,7 @@ import { labInfo, researchThemes, publications } from "@/data/content";
 import { motion } from "framer-motion";
 
 // Import generated images
-import heroImage from '@assets/generated_images/abstract_scientific_visualization_of_circadian_rhythms_and_rna_biology.png';
+import heroImage from '@assets/generated_images/drosophila_art_hero_background.png';
 
 export default function Home() {
   return (
