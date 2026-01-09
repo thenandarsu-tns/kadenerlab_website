@@ -32,7 +32,7 @@ export default function Research() {
                     <img 
                       src={theme.image} 
                       alt={theme.title}
-                      className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${theme.id === 'circrnas' ? 'object-bottom scale-125' : ''}`}
+                      className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${theme.id === 'circrnas' ? 'object-[center_70%]' : ''}`}
                     />
                     <div className="absolute bottom-4 left-4 z-20">
                       <div className="w-10 h-10 rounded-lg bg-primary/20 backdrop-blur-md flex items-center justify-center text-primary border border-white/10">
