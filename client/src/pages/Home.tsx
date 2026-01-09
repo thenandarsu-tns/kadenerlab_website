@@ -18,7 +18,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10" />
           <motion.img
             initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.7 }}
+            animate={{ scale: 1, opacity: 0.9 }}
             transition={{ duration: 1.5 }}
             src={heroImage}
             alt="Fly Brain Fluorescence"
