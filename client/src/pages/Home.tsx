@@ -22,7 +22,7 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             src={heroImage}
             alt="Fly Brain Fluorescence"
-            className="w-full h-full object-contain md:object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 
