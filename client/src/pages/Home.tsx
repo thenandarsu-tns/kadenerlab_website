@@ -33,9 +33,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 text-fuchsia-300 text-sm font-medium mb-6 backdrop-blur-sm">
-              RNA Biology & Circadian Rhythms
-            </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tighter text-white">
               Welcome to the <br /> Kadener Lab!
             </h1>
