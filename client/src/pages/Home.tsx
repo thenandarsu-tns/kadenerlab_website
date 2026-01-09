@@ -44,7 +44,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/research">
-                <Button size="lg" className="text-base h-12 px-8 bg-fuchsia-600 hover:bg-fuchsia-700">
+                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
                   Explore Research <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
