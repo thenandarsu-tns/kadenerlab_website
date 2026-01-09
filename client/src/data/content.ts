@@ -5,7 +5,7 @@ import spatialImage from '@assets/generated_images/spatial_transcriptomics_brain
 import standardsImage from '@assets/generated_images/scientific_standards_documentation.png';
 
 // New Research Theme Images
-import circRnaTheme from '@assets/Screenshot_2026-01-09_144738_1767988072163.png';
+import circRnaTheme from '@assets/Screenshot_2026-01-09_144738_1767994312248.png';
 import circadianTheme from '@assets/generated_images/circadian_biology_rna_clock_schematic.png';
 import genomicsTheme from '@assets/generated_images/computational_genomics_pipeline_schematic.png';
 import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
