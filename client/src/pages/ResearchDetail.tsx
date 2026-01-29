@@ -98,13 +98,16 @@ export default function ResearchDetail() {
                     </figcaption>
                   </figure>
 
-                  <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
                     <img
                       src={mblFigure}
                       alt="circMbl functions schematic"
                       className="w-full h-auto"
                     />
-                  </div>
+                    <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
+                      Graphical abstract from Pamudurti et al., 2022
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             )}
