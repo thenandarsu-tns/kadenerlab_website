@@ -14,6 +14,7 @@ import genomicsImage from '@assets/generated_images/computational_genomics_pipel
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
 import circRnaFigure from '@assets/circrna_1769716997555.png';
 import mblFigure from '@assets/mbl_1769716903421.jpg';
+import tempFigure from "@/assets/images/temp_1769726468923.jpg";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -106,6 +107,17 @@ export default function ResearchDetail() {
                     />
                     <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
                       Graphical abstract from Pamudurti et al., 2022
+                    </figcaption>
+                  </figure>
+
+                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                    <img
+                      src={tempFigure}
+                      alt="Temperature-induced circRNAs maintained over time"
+                      className="w-full h-auto"
+                    />
+                    <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
+                      The expression of specific temperature-induced circRNAs is maintained over time. -Figure 7. Kirio et al., 2025
                     </figcaption>
                   </figure>
                 </div>
