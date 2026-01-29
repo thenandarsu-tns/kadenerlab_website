@@ -110,7 +110,7 @@ export default function People() {
                 <img 
                    src={member.image && member.image !== "member-placeholder" ? member.image : `https://ui-avatars.com/api/?name=${member.name.replace(' ', '+')}&background=random&color=fff&size=128`}
                    alt={member.name}
-                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                   className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 transition-opacity"
                 />
               </div>
               <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
