@@ -77,7 +77,7 @@ export default function ResearchDetail() {
               
               return (
                 <div key={idx} className="space-y-6">
-                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     {section}
                   </p>
                 </div>
