@@ -15,6 +15,7 @@ import nandarImage from '@assets/Nandar_1767740032236.jpeg';
 import sebastianImage from '@assets/kadener-400_1767801824700.jpg';
 import nathanImage from '@assets/Nathan_1767801861147.jpeg';
 import jazminImage from '@assets/Jazmin_1767802264089.jpg';
+import yingshiImage from '@assets/Yingshi_1769714873900.jpg';
 
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
@@ -121,7 +122,7 @@ export const people = [
     name: "Yingshi Peng",
     role: "Postdoctoral Researcher",
     bio: "Yingshi joined us in 2024, and he studies how circRNAs affect aging in Drosophila in our lab. Before coming to Brandeis, he obtained his Ph.D. degree in the lab of Prof. Elizabeth R. Gavis at Princeton University where he studied translational control of maternal transcripts in developing Drosophila oocytes. Outside of lab, he enjoys running, skiing, and photography.",
-    image: "member-placeholder",
+    image: yingshiImage,
     email: "",
     category: "Postdoc"
   },
