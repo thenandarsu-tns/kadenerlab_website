@@ -244,6 +244,114 @@ export const people = [
     category: "Undergrad"
   },
   {
+    id: "do",
+    name: "Daniel Olusheki",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "ds",
+    name: "Daniel Shin",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "vj",
+    name: "Vincent Jared",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "lug",
+    name: "Leila Uwamungu Gasaro",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "hc",
+    name: "Helen Chen",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "dt",
+    name: "David Tong",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "hyk",
+    name: "Han-yin Ku",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "pd",
+    name: "Pirm Dhararag",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "zh",
+    name: "Zena Hu",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "sherren",
+    name: "Sherren",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "aa",
+    name: "Anjali Amin",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
+    id: "shc",
+    name: "Shi Hao Chen (Jack)",
+    role: "Undergraduate",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Undergrad"
+  },
+  {
     id: "jg",
     name: "Jonathan Garrity",
     role: "Undergrad Researcher (2023-2025)",
