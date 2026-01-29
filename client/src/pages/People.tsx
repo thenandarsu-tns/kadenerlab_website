@@ -18,13 +18,14 @@ export default function People() {
   // Separate PI from the rest if showing all or PI
   const pi = people.find(p => p.category === "PI");
   const undergrads = filteredPeople.filter(p => p.category === "Undergrad");
-  const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad");
+  const alumni = filteredPeople.filter(p => p.category === "Alumni");
+  const members = filteredPeople.filter(p => p.category !== "PI" && p.category !== "Undergrad" && p.category !== "Alumni");
 
   return (
     <div>
       <PageHeader 
         title="Team" 
-        description="Meet the team unraveling the mysteries of biological time."
+        description="Meet the Kadener Krew!"
       />
 
       {/* Filter Tabs */}
@@ -51,7 +52,7 @@ export default function People() {
         {(filter === "All" || filter === "PI") && pi && (
           <Section className="mb-20">
             <div className="glass-card p-8 md:p-12 rounded-3xl border border-primary/20 bg-gradient-to-br from-card/50 to-primary/5">
-              <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="flex flex-col md:flex-row gap-10 items-start">
                 <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shrink-0 border-4 border-white/5 shadow-2xl relative group">
                   <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
                   <img 
@@ -64,10 +65,23 @@ export default function People() {
                   <div className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">
                     Principal Investigator
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{pi.name}</h2>
-                  <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-                    {pi.bio}
-                  </p>
+                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-2">{pi.name}</h2>
+                  <a href={`mailto:${pi.email}`} className="text-primary font-medium text-lg block mb-6 hover:underline w-fit">
+                    {pi.email}
+                  </a>
+                  <div className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+                    {pi.bio.split('\n').map((line, i) => (
+                      <span key={i} className="block min-h-[1.5em]">
+                        {line.includes('**') ? (
+                          line.split('**').map((part, j) => 
+                            j % 2 === 1 ? <strong key={j} className="text-foreground">{part}</strong> : part
+                          )
+                        ) : (
+                          line
+                        )}
+                      </span>
+                    ))}
+                  </div>
                   <div className="flex gap-4 justify-center md:justify-start">
                     <a href={`mailto:${pi.email}`} className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-colors">
                       <Mail className="w-5 h-5" />
@@ -96,7 +110,7 @@ export default function People() {
                 <img 
                    src={member.image && member.image !== "member-placeholder" ? member.image : `https://ui-avatars.com/api/?name=${member.name.replace(' ', '+')}&background=random&color=fff&size=128`}
                    alt={member.name}
-                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                   className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 transition-opacity"
                 />
               </div>
               <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
@@ -133,8 +147,31 @@ export default function People() {
             </div>
           </Section>
         )}
+
+        {/* Alumni Section - Simple List */}
+        {alumni.length > 0 && (
+          <Section className="mb-20">
+            <h3 className="text-2xl font-display font-bold mb-8 border-b border-white/10 pb-4">Past Lab Members</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {alumni.map((alum) => (
+                <div 
+                  key={alum.id} 
+                  className="glass-card px-6 py-4 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-primary/5 transition-colors"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-muted-foreground/50" />
+                    <span className="font-medium text-lg">{alum.name}</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground bg-white/5 px-3 py-1 rounded-full whitespace-nowrap">
+                    {alum.role}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
         
-        {members.length === 0 && undergrads.length === 0 && filter !== "PI" && (
+        {members.length === 0 && undergrads.length === 0 && alumni.length === 0 && filter !== "PI" && (
           <div className="text-center py-20 text-muted-foreground">
             No members found in this category.
           </div>
