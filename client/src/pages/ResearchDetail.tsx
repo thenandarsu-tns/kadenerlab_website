@@ -84,7 +84,7 @@ export default function ResearchDetail() {
                     <div className="space-y-6">
                       <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
                         <img
-                          src={circRnaFigure}
+                          src={`${circRnaFigure}?v=1769717200`}
                           alt="Circular RNA schematic"
                           className="w-full h-auto"
                         />
