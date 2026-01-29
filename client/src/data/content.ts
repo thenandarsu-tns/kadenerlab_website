@@ -451,6 +451,17 @@ export const publications: Publication[] = [
     tags: ["Circular RNAs"]
   },
   {
+    id: 2.5,
+    title:
+      "Tissue-like multicellular development triggered by mechanical compression in archaea",
+    authors:
+      "Rados T., Leland O.S., Escudeiro P., Mallon J., Andre K., Caspy I., von Kügelgen A., Stolovicki E., Nguyen S., Patop I.L., Rangel L.T., Kadener S., Renner L.D., Thiel V., Soen Y., Bharat T.A.M., Alva V., Bisson A.",
+    journal: "Science",
+    year: 2025,
+    doi: "10.1126/science.adu0047",
+    tags: ["Archaea", "Mechanobiology"]
+  },
+  {
     id: 3,
     title:
       "A brain-enriched circular RNA controls excitatory neurotransmission and restricts sensitivity to aversive stimuli",
