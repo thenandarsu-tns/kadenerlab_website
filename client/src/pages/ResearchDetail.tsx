@@ -12,6 +12,7 @@ import circImage from '@assets/generated_images/mechanism_of_circular_rna_biogen
 import clockImage from '@assets/generated_images/molecular_mechanism_of_circadian_clock_regulation.png';
 import genomicsImage from '@assets/generated_images/computational_genomics_pipeline_and_rna_sequencing_analysis.png';
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
+import circRnaFigure from '@assets/circrna_1769716654610.png';
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -73,9 +74,21 @@ export default function ResearchDetail() {
               }
               
               return (
-                <p key={idx} className="text-lg text-muted-foreground leading-relaxed">
-                  {section}
-                </p>
+                <div key={idx} className="space-y-6">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    {section}
+                  </p>
+
+                  {theme.id === "circrnas" && idx === 0 && (
+                    <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                      <img
+                        src={circRnaFigure}
+                        alt="Circular RNA schematic"
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
