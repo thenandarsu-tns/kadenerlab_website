@@ -3,6 +3,18 @@ import { Button } from "@/components/ui/custom-button";
 import { ArrowRight, Microscope, Clock, Dna, FlaskConical } from "lucide-react";
 import { Link } from "wouter";
 import { labInfo, researchThemes, publications } from "@/data/content";
+
+type PublicationItem = {
+  id: string;
+  title: string;
+  authors: string;
+  journal: string;
+  year: number;
+  doi?: string;
+  abstract?: string;
+  category?: string;
+};
+
 import { motion } from "framer-motion";
 
 // Import background image
@@ -111,7 +123,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-4">
-          {publications.featured.slice(0, 3).map((pub) => (
+          {(publications.featured as PublicationItem[]).slice(0, 3).map((pub) => (
             <div key={pub.id} className="group glass-card p-6 rounded-xl hover:bg-white/5 transition-colors border-l-4 border-l-transparent hover:border-l-primary">
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                 <div>

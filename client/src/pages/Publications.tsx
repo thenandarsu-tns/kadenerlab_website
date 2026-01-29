@@ -3,16 +3,16 @@ import { Section } from "@/components/ui/Section";
 import { publications } from "@/data/content";
 
 type PublicationItem = {
-  id: string;
+  id: number;
   title: string;
   authors: string;
   journal: string;
   year: number;
   doi?: string;
+  tags?: string[];
   summary?: string;
-  abstract?: string;
-  category?: string;
 };
+
 import { useState } from "react";
 import { Button } from "@/components/ui/custom-button";
 import { Search, Filter, ChevronDown, ChevronUp } from "lucide-react";
@@ -21,7 +21,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Publications() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedYear, setSelectedYear] = useState<string | "All">("All");
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
   const publicationList: PublicationItem[] = Array.from(
     new Map(
