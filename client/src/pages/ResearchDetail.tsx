@@ -115,7 +115,7 @@ export default function ResearchDetail() {
                       className="w-full h-auto"
                     />
                     <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      Graphical abstract from Pamudurti et al., 2022
+                      Graphical abstract from Kirio et al., 2025
                     </figcaption>
                   </figure>
 
