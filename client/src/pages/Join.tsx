@@ -23,20 +23,26 @@ export default function Join() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-bold text-primary mb-2">Postdoctoral Fellows</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-4">
                   We are looking for postdocs with experience in RNA biology, genomics, or computational biology. 
                   Candidates should send a CV, a brief statement of research interests, and contact information for three references.
                 </p>
+                <Button variant="outline" className="w-full sm:w-auto">
+                  Application Details
+                </Button>
               </div>
 
               <div className="w-full h-[1px] bg-white/10" />
 
               <div>
                 <h3 className="text-xl font-bold text-primary mb-2">Graduate Students</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-4">
                   Prospective students should apply through the Brandeis University PhD programs 
                   (Mol/Cell Biology or Neuroscience). Current students interested in rotations should contact Sebastian directly.
                 </p>
+                <Button variant="outline" className="w-full sm:w-auto">
+                  Contact for Rotation
+                </Button>
               </div>
             </div>
 

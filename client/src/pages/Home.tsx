@@ -3,22 +3,10 @@ import { Button } from "@/components/ui/custom-button";
 import { ArrowRight, Microscope, Clock, Dna, FlaskConical } from "lucide-react";
 import { Link } from "wouter";
 import { labInfo, researchThemes, publications } from "@/data/content";
-
-type PublicationItem = {
-  id: string;
-  title: string;
-  authors: string;
-  journal: string;
-  year: number;
-  doi?: string;
-  abstract?: string;
-  category?: string;
-};
-
 import { motion } from "framer-motion";
 
-// Import background image
-import heroImage from '@assets/image_1767987211605.png';
+// Import generated images
+import heroImage from '@assets/generated_images/abstract_scientific_visualization_of_circadian_rhythms_and_rna_biology.png';
 
 export default function Home() {
   return (
@@ -30,10 +18,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10" />
           <motion.img
             initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.9 }}
+            animate={{ scale: 1, opacity: 0.4 }}
             transition={{ duration: 1.5 }}
             src={heroImage}
-            alt="Fly Brain Fluorescence"
+            alt="Lab Abstract Visualization"
             className="w-full h-full object-cover"
           />
         </div>
@@ -45,20 +33,23 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tighter text-white mt-16 md:mt-0">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-6 backdrop-blur-sm">
+              RNA Biology & Circadian Rhythms
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/70">
               Welcome to the <br /> Kadener Lab!
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
               {labInfo.mission}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/research">
-                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
+                <Button size="lg" className="text-base h-12 px-8">
                   Explore Research <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
               <Link href="/join">
-                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
+                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/10 hover:bg-white/10">
                   Join the Lab
                 </Button>
               </Link>
@@ -71,10 +62,10 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground"
         >
           <span className="text-xs uppercase tracking-widest">Scroll</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-fuchsia-500 to-transparent" />
+          <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent" />
         </motion.div>
       </section>
 
@@ -83,6 +74,9 @@ export default function Home() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="lg:col-span-4 mb-8 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Research Areas</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our multidisciplinary approach combines genetics, genomics, biochemistry, and computational biology.
+            </p>
           </div>
           
           {researchThemes.slice(0, 4).map((theme, i) => (
@@ -123,7 +117,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-4">
-          {(publications.featured as PublicationItem[]).slice(0, 3).map((pub) => (
+          {publications.slice(0, 3).map((pub) => (
             <div key={pub.id} className="group glass-card p-6 rounded-xl hover:bg-white/5 transition-colors border-l-4 border-l-transparent hover:border-l-primary">
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                 <div>
@@ -136,6 +130,13 @@ export default function Home() {
                     <span>•</span>
                     <span>{pub.year}</span>
                   </div>
+                </div>
+                <div className="flex gap-2 shrink-0">
+                  <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noreferrer">
+                     <Button variant="outline" size="sm" className="h-8 text-xs">
+                       DOI
+                     </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -151,6 +152,24 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* CTA Section */}
+      <section className="py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-primary/5">
+           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10 text-center">
+           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Interested in joining?</h2>
+           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+             We are always looking for passionate scientists to join our team. 
+             Check out our open positions for postdocs and graduate students.
+           </p>
+           <Link href="/join">
+             <Button size="lg" className="h-14 px-10 text-lg shadow-2xl shadow-primary/30">
+               See Open Positions
+             </Button>
+           </Link>
+        </div>
+      </section>
     </div>
   );
 }

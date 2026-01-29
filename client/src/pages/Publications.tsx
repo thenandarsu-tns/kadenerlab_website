@@ -1,18 +1,6 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { publications } from "@/data/content";
-
-type PublicationItem = {
-  id: number;
-  title: string;
-  authors: string;
-  journal: string;
-  year: number;
-  doi?: string;
-  tags?: string[];
-  summary?: string;
-};
-
 import { useState } from "react";
 import { Button } from "@/components/ui/custom-button";
 import { Search, Filter, ChevronDown, ChevronUp } from "lucide-react";
@@ -23,21 +11,11 @@ export default function Publications() {
   const [selectedYear, setSelectedYear] = useState<string | "All">("All");
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const publicationList: PublicationItem[] = Array.from(
-    new Map(
-      [...publications.featured, ...Object.values(publications.categories).flat()].map(
-        (p) => [p.id, p],
-      ),
-    ).values(),
-  ).sort((a, b) => b.year - a.year);
-
   // Extract unique years
-  const years = Array.from(
-    new Set(publicationList.map((p) => p.year.toString())),
-  ).sort((a, b) => b.localeCompare(a));
-  const allYears: Array<string | "All"> = ["All", ...years];
+  const years = Array.from(new Set(publications.map(p => p.year.toString()))).sort((a, b) => b.localeCompare(a));
+  const allYears = ["All", ...years];
 
-  const filteredPubs = publicationList.filter((pub) => {
+  const filteredPubs = publications.filter(pub => {
     const matchesSearch = pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           pub.authors.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           pub.journal.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -64,7 +42,7 @@ export default function Publications() {
                 Filter by Year
               </h3>
               <div className="flex flex-col gap-2">
-                {allYears.map((year) => (
+                {allYears.map(year => (
                   <button
                     key={year}
                     onClick={() => setSelectedYear(year)}

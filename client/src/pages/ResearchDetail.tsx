@@ -12,8 +12,6 @@ import circImage from '@assets/generated_images/mechanism_of_circular_rna_biogen
 import clockImage from '@assets/generated_images/molecular_mechanism_of_circadian_clock_regulation.png';
 import genomicsImage from '@assets/generated_images/computational_genomics_pipeline_and_rna_sequencing_analysis.png';
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
-import circRnaFigure from '@assets/circrna_1769716997555.png';
-import mblFigure from '@assets/mbl_1769716903421.jpg';
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -75,39 +73,11 @@ export default function ResearchDetail() {
               }
               
               return (
-                <div key={idx} className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    {section}
-                  </p>
-                </div>
+                <p key={idx} className="text-lg text-muted-foreground leading-relaxed">
+                  {section}
+                </p>
               );
             })}
-
-            {theme.id === "circrnas" && (
-              <div className="pt-4">
-                <h3 className="text-sm font-semibold tracking-wide text-white/80 uppercase">Figures</h3>
-                <div className="mt-4 space-y-6">
-                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                    <img
-                      src={`${circRnaFigure}?v=1769717200`}
-                      alt="Circular RNA schematic"
-                      className="w-full h-auto"
-                    />
-                    <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      Representation of MBL-C and MBL-O/P regulation in cis by circMbl isoforms in different tissues. In the brain (green), MBL-C binds to pre-mRNA in order to facilitate backsplicing (as described in Ashwal-Fluss et al., 2014). In the eye, MBL-O/P regulates its own levels by two different mechanisms: inhibiting the splicing of the first and second introns (red inhibition symbols) and promoting backsplicing (dashed violet lines). -
-                    </figcaption>
-                  </figure>
-
-                  <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                    <img
-                      src={mblFigure}
-                      alt="circMbl functions schematic"
-                      className="w-full h-auto"
-                    />
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Sidebar / Visuals */}
