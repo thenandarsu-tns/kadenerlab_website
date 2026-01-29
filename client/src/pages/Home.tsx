@@ -111,7 +111,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-4">
-          {publications.slice(0, 3).map((pub) => (
+          {publications.featured.slice(0, 3).map((pub) => (
             <div key={pub.id} className="group glass-card p-6 rounded-xl hover:bg-white/5 transition-colors border-l-4 border-l-transparent hover:border-l-primary">
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                 <div>

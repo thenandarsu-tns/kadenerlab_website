@@ -6,7 +6,6 @@ import standardsImage from '@assets/generated_images/scientific_standards_docume
 
 // New Research Theme Images
 import circRnaTheme from '@assets/circrna_1769717249956.png';
-import circRnaThemeCard from '@assets/circrna_1769717249956.png';
 import circadianTheme from '@assets/generated_images/circadian_biology_rna_clock_schematic.png';
 import genomicsTheme from '@assets/generated_images/computational_genomics_pipeline_schematic.png';
 import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
@@ -51,7 +50,7 @@ Another interest of our lab is how circRNAs can be used as biomarkers for aging 
 Due to the stability of the circRNAs, we are also curious to know if they can be used as unique experience markers of prior physiological states. We have shown that specific circRNAs respond to changes in temperature, light conditions, metabolic stress, and other environmental stresses, and that these changes can persist long after the stimulus is removed. From this, we are exploring how these properties can be used to reconstruct past exposures and physiological states from the RNA profiles.
 
 Additionally, altered circRNA profiles have been observed in multiple neurodegenerative diseases, cancer, metabolic diseases, and many more. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. We are exploring circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.`,
-    image: circRnaThemeCard,
+    image: circRnaTheme,
     points: [
       "Circular RNA Biosynthesis",
       "circRNAs and Aging",
