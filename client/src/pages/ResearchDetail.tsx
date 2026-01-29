@@ -13,6 +13,7 @@ import clockImage from '@assets/generated_images/molecular_mechanism_of_circadia
 import genomicsImage from '@assets/generated_images/computational_genomics_pipeline_and_rna_sequencing_analysis.png';
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
 import circRnaFigure from '@assets/circrna_1769716654610.png';
+import mblFigure from '@assets/mbl_1769716799735.jpg';
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -80,12 +81,22 @@ export default function ResearchDetail() {
                   </p>
 
                   {theme.id === "circrnas" && idx === 0 && (
-                    <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                      <img
-                        src={circRnaFigure}
-                        alt="Circular RNA schematic"
-                        className="w-full h-auto"
-                      />
+                    <div className="space-y-6">
+                      <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                        <img
+                          src={circRnaFigure}
+                          alt="Circular RNA schematic"
+                          className="w-full h-auto"
+                        />
+                      </div>
+
+                      <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                        <img
+                          src={mblFigure}
+                          alt="circMbl functions schematic"
+                          className="w-full h-auto"
+                        />
+                      </div>
                     </div>
                   )}
                 </div>
