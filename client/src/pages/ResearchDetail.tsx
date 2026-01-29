@@ -13,7 +13,7 @@ import clockImage from '@assets/generated_images/molecular_mechanism_of_circadia
 import genomicsImage from '@assets/generated_images/computational_genomics_pipeline_and_rna_sequencing_analysis.png';
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
 import circRnaFigure from '@assets/circrna_1769716654610.png';
-import mblFigure from '@assets/mbl_1769716799735.jpg';
+import mblFigure from '@assets/mbl_1769716903421.jpg';
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
