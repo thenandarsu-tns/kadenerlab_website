@@ -137,19 +137,6 @@ export default function ResearchDetail() {
                   </li>
                 ))}
               </ul>
-              
-              <div className="mt-8 pt-8 border-t border-white/10">
-                <div className="aspect-square rounded-lg overflow-hidden bg-black/20 border border-white/10 relative group">
-                  <img 
-                    src={imageMap[theme.image]} 
-                    alt="Schematic" 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                    <span className="text-xs font-medium text-white/80">Schematic Overview</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
