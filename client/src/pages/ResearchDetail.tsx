@@ -117,7 +117,7 @@ export default function ResearchDetail() {
                       className="w-full h-auto"
                     />
                     <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      The expression of specific temperature-induced circRNAs is maintained over time. -Figure 7. Kirio et al., 2025
+                      Graphical abstract from Kirio et al., 2025
                     </figcaption>
                   </figure>
                 </div>
