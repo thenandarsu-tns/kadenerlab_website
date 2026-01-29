@@ -79,29 +79,32 @@ export default function ResearchDetail() {
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     {section}
                   </p>
-
-                  {theme.id === "circrnas" && idx === 0 && (
-                    <div className="space-y-6">
-                      <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                        <img
-                          src={`${circRnaFigure}?v=1769717200`}
-                          alt="Circular RNA schematic"
-                          className="w-full h-auto"
-                        />
-                      </div>
-
-                      <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                        <img
-                          src={mblFigure}
-                          alt="circMbl functions schematic"
-                          className="w-full h-auto"
-                        />
-                      </div>
-                    </div>
-                  )}
                 </div>
               );
             })}
+
+            {theme.id === "circrnas" && (
+              <div className="pt-4">
+                <h3 className="text-sm font-semibold tracking-wide text-white/80 uppercase">Figures</h3>
+                <div className="mt-4 space-y-6">
+                  <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                    <img
+                      src={`${circRnaFigure}?v=1769717200`}
+                      alt="Circular RNA schematic"
+                      className="w-full h-auto"
+                    />
+                  </div>
+
+                  <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+                    <img
+                      src={mblFigure}
+                      alt="circMbl functions schematic"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sidebar / Visuals */}
