@@ -23,7 +23,13 @@ export default function Publications() {
   const [selectedYear, setSelectedYear] = useState<string | "All">("All");
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  const publicationList: PublicationItem[] = publications.featured;
+  const publicationList: PublicationItem[] = Array.from(
+    new Map(
+      [...publications.featured, ...Object.values(publications.categories).flat()].map(
+        (p) => [p.id, p],
+      ),
+    ).values(),
+  ).sort((a, b) => b.year - a.year);
 
   // Extract unique years
   const years = Array.from(
