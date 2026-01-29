@@ -622,8 +622,522 @@ export const publications: Publication[] = [
     journal: "PLoS Pathogens",
     year: 2020,
     tags: ["Circular RNAs", "Virology"]
+  },
+  {
+    id: 21,
+    title:
+      "A lncRNA survey finds increases in neuroprotective LINC‐PINT in Parkinson’s disease substantia nigra",
+    authors:
+      "Simchovitz A., Hanan M., Yayon N., Lee S., Bennett E., Greenberg D., Kadener S., Soreq H.",
+    journal: "Aging Cell",
+    year: 2020,
+    tags: ["lncRNA", "Parkinson's Disease"]
+  },
+  {
+    id: 22,
+    title: "CRISPR-Cas13 mediated Knock Down in Drosophila cultured cells",
+    authors: "Viswanatha R., Zaffagni M., Zirin J., Perrimon N.*, Kadener S.*",
+    journal: "bioRxiv",
+    year: 2020,
+    tags: ["CRISPR", "Methodology"]
+  },
+  {
+    id: 23,
+    title:
+      "Drosophila PSI controls circadian period and the phase of circadian behavior under temperature cycle via tim splicing",
+    authors: "Foley L., Ling J., Joshi R., Evantal N., S Kadener S., Emery P",
+    journal: "eLife",
+    year: 2019,
+    tags: ["Circadian Biology", "Splicing"]
+  },
+  {
+    id: 24,
+    title:
+      "Thermosensitive alternative splicing senses and mediates temperature adaptation in Drosophila",
+    authors: "Anduaga A.*, Evantal N.*, Patop I., Bartok O., Weiss R., Kadener S.",
+    journal: "eLife",
+    year: 2019,
+    tags: ["Splicing", "Temperature Adaptation"]
+  },
+  {
+    id: 25,
+    title:
+      "NEAT1 is overexpressed in Parkinson’s disease substantia nigra and confers drug-inducible neuroprotection from oxidative stress",
+    authors:
+      "Simchovitz A., Hanan M., Niederhoffer N., Madrer N., Yayon N., Bennett E., Greenberg D., Kadener S. and Soreq H.",
+    journal: "FASEB Journal",
+    year: 2019,
+    tags: ["Parkinson's Disease", "lncRNA"]
+  },
+  {
+    id: 26,
+    title: "Past, present and future of circRNAs",
+    authors: "Patop I., Wust S. and Kadener S.",
+    journal: "EMBO Journal",
+    year: 2019,
+    tags: ["Circular RNAs", "Review"]
+  },
+  {
+    id: 27,
+    title: "Craving for Introns",
+    authors: "Zaffagni M. and Kadener S.",
+    journal: "Molecular Cell",
+    year: 2019,
+    tags: ["Commentary"]
+  },
+  {
+    id: 28,
+    title:
+      "Transcription of a plasticity gene is activated by neuronal hyperpolarization",
+    authors: "Zhu Z., Ortiz T., Mezan S., Kadener S. and Blau J.",
+    journal: "bioRxiv",
+    year: 2019,
+    tags: ["Neuronal Plasticity"]
+  },
+  {
+    id: 29,
+    title:
+      "High-accuracy determination of internal circadian time from a single blood sample",
+    authors:
+      "Wittenbrink N., Ananthasubramaniam B., Münch M., Koller B., Maier B., Weschke C., Bes F., de Zeeuw J., Nowozin C., Wahnschaffe A., Wisniewski S., Zaleska M., Bartok O., Ashwal-Fluss R., Lammert H., Herzel H., Hummel M., Kadener S., Kunz D., Kramer A.",
+    journal: "The Journal of Clinical Investigation",
+    year: 2018,
+    tags: ["Circadian Biology", "Clinical"]
+  },
+  {
+    id: 30,
+    title:
+      "Reconfiguration of a Multi-oscillator Network by Light in the Drosophila Circadian Clock",
+    authors:
+      "Chatterjee A., Lamaze A., De J., Mena W., Chélot E., Martin B., Hardin P., Kadener S., Emery P., Rouyer F.",
+    journal: "Current Biology",
+    year: 2018,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 31,
+    title: "circRNAs in Cancer",
+    authors: "Patop I. and Kadener S.",
+    journal: "Curr. Opin Genet Dev.",
+    year: 2018,
+    tags: ["Circular RNAs", "Cancer", "Review"]
+  },
+  {
+    id: 32,
+    title: "CircRNAs in the brain",
+    authors: "Hanan M., Soreq H. and Kadener S.",
+    journal: "RNA Biology",
+    year: 2017,
+    tags: ["Circular RNAs", "Review"]
+  },
+  {
+    id: 33,
+    title: "Dynamic hyper-editing underlies temperature adaptation in Drosophila",
+    authors:
+      "Buchumenski I, Bartok O, Ashwal-Fluss R, Pandey V, Porath HT, Levanon EY, Kadener S.",
+    journal: "PLoS Genetics",
+    year: 2017,
+    tags: ["RNA Editing", "Genomics"]
+  },
+  {
+    id: 34,
+    title:
+      "Defining the 5’ and 3’ landscape of the Drosophila transcriptome with ExoCAGE and RNaseH-seq",
+    authors:
+      "Afik S. 1, Bartok O. 1, Artyomov M., Shishkin A., Kadri S., Zhu X., Gutman M., Garber M.* and Kadener S.*",
+    journal: "Nucleic Acids Research",
+    year: 2017,
+    tags: ["Transcriptomics", "Methodology"]
+  },
+  {
+    id: 35,
+    title: "Clonally stable VK allelic choice instructs IgK repertoire",
+    authors:
+      "Levin-Klein R., Fraenkel S., Lichtenstein M., Matheson L., Bartok O., Nevo Y., Kadener S., Corcoran A., Cedar H., Bergman Y.",
+    journal: "Nature Communications",
+    year: 2017,
+    tags: ["Immunology"]
+  },
+  {
+    id: 36,
+    title: "Translation of circRNAs",
+    authors:
+      "Pamudurti N., Bartok O., Jens O., Ashwal-Fluss R., Stottmeister C., Ruhe L., Hanan M., Wyler E., Perez-Hernandez D., Ramberger E., Shenzis S., Samson M., Dittmar G., Landthaler M., Chekulaeva M., Rajewsky N. and Kadener S.",
+    journal: "Molecular Cell",
+    year: 2017,
+    tags: ["Circular RNAs", "Translation"]
+  },
+  {
+    id: 37,
+    title:
+      "Marked differences in C9orf72 methylation status and isoform expression between C9/ALS human embryonic and induced pluripotent stem cells",
+    authors:
+      "Cohen-Hadad Y., Altarescu G., Eldar-Geva T., Levi-Lahad E., Zhang M., Rogaeva, E. Gotkine M., Bartok O., Ashwal-Fluss R., Kadener S., Epsztejn-Litman S., Eiges R.",
+    journal: "Stem Cell Reports",
+    year: 2016,
+    tags: ["ALS", "Stem Cells"]
+  },
+  {
+    id: 38,
+    title:
+      "PDF signaling is an integral part of the Drosophila circadian molecular oscillator",
+    authors: "Mezan S., Feuz JD, Deplancke B. and Kadener S.",
+    journal: "Cell Reports",
+    year: 2016,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 39,
+    title:
+      "End Sequence Analysis Toolkit (ESAT) expands the extractable information from single-cell RNA-seq data",
+    authors:
+      "Derr A, Yang C, Zilionis R, Sergushichev A, Blodgett DM, Redick S, Bortell R, Luban J, Harlan DM, Kadener S, Greiner DL, Klein A, Artyomov MN, Garber M.",
+    journal: "Genome Research",
+    year: 2016,
+    tags: ["Methodology", "Single-cell RNA-seq"]
+  },
+  {
+    id: 40,
+    title:
+      "Pseudouridylation in Trypanosoma brucei rRNA is developmentally regulated in positions critical for ribosome function",
+    authors:
+      "Chikne V.*, Doniger T.*, Bartok O.*, Eliaz D.*, Cohen Chalamish S., Tschudi C., Unger R., Hashem Y., Kadener S. and Michaeli S.",
+    journal: "Scientific Reports",
+    year: 2016,
+    tags: ["RNA Modification"]
+  },
+  {
+    id: 41,
+    title: "miR-184 regulates pancreatic β-Cell function according to glucose metabolism",
+    authors:
+      "Tattikota SG., Rathjen T., Hausser J., Khedkar A., Kabra UD., Pandey V., Sury M., Wessels HH., Mollet IG., Eliasson L., Selbach M., Zinzen RP., Zavolan M., Kadener S, Tschöp MH, Jastroch M, Friedländer NR., Poy MN.",
+    journal: "J. Biol. Chem.",
+    year: 2015,
+    tags: ["miRNA", "Metabolism"]
+  },
+  {
+    id: 42,
+    title:
+      "Circular RNAs in the mammalian brain are highly abundant, conserved, dynamically expressed, and regulated by ADAR1",
+    authors:
+      "Rybak-Wolf A., Stottmeister C., Glazar P., Jens M., Pino N., Giusti S., Hanan M., Behm M., Bartok O., Ashwal R., Herzog M., Schreyer L., Papavasileiou P., Ivanov A., Ohman M., Refojo D., Kadener S. and Rajewsky N.",
+    journal: "Molecular Cell",
+    year: 2015,
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 43,
+    title:
+      "The transcription factor Cabut coordiantes energy metabolism and the circadian clock in response to sugar sensing",
+    authors:
+      "Bartok O., Teesalu M., Pandey V., Hanan M., Poukkula M., Havula E., Moussaieff A., Vodala S., Nahmias Y., Kadener S.* and Hietakangas V.*",
+    journal: "EMBO Journal",
+    year: 2015,
+    tags: ["Circadian Biology", "Metabolism"]
+  },
+  {
+    id: 44,
+    title:
+      "Clk post-transcriptional control denoises circadian transcription in time and space",
+    authors:
+      "Lerner I.*, Bartok O.*, Afik S., Menet J., Wolfson V., Weissbein U., Haimovich D., Gafni C., Friedman N., Rosbash M. and Kadener S.",
+    journal: "Nature Communications",
+    year: 2015,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 45,
+    title:
+      "Studying the differentiation of human parthenogenetic cells reveals novel tissue and isoform dependent imprinted transcripts",
+    authors:
+      "Stelzer Y., Bar S., Bartok O., Afik S., Ronen D., Kadener S.* and Benvenisty N.*",
+    journal: "Cell Reports",
+    year: 2015,
+    tags: ["Stem Cells", "Imprinting"]
+  },
+  {
+    id: 46,
+    title: "CircRNA biogenesis and canonical splicing compete with each other",
+    authors:
+      "Ashwal-Fluss R., Meyer M., Pamudurti N.R., Ivanov A., Bartok O., Evantal N., Hanan M., Memczak S., Rajewsky N. and Kadener S.",
+    journal: "Molecular Cell",
+    year: 2014,
+    tags: ["Circular RNAs", "Splicing"]
+  },
+  {
+    id: 47,
+    title:
+      "Synergistic Interactions between the Molecular and Neuronal Circadian Networks Drive Behavioral Circadian Rhythms in Drosophila melanogaster",
+    authors: "Weiss R., Bartok O., Mezan S., Malka Y and Kadener S.",
+    journal: "PloS Genetics",
+    year: 2014,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 48,
+    title:
+      "Genome-wide assessment of post-transcriptional regulation in the fly brain",
+    authors: "Mezan S., Ashwal-Fluss R., Shenhav R., Garber M. and Kadener S.",
+    journal: "Frontiers in Molecular Neuroscience",
+    year: 2013,
+    tags: ["Genomics", "Post-transcriptional Regulation"]
+  },
+  {
+    id: 49,
+    title:
+      "A new in vivo model of pantothenate kinase-associated neurodegeneration reveals a surprising role for transcriptional regulation in PKAN pathogenesis",
+    authors: "Pandey V., Turm H., Bekenstein U., Shifman S. and Kadener S.",
+    journal: "Frontiers in Cell Neuroscience",
+    year: 2013,
+    tags: ["Neurodegeneration"]
+  },
+  {
+    id: 50,
+    title:
+      "Adaptation of molecular circadian clockwork to environmental changes: a role for alternative splicing and miRNAs",
+    authors: "Bartok O., Kyriacou C., Levine J., Sehgal A. and Kadener S.",
+    journal: "Proc R. Soc. B.",
+    year: 2013,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 51,
+    title:
+      "Alternative splicing regulates biogenesis of miRNAs located across exon-intron junctions",
+    authors:
+      "Melamed Z., Levy A., Ashwal R., Lev-Maor G., Mekahel N., Atias N., Gilad S., Sharan R., Levy C., Kadener S* and Ast G*.",
+    journal: "Molecular Cell",
+    year: 2013,
+    tags: ["Splicing", "miRNA"]
+  },
+  {
+    id: 52,
+    title:
+      "Transcriptional activity and nuclear localization of Cabut, the Drosophila ortholog of vertebrate TGF-β-inducible early-response gene (TIEG) proteins",
+    authors: "Belacortu Y., Weiss R., Kadener S. and Paricio N.",
+    journal: "PLoS One",
+    year: 2012,
+    tags: ["Development"]
+  },
+  {
+    id: 53,
+    title:
+      "What can Drosophila teach us about iron-accumulation neurodegenerative disorders?",
+    authors: "Bekenstein U. and Kadener S.",
+    journal: "J. Neural Trans",
+    year: 2011,
+    tags: ["Neurodegeneration", "Review"]
+  },
+  {
+    id: 54,
+    title:
+      "Expression of Drosophila cabut during early embryogenesis, dorsal closure and nervous system development",
+    authors: "Belancortu Y., Weiss R., Kadener S. and Paricio N.",
+    journal: "Gene Expr Patterns",
+    year: 2011,
+    tags: ["Development"]
+  },
+  {
+    id: 55,
+    title:
+      "Genome-Wide Analysis of Light and Temperature-Entrained Circadian Transcripts in C. elegans",
+    authors:
+      "Van der Linden A.M., Beverly M., Kadener S., Rodriguez J., Wasserman S., Rosbash M. and Sengupta P.",
+    journal: "PLoS Biology",
+    year: 2010,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 56,
+    title:
+      "Mathematical Model of the Drosophila Circadian Clock: Loop Regulation and Transcriptional Integration",
+    authors: "Fathallah-Shaykh H.M., Bona J.L. and Kadener S.",
+    journal: "Biophys J.",
+    year: 2009,
+    tags: ["Circadian Biology", "Modeling"]
+  },
+  {
+    id: 57,
+    title: "A role for miRNAs in the Drosophila circadian clock",
+    authors:
+      "Kadener S., Menet J., Sugino K., Horwich M.D., Weissbein U., Nawathean P., Vagin V., Zamore P., Nelson S. and Rosbash M.",
+    journal: "Genes Dev.",
+    year: 2009,
+    tags: ["Circadian Biology", "miRNA"]
+  },
+  {
+    id: 58,
+    title:
+      "Genome-wide identification of targets of the drosha-pasha/DGCR8 complex",
+    authors: "Kadener S., Rodriguez J., Abruzzi K. and Rosbash M.",
+    journal: "RNA",
+    year: 2009,
+    tags: ["miRNA"]
+  },
+  {
+    id: 59,
+    title:
+      "Circadian transcription contributes to core period determination in Drosophila",
+    authors: "Kadener S., Schoer R., Menet J. and Rosbash M.",
+    journal: "PLOS Biology",
+    year: 2008,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 60,
+    title:
+      "Clockwork orange is a transcriptional repressor and a new Drosophila circadian pacemaker component",
+    authors: "Kadener S., Stoleru D., McDonald M., Nawathean P. and Rosbash M.",
+    journal: "Genes Dev.",
+    year: 2007,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 61,
+    title:
+      "Transcriptional feedback and definition of the circadian pacemaker in Drosophila and animals",
+    authors:
+      "Rosbash M., Bradley S., Kadener S., Li Y., Luo W., Menet J.S., Nagoshi E., Palm K., Schoer R., Shang Y. and Tang C.H.",
+    journal: "Cold Spring Harb Symp Quant Biol.",
+    year: 2007,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 62,
+    title:
+      "Neurotoxic protein expression reveals connections between the circadian clock and mating behavior in Drosophila",
+    authors:
+      "Kadener S., Villella A., Kula E., Palm K., Pyza E., Botas J., Hall J.C. and Rosbash M.",
+    journal: "Proc Natl Acad Sci U S A.",
+    year: 2006,
+    tags: ["Circadian Biology", "Behavior"]
+  },
+  {
+    id: 63,
+    title:
+      "In vivo commitment to yeast cotranscriptional splicing is sensitive to transcription elongation mutants",
+    authors: "Lacadie S.A., Tardiff D.F., Kadener S. and Rosbash M.",
+    journal: "Genes Dev.",
+    year: 2006,
+    tags: ["Splicing"]
+  },
+  {
+    id: 64,
+    title:
+      "A polar mechanism coordinates different regions of alternative splicing within a single gene",
+    authors:
+      "Fededa J.P., Petrillo E., Gelfand M.S., Neverov A.D., Kadener S., Nogues G., Pelisch F., Baralle F.E., Muro A.F. and Kornblihtt A.R.",
+    journal: "Mol Cell.",
+    year: 2005,
+    tags: ["Splicing"]
+  },
+  {
+    id: 65,
+    title:
+      "PERIOD1-associated proteins modulate the negative limb of the mammalian circadian oscillator",
+    authors:
+      "Brown S.A., Ripperger J., Kadener S., Fleury-Olela F., Vilbois F., Rosbash M. and Schibler U.",
+    journal: "Science",
+    year: 2005,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 66,
+    title: "A slow RNA polymerase II affects alternative splicing in vivo",
+    authors:
+      "de la Mata M., Alonso C.R., Kadener S., Fededa J.P., Blaustein M., Pelisch F., Cramer P., Bentley D. and Kornblihtt A.R.",
+    journal: "Mol Cell",
+    year: 2005,
+    tags: ["Splicing"]
+  },
+  {
+    id: 67,
+    title:
+      "A recessive mutant of Drosophila Clock reveals a role in circadian rhythm amplitude",
+    authors: "Allada R., Kadener S., Nandakumar N. and Rosbash M.",
+    journal: "EMBO J.",
+    year: 2003,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 68,
+    title:
+      "An early ancestor in the evolution of splicing: a Trypanosoma cruzi serine-arginine-rich protein (TcSR) is functional in cis-splicing",
+    authors:
+      "Portal D., Espinosa J.M., Lobo G.S., Kadener S., Pereira C.A., de la Mata M., Tang Z., Lin R.J., Kornblihtt A.R., Baralle F.E., Flawia M.M. and Torres H.N.",
+    journal: "Mol Biochem Parasitology",
+    year: 2003,
+    tags: ["Splicing", "Evolution"]
+  },
+  {
+    id: 69,
+    title:
+      "Trypanosoma cruzi TcSRPK, the first protozoan member of the SRPK family, is biochemically and functionally conserved with metazoan SR protein-specific kinases",
+    authors:
+      "Portal D., Lobo G.S., Kadener S., Prasad J., Espinosa J.M., Pereira C.A., Tang Z., Lin R.J., Manley J.L., Kornblihtt A.R., Flawia M.M. and Torres H.N.",
+    journal: "Mol Biochem Parasitology",
+    year: 2003,
+    tags: ["Splicing"]
+  },
+  {
+    id: 70,
+    title:
+      "Control of alternative pre-mRNA splicing by RNA Pol II elongation: faster is not always better",
+    authors:
+      "Nogues G., Kadener S., Cramer P., de la Mata M., Fededa J.P., Blaustein M., Srebrow A. and Kornblihtt A.R.",
+    journal: "IUBMB Life",
+    year: 2003,
+    tags: ["Splicing"]
+  },
+  {
+    id: 71,
+    title:
+      "Transcriptional activators differ in their abilities to control alternative splicing",
+    authors: "Nogues G., Kadener S., Cramer P., Bentley D. and Kornblihtt A.R.",
+    journal: "J. Biol Chem",
+    year: 2002,
+    tags: ["Splicing"]
+  },
+  {
+    id: 72,
+    title:
+      "Regulation of alternative splicing by a transcriptional enhancer through RNA pol II elongation",
+    authors: "Kadener S., Fededa J.P., Rosbash M. and Kornblihtt A.R.",
+    journal: "Proc.NatlAcad Sci USA.",
+    year: 2002,
+    tags: ["Splicing"]
+  },
+  {
+    id: 73,
+    title:
+      "Antagonistic effects of T-Ag andVP16 reveal a role for RNA polymerase II elongation in alternative splicing",
+    authors:
+      "Kadener S., Cramer P., Nogues G., Cazalla D., de la Mata M., Fededa J., Werbajh S., Srebrow A. and Kornblihtt A.",
+    journal: "EMBO J.",
+    year: 2002,
+    tags: ["Splicing"]
+  },
+  {
+    id: 74,
+    title: "Coordination between transcription and pre-mRNA processing",
+    authors:
+      "Cramer P., Srebrow A., Kadener S., Werbajh S., de la Mata M., Melen G., Nogues G. and Kornblihtt AR.",
+    journal: "FEBS Lett.",
+    year: 2001,
+    tags: ["Splicing"]
+  },
+  {
+    id: 75,
+    title:
+      "Coupling of transcription with alternative splicing: RNA pol II promoters modulate SF2/ASF and 9G8 effects on an exonic splicing enhancer",
+    authors:
+      "Cramer P., Cáceres J.F., Cazalla D., Kadener S., Muro, A., Baralle F. and Kornblihtt A.",
+    journal: "Mol. Cell",
+    year: 2001,
+    tags: ["Splicing"]
   }
 ];
+
 
 export const news = [
   {
