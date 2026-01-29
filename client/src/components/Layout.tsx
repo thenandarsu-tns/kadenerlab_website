@@ -86,14 +86,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 top-16 z-40 bg-background/95 backdrop-blur-xl lg:hidden flex flex-col p-8 gap-4 border-t border-white/10"
+            className="fixed inset-0 top-16 z-40 lg:hidden flex flex-col p-8 gap-4 border-t border-black/10 bg-white/95 text-slate-900 backdrop-blur-xl"
           >
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <a
                   className={cn(
-                    "text-2xl font-display font-medium py-2 border-b border-white/5",
-                    location === item.href ? "text-primary pl-4 border-l-2 border-primary" : "text-muted-foreground"
+                    "text-2xl font-display font-medium py-2 border-b border-black/10",
+                    location === item.href ? "text-slate-900 pl-4 border-l-2 border-primary" : "text-slate-700"
                   )}
                   onClick={() => setIsOpen(false)}
                 >
