@@ -94,7 +94,7 @@ export default function ResearchDetail() {
                       className="w-full h-auto"
                     />
                     <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      Representation of MBL-C and MBL-O/P regulation in cis by circMbl isoforms in different tissues. In the brain (green), MBL-C binds to pre-mRNA in order to facilitate backsplicing (as described in Ashwal-Fluss et al., 2014). In the eye, MBL-O/P regulates its own levels by two different mechanisms: inhibiting the splicing of the first and second introns (red inhibition symbols) and promoting backsplicing (dashed violet lines). -
+                      Representation of MBL-C and MBL-O/P regulation in cis by circMbl isoforms in different tissues. In the brain (green), MBL-C binds to pre-mRNA in order to facilitate backsplicing (as described in Ashwal-Fluss et al., 2014). In the eye, MBL-O/P regulates its own levels by two different mechanisms: inhibiting the splicing of the first and second introns (red inhibition symbols) and promoting backsplicing (dashed violet lines). - Pamudurti et al., 2022
                     </figcaption>
                   </figure>
 
