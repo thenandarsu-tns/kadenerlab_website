@@ -12,10 +12,10 @@ export default function Publications() {
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
   // Extract unique years
-  const years = Array.from(new Set(publications.map(p => p.year.toString()))).sort((a, b) => b.localeCompare(a));
+  const years = Array.from(new Set(publications.map((p) => p.year.toString()))).sort((a, b) => b.localeCompare(a));
   const allYears = ["All", ...years];
 
-  const filteredPubs = publications.filter(pub => {
+  const filteredPubs = publications.filter((pub) => {
     const matchesSearch = pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           pub.authors.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           pub.journal.toLowerCase().includes(searchTerm.toLowerCase()) ||

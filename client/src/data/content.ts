@@ -418,80 +418,212 @@ export const alumni = [
   }
 ];
 
-export const publications = {
-  featured: [
-    {
-      id: "stoehr2024",
-      title: "A circadian clock in Drosophila ensures early developmental synchrony in individual animal physiology",
-      authors: "Stoehr, A., Monteleone, D., Fridman, N., Morgan, M., Morales, J., Zinzi, A., Biswas, S., Villalba, H., Ruben, M., Kadener, S. (2024)",
-      journal: "Science",
-      year: 2024,
-      doi: "10.1126/science.ado8027",
-      abstract: "Circadian timing is critical for coordinating physiology and behavior. Here we show that a circadian clock in Drosophila ensures early developmental synchrony across individual animals by regulating clock output genes during development.",
-      category: "Circadian Biology"
-    },
-    {
-      id: "rothe2024",
-      title: "mRNA tailing and RNA binding proteins determine circRNA translation and circMbl levels",
-      authors: "Rothe, M., Beckel, E., Pedroncini, M., & Kadener, S. (2024)",
-      journal: "Nature Communications",
-      year: 2024,
-      doi: "10.1038/s41467-024-46985-1",
-      abstract: "We identify how mRNA tailing and RNA binding proteins influence circRNA translation and circMbl levels, providing insights into circRNA regulation and function.",
-      category: "Circular RNA Biology"
-    },
-    {
-      id: "mastrangelo2023",
-      title: "Complex nuclear structure of fly circadian neurons",
-      authors: "Mastrangelo, M.D., O'Donnell, K.H., Jung, J., Jacobson, J., Borch Jensen, M., & Kadener, S. (2023)",
-      journal: "Nature",
-      year: 2023,
-      doi: "10.1038/s41586-023-06690-4",
-      abstract: "We explore the nuclear organization of fly circadian neurons, revealing complex nuclear structures that support circadian gene regulation.",
-      category: "Circadian Biology"
-    }
-  ],
-  categories: {
-    "Circular RNA Biology": [
-      {
-        id: "rothe2024",
-        title: "mRNA tailing and RNA binding proteins determine circRNA translation and circMbl levels",
-        authors: "Rothe, M., Beckel, E., Pedroncini, M., & Kadener, S. (2024)",
-        journal: "Nature Communications",
-        year: 2024,
-        doi: "10.1038/s41467-024-46985-1"
-      },
-      {
-        id: "stoehr2021",
-        title: "Clock-dependent transcriptional cycles in the Drosophila brain",
-        authors: "Stoehr, A.M., Joseph, A., Ganeshan, S., Agarwal, A., & Kadener, S. (2021)",
-        journal: "Cell",
-        year: 2021,
-        doi: "10.1016/j.cell.2021.03.034"
-      }
-    ],
-    "Circadian Biology": [
-      {
-        id: "stoehr2024",
-        title: "A circadian clock in Drosophila ensures early developmental synchrony in individual animal physiology",
-        authors: "Stoehr, A., Monteleone, D., Fridman, N., Morgan, M., Morales, J., Zinzi, A., Biswas, S., Villalba, H., Ruben, M., Kadener, S. (2024)",
-        journal: "Science",
-        year: 2024,
-        doi: "10.1126/science.ado8027"
-      }
-    ],
-    "Genomics & Computational Biology": [
-      {
-        id: "example1",
-        title: "High-throughput circRNA detection pipeline",
-        authors: "Kadener Lab (2023)",
-        journal: "Bioinformatics",
-        year: 2023,
-        doi: "10.1093/bioinformatics/example"
-      }
-    ]
+export interface Publication {
+  id: number;
+  title: string;
+  authors: string;
+  journal: string;
+  year: number;
+  doi?: string;
+  tags?: string[];
+  summary?: string;
+}
+
+export const publications: Publication[] = [
+  {
+    id: 1,
+    title:
+      "Neuronal activity-dependent gene expression is stimulus-specific and changes with neuronal maturation",
+    authors:
+      "Lukin J., Beckel M.S., Pedroncini O., Giusti S.A., Di Mauro G., Linenberg I.M., Patop I.L., Chernomoretz A., Marin-Burgin A., Kadener S., Refojo D.",
+    journal: "Frontiers in Molecular Neuroscience",
+    year: 2025,
+    tags: ["Neuronal Maturation"]
+  },
+  {
+    id: 2,
+    title:
+      "circRNAs are extremely stable in the brain and can serve as age and experience markers",
+    authors:
+      "Kirio K., Patop I., Anduaga-Martin A., Harris J., Pamudurti N., Martel C. and Kadener S.",
+    journal: "Cell Reports",
+    year: 2025,
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 3,
+    title:
+      "A brain-enriched circular RNA controls excitatory neurotransmission and restricts sensitivity to aversive stimuli",
+    authors:
+      "Giusti S., Pino N., Pannunzio C., Ogando M., Armando N., Garrett A., Zimprich A., Becker L., Gimeno M., Lukin J., Merino F., Pardi1B., Pedroncini O., Di Mauro G., Gailus Durner V., Fuchs H., Hrabe de Angelis M., Patop I., Turck C., Deussing J., Vogt Weisenhorn D., Jahn O., Kadener S., Hölter S., Brose N., Giesert F., Wurst W., Marin-Burgin A. and Refojo D.",
+    journal: "Science Advances",
+    year: 2024,
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 4,
+    title:
+      "In Vivo Tissue-Specific Knockdown of circRNAs Using shRNAs in Drosophila melanogaster",
+    authors: "Patop I., Canori M. and S Kadener.",
+    journal: "Circular RNAs",
+    year: 2024,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 5,
+    title:
+      "Alternative polyadenylation factor CPSF6 regulates temperature compensation of the mammalian circadian clock",
+    authors:
+      "Schmal C., Maier B., Ashwal-Fluss R., Bartok O., Finger A., Bange T., Koutsouli S., Robles M., Kadener S., Herzel H and Kramer A.",
+    journal: "PLoS Biology",
+    year: 2023,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 6,
+    title:
+      "Organismal landscape of clock cells and circadian gene expression in Drosophila",
+    authors: "Patop I, Anduaga A., Bussi I., Ceriani M. and Kadener S.",
+    journal: "bioRxiv",
+    year: 2023,
+    tags: ["Circadian Biology", "Genomics"]
+  },
+  {
+    id: 7,
+    title:
+      "The chromatin factor ROW cooperates with BEAF-32 in regulating long-range genes",
+    authors: "Herman N., Kadener S.* and Shifman S.*",
+    journal: "EMBO Reports",
+    year: 2022,
+    tags: ["Genomics"]
+  },
+  {
+    id: 8,
+    title:
+      "Artificially stimulating retrotransposon activity increases mortality and accelerates a subset of aging phenotypes in Drosophila",
+    authors:
+      "Rygal J., Anduaga Martin A., Bitman E, Rivellese E, Kadener S., Marr M.",
+    journal: "eLife",
+    year: 2022,
+    tags: ["Aging"]
+  },
+  {
+    id: 9,
+    title:
+      "circMbl functions in cis and in trans to regulate gene expression and physiology in a tissue-specific fashion",
+    authors:
+      "Pamudurti NP*, Patop* IL, Krishnamoorthy A., Bartok O., Maya R., Lerner N., Ashwall-Fluss R., Konakondla-Jacob V, Beatus T, and Kadener S.",
+    journal: "Cell Reports",
+    year: 2022,
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 10,
+    title: "Best practice standards for circRNA research",
+    authors:
+      "Nielsen A., Bindereif A., Bozzoni I, Hanan M., Hansen T., Irimia T., Kadener S., Kristensen L., Legnini I., Morlando M., Olesen M., Pasterkamp R., Preibisch S., Rajewsky N., Suenkel C. and Kjems J.",
+    journal: "Nature Methods",
+    year: 2022,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 11,
+    title:
+      "SARS-CoV-2 Nsp14 mediates the effects of viral infection on the host cell transcriptome",
+    authors:
+      "Zaffagni M., Harris JM, Patop IL, Pamudurti NR, Nguyen S. and Kadener S.",
+    journal: "eLife",
+    year: 2022,
+    tags: ["Virology", "Transcriptomics"]
+  },
+  {
+    id: 12,
+    title:
+      "Parallel evolution of a splicing program controlling neuronal excitability in flies and mammals",
+    authors:
+      "Torres-Mendez A., Pop S., Bonnal S., Almudi I., Roberts R., Paolantoni C., Alcaina A., Avola A., Martín-Anduaga A., Haussmann I., Morin V., Soller M., Kadener S., Roignant JY, Prieto-Godino L., Irimia M.",
+    journal: "Science Advances",
+    year: 2022,
+    tags: ["Evolution", "Splicing"]
+  },
+  {
+    id: 13,
+    title:
+      "SRCP: A comprehensive pipeline for accurate annotation and quantification of circRNAs",
+    authors:
+      "Rabin A., Zaffagni M., Ashwal-Fluss R., Patop I., Jajoo A., Shenzis S., Carmel L. and Kadener S.",
+    journal: "Genome Biology",
+    year: 2021,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 14,
+    title:
+      "Using Drosophila to uncover molecular and physiological functions of circRNAs",
+    authors: "Krishnamoorthy A. and Kadener S.",
+    journal: "Methods",
+    year: 2021,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 15,
+    title:
+      "Extensive tissue-specific expression variation and novel regulators underlying circadian behavior",
+    authors:
+      "Litovchenko A., Meireles-Filho A., Frochaux M., Bevers R., Prunotto A., Martin Anduaga A., Hollis B., Gardeux V., Braman V., Russeil J., Kadener S., Dal Peraro M., Deplancke. B.",
+    journal: "Science Advances",
+    year: 2021,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 16,
+    title:
+      "An integrative omics approach reveals posttranscriptional mechanisms underlying circadian temperature compensation",
+    authors:
+      "Schmal C., Maier B., Ashwal-Fluss R., Bartok O., Finger AM, Bange T., Koutsouli S., Robles MS, Kadener S., Herzel H. and Kramer A.",
+    journal: "bioRxiv",
+    year: 2021,
+    tags: ["Circadian Biology"]
+  },
+  {
+    id: 17,
+    title:
+      "The chromatin factor ROW cooperates with BEAF-32 in regulating long-range genes",
+    authors: "Herman N., Kadener S.* and Shifman S.*",
+    journal: "bioRxiv",
+    year: 2021,
+    tags: ["Genomics"]
+  },
+  {
+    id: 18,
+    title:
+      "A Parkinson's disease Circ RNA s Resource reveals a link between circ SLC 8A1 and oxidative stress",
+    authors:
+      "Hanan M., Simchovitz A., Yayon N.,Vaknine S., Cohen‐Fultheim R., Karmon M., Madrer N., Rohrlich T., Maman M., Bennett E., Greenberg D., Meshorer E., Levanon E., Soreq H. and Kadener S.",
+    journal: "EMBO Mol Medicine",
+    year: 2020,
+    tags: ["Circular RNAs", "Parkinson's Disease"]
+  },
+  {
+    id: 19,
+    title: "An in vivo strategy for knockdown of circular RNAs",
+    authors:
+      "Pamudurti N., Patop I., Krishnamoorthy A., Ashwal-Fluss R., Bartok O., Kadener S.",
+    journal: "Cell Discovery",
+    year: 2020,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 20,
+    title:
+      "Host-derived circular RNAs display proviral activities in Hepatitis C virus-infected cells",
+    authors:
+      "Chen T., Tallo-Parra M., Cao Q., Kadener S., Böttcher R., Pérez-Vilaró G., Boonchuen P., Somboonwiwat K., Díez J., Sarnow P.",
+    journal: "PLoS Pathogens",
+    year: 2020,
+    tags: ["Circular RNAs", "Virology"]
   }
-};
+];
 
 export const news = [
   {
