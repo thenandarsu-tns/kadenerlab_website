@@ -15,7 +15,6 @@ import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_o
 import circRnaFigure from '@assets/circrna_1769716997555.png';
 import mblFigure from '@assets/mbl_1769716903421.jpg';
 import tempFigure from "@/assets/images/temp_1769727105168.jpg";
-import ageFigure from "@/assets/images/age_1769727196062.jpg";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -102,20 +101,12 @@ export default function ResearchDetail() {
 
                   <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
                     <img
-                      src={ageFigure}
-                      alt="circRNA levels increase with age"
-                      className="w-full h-auto"
-                    />
-                  </figure>
-
-                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                    <img
                       src={mblFigure}
                       alt="circMbl functions schematic"
                       className="w-full h-auto"
                     />
                     <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      Graphical abstract from Kirio et al., 2025
+                      Graphical abstract from Pamudurti et al., 2022
                     </figcaption>
                   </figure>
 
