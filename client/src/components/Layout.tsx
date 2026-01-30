@@ -38,8 +38,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <Link href="/">
-            <a className="flex items-center gap-2 group">
+          <Link href="/" asChild>
+            <a className="flex items-center gap-2 group" data-testid="link-nav-home">
               <div className="w-8 h-8 rounded bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center text-background font-bold shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
                 K
               </div>
@@ -52,7 +52,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex gap-1 items-center">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
+              <Link key={item.href} href={item.href} asChild>
                 <a
                   className={cn(
                     "px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:text-primary",
@@ -60,6 +60,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       ? "bg-white/5 text-primary shadow-inner border border-white/5"
                       : "text-muted-foreground hover:bg-white/5"
                   )}
+                  data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                 >
                   {item.label}
                 </a>
@@ -88,13 +89,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             className="fixed inset-0 top-16 z-40 lg:hidden flex flex-col p-8 gap-4 border-t border-black/10 bg-white/95 text-slate-900 backdrop-blur-xl"
           >
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
+              <Link key={item.href} href={item.href} asChild>
                 <a
                   className={cn(
                     "text-2xl font-display font-medium py-2 border-b border-black/10",
                     location === item.href ? "text-slate-900 pl-4 border-l-2 border-primary" : "text-slate-700"
                   )}
                   onClick={() => setIsOpen(false)}
+                  data-testid={`link-mobile-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                 >
                   {item.label}
                 </a>
