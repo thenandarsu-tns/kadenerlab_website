@@ -2,7 +2,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { news } from "@/data/content";
 import { motion } from "framer-motion";
-import { Calendar, Tag } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/custom-button";
 import { useState } from "react";
 
@@ -39,18 +39,9 @@ export default function News() {
                 {item.title}
               </h3>
               
-              <p className="text-muted-foreground mb-6 flex-grow">
-                {item.summary}
+              <p className="text-muted-foreground mb-6 flex-grow whitespace-pre-line">
+                {item.content}
               </p>
-              
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {item.tags?.map(tag => (
-                  <div key={tag} className="flex items-center gap-1 text-xs px-2 py-1 rounded-full bg-white/5 border border-white/5 text-muted-foreground">
-                    <Tag className="w-3 h-3" />
-                    {tag}
-                  </div>
-                ))}
-              </div>
             </motion.div>
           ))}
         </div>

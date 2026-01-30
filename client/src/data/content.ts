@@ -1295,22 +1295,80 @@ export const publications: Publication[] = [
 
 export const news = [
   {
-    id: 1,
-    title: "Kadener Lab awarded new NIH grant",
-    date: "2024-11-15",
-    content: "We are excited to announce that the Kadener Lab has received a new NIH grant to investigate the role of circular RNAs in aging and neurodegeneration. This funding will support our research on RNA biology and circadian rhythms in Drosophila."
+    id: 202512,
+    title: "December 2025",
+    date: "2025-12-01",
+    content:
+      "Ines's preprint is posted on BioRxiv as \"Remote and partial clocks expand the circadian neuronal network, driving widespread molecular rhythmicity in Drosophila\"."
   },
   {
-    id: 2,
-    title: "New publication in Science",
-    date: "2024-06-21",
-    content: "Congratulations to our team on publishing our latest findings on circadian clocks in Drosophila development in Science. This work reveals how circadian rhythms ensure physiological synchrony across individual animals during early development."
+    id: 202510,
+    title: "October 2025",
+    date: "2025-10-01",
+    content:
+      "Yingshi, Jazmin, and Michael gave poster presentations at Neurobiology of Drosophila meeting at Cold Spring Harbor Laboratory from Oct 7 – 11.\nSayan also attended and presented his work at the ASHG 2025 Annual Meeting that took place in Boston, MA."
   },
   {
-    id: 3,
-    title: "Welcome new lab members",
-    date: "2024-09-01",
-    content: "We welcome several new lab members joining us this fall. Their diverse expertise will strengthen our research programs in RNA biology, circadian rhythms, and computational genomics."
+    id: 202508,
+    title: "August 2025",
+    date: "2025-08-01",
+    content:
+      "Our undergrads – Susie, Shirley, Jonathan, Bee, and Kat – presented their summer research projects at Brandeis SciFest. Good job to all of you and the mentors!"
+  },
+  {
+    id: 202507,
+    title: "July 2025",
+    date: "2025-07-01",
+    content:
+      "Nathan presented their research at the Brandeis Post-doctoral Symposium, highlighting ongoing projects and findings from the lab as our new postdoc!"
+  },
+  {
+    id: 202506,
+    title: "June 2025",
+    date: "2025-06-01",
+    content:
+      "Nathan defended their thesis work on \"Characterizing post-transcriptional regulation of molecular clock genes timeless and clock\". Congratulations Dr Brownstein!"
+  },
+  {
+    id: 202505,
+    title: "May 2025",
+    date: "2025-05-01",
+    content:
+      "Shruti and Iris successfully passed their qualifying exams after hours of hard work!! Congrats to both of you!"
+  },
+  {
+    id: 202504,
+    title: "April 2025",
+    date: "2025-04-01",
+    content:
+      "Ken’s paper on \"Circular RNAs exhibit exceptional stability in the aging brain and serve as reliable age and experience indicators\" is published in Cell Reports."
+  },
+  {
+    id: 202501,
+    title: "January 2025",
+    date: "2025-01-01",
+    content:
+      "Sebastian co-organized the Non-Coding RNA Biology: New Roles and Diversity conference with Irene Bozzoni, and Luisa Cochella in Keystone, CO from Jan 27–30, 2025. Yingshi, Jazmin, and Michael attended the conference and presented their recent research findings at the conference."
+  },
+  {
+    id: 202408,
+    title: "August 2024",
+    date: "2024-08-01",
+    content:
+      "We had our second lab retreat in Vermont for 2 nights, 3 days trip. Juan Fuxman Bass from Boston University joined us as our honored guest for this retreat."
+  },
+  {
+    id: 202405,
+    title: "May 2024",
+    date: "2024-05-01",
+    content:
+      "Ane presented on \"Beyond the clock neurons: Control and transmission of oscillatory gene expression across the Drosophila brain\" at the 2024 SRBR conference in San Juan, PR from May 18-22.\nWe are excited to have Yingshi in our lab as our new postdoc!\nShruti joined our lab as a joint student between Griffith and our lab. Iris is also a newcomer in our lab!"
+  },
+  {
+    id: 202403,
+    title: "March 2024",
+    date: "2024-03-01",
+    content: "Sayan presented at GSA conference."
   }
 ];
 
