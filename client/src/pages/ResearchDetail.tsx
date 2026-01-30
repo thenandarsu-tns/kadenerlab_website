@@ -117,7 +117,7 @@ export default function ResearchDetail() {
                       className="w-full h-auto"
                     />
                     <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      Graphical abstract from Kirio et al., 2025
+                      circRNAs increase linearly with age in Drosophila heads. Shown above are total number of DESeq2 normalized circRNA and linear reads at each time point across life in female flies, represented by green/circles and blue/triangles, respectively.    -Figure 1. Kirio et al., 2025
                     </figcaption>
                   </figure>
                 </div>
