@@ -14,7 +14,7 @@ import genomicsImage from '@assets/generated_images/computational_genomics_pipel
 import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_of_drosophila_brain.png';
 import circRnaFigure from '@assets/circrna_1769716997555.png';
 import mblFigure from '@assets/mbl_1769716903421.jpg';
-import tempFigure from "@/assets/images/age_1769727314787.jpg";
+import tempFigure from "@/assets/images/age_1769802132731.png";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
