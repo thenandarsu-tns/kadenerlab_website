@@ -45,9 +45,9 @@ export default function Home() {
                   Explore Research <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/join">
-                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
-                  Join the Lab
+              <Link href="/contact">
+                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10" data-testid="button-hero-contact">
+                  Contact Us
                 </Button>
               </Link>
             </div>
