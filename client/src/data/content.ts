@@ -7,7 +7,7 @@ import standardsImage from '@assets/generated_images/scientific_standards_docume
 // New Research Theme Images
 import circRnaTheme from '@assets/circrna_1769717249956.png';
 import circadianTheme from '@assets/generated_images/circadian_biology_rna_clock_schematic.png';
-import genomicsTheme from '@assets/generated_images/computational_genomics_pipeline_schematic.png';
+import genomicsTheme from "@/assets/images/heatmap_1769802867782.png";
 import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
