@@ -15,6 +15,7 @@ import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_o
 import circRnaFigure from "@/assets/images/Ines-circrna_1769802663088.png";
 import mblFigure from '@assets/mbl_1769716903421.jpg';
 import tempFigure from "@/assets/images/age_1769802132731.png";
+import clkNatureCommFigure from "@/assets/images/clk_naturecomm_1769806398982.png";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -88,42 +89,63 @@ export default function ResearchDetail() {
               );
             })}
 
-            {theme.id === "circrnas" && (
+            {(theme.id === "circrnas" || theme.id === "circadian-clocks") && (
               <div className="pt-4">
-                <h3 className="text-sm font-semibold tracking-wide text-white/80 uppercase">Figures</h3>
-                <div className="mt-4 space-y-6">
-                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                    <img
-                      src={`${circRnaFigure}?v=1769717200`}
-                      alt="Circular RNA schematic"
-                      className="w-full h-auto"
-                    />
-                    <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      circRNAs at a glance. circRNA can be generated either with the help of reverse complementary repeats or RNA‐binding proteins and exported from the nucleus. In the cytoplasm, the circRNA might be bound by multiple factors.   - Figure 1, Patop et al., 2019
-                    </figcaption>
-                  </figure>
+                <h3 className="text-sm font-semibold tracking-wide text-white/80 uppercase" data-testid="heading-figures">Figures</h3>
+                <div className="mt-4 space-y-6" data-testid="section-figures">
+                  {theme.id === "circrnas" && (
+                    <>
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circrna-1">
+                        <img
+                          src={`${circRnaFigure}?v=1769717200`}
+                          alt="Circular RNA schematic"
+                          className="w-full h-auto"
+                          data-testid="img-figure-circrna-1"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circrna-1">
+                          circRNAs at a glance. circRNA can be generated either with the help of reverse complementary repeats or RNA‐binding proteins and exported from the nucleus. In the cytoplasm, the circRNA might be bound by multiple factors.   - Figure 1, Patop et al., 2019
+                        </figcaption>
+                      </figure>
 
-                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                    <img
-                      src={mblFigure}
-                      alt="circMbl functions schematic"
-                      className="w-full h-auto"
-                    />
-                    <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      Graphical abstract from Pamudurti et al., 2022
-                    </figcaption>
-                  </figure>
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circrna-2">
+                        <img
+                          src={mblFigure}
+                          alt="circMbl functions schematic"
+                          className="w-full h-auto"
+                          data-testid="img-figure-circrna-2"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circrna-2">
+                          Graphical abstract from Pamudurti et al., 2022
+                        </figcaption>
+                      </figure>
 
-                  <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-                    <img
-                      src={tempFigure}
-                      alt="Temperature-induced circRNAs maintained over time"
-                      className="w-full h-auto"
-                    />
-                    <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10">
-                      circRNAs increase linearly with age in Drosophila heads. Shown above are total number of DESeq2 normalized circRNA and linear reads at each time point across life in female flies, represented by green/circles and blue/triangles, respectively.    -Figure 1. Kirio et al., 2025
-                    </figcaption>
-                  </figure>
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circrna-3">
+                        <img
+                          src={tempFigure}
+                          alt="Temperature-induced circRNAs maintained over time"
+                          className="w-full h-auto"
+                          data-testid="img-figure-circrna-3"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circrna-3">
+                          circRNAs increase linearly with age in Drosophila heads. Shown above are total number of DESeq2 normalized circRNA and linear reads at each time point across life in female flies, represented by green/circles and blue/triangles, respectively.    -Figure 1. Kirio et al., 2025
+                        </figcaption>
+                      </figure>
+                    </>
+                  )}
+
+                  {theme.id === "circadian-clocks" && (
+                    <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circadian-1">
+                      <img
+                        src={clkNatureCommFigure}
+                        alt="Circadian clock gene regulation figure"
+                        className="w-full h-auto"
+                        data-testid="img-figure-circadian-1"
+                      />
+                      <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-1">
+                        Figure from a Nature Communications paper (details to be added).
+                      </figcaption>
+                    </figure>
+                  )}
                 </div>
               </div>
             )}
