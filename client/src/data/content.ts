@@ -8,7 +8,7 @@ import standardsImage from '@assets/generated_images/scientific_standards_docume
 import circRnaTheme from '@assets/circrna_1769717249956.png';
 import circadianTheme from "@/assets/images/circadian_1769804672240.png";
 import genomicsTheme from "@/assets/images/heatmap_1769802867782.png";
-import spatialOmicsTheme from '@assets/generated_images/spatial_transcriptomics_fly_head_schematic.png';
+import spatialOmicsTheme from "@/assets/images/spatial_1769809881416.png";
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
 import nandarImage from '@assets/Nandar_1767740032236.jpeg';
