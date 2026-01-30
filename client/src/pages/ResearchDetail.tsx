@@ -142,7 +142,7 @@ export default function ResearchDetail() {
                         data-testid="img-figure-circadian-1"
                       />
                       <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-1">
-                        Figure from a Nature Communications paper (details to be added).
+                        Temperature remodels the circadian transcriptome. Heat maps of normalized expression of genes that display 24 hr cycling expression at different temperatures. Flies were entrained at the indicated temperatures for 3 days in 12:12 LD conditions.   -Anduaga et al., 2019
                       </figcaption>
                     </figure>
                   )}
