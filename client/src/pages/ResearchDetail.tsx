@@ -16,6 +16,7 @@ import circRnaFigure from "@/assets/images/Ines-circrna_1769802663088.png";
 import mblFigure from '@assets/mbl_1769716903421.jpg';
 import tempFigure from "@/assets/images/age_1769802132731.png";
 import timFigure from "@/assets/images/tim_1769807187243.png";
+import timSplicingFigure from "@/assets/images/tim_splicing_1769807333418.jpg";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -134,17 +135,35 @@ export default function ResearchDetail() {
                   )}
 
                   {theme.id === "circadian-clocks" && (
-                    <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circadian-1">
-                      <img
-                        src={timFigure}
-                        alt="Temperature-responsive Tim expression heatmaps"
-                        className="w-full h-auto"
-                        data-testid="img-figure-circadian-1"
-                      />
-                      <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-1">
-                        Temperature remodels the circadian transcriptome. Heat maps of normalized expression of genes that display 24 hr cycling expression at different temperatures. Flies were entrained at the indicated temperatures for 3 days in 12:12 LD conditions.   -Anduaga et al., 2019
-                      </figcaption>
-                    </figure>
+                    <>
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circadian-1">
+                        <img
+                          src={timFigure}
+                          alt="Temperature-responsive Tim expression heatmaps"
+                          className="w-full h-auto"
+                          data-testid="img-figure-circadian-1"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-1">
+                          Temperature remodels the circadian transcriptome. Heat maps of normalized expression of genes that display 24 hr cycling expression at different temperatures. Flies were entrained at the indicated temperatures for 3 days in 12:12 LD conditions.   -Anduaga et al., 2019
+                        </figcaption>
+                      </figure>
+
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circadian-2">
+                        <img
+                          src={timSplicingFigure}
+                          alt="Temperature-modulated tim alternative splicing figure"
+                          className="w-full h-auto"
+                          data-testid="img-figure-circadian-2"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-2">
+                          Temperature modulates tim alternative splicing.
+                          (A) Integrative Genomics Viewer (IGV) snapshot of the tim locus, indicating the expression of this gene at 18°C (blue), 25°C (black), and 29°C (red). The presented data include the aggregated data from the 3′ RNA-seq datasets presented in Figure 1 (upper traces) as well as full transcript polyA+ RNA-seq datasets (lower traces). The latter include two time points at 25°C and three time points at 18°C and 29°C. The arrows indicate the alternative splicing events that are regulated by temperature.
+                          (B) A schematic of the alternatively spliced tim isoforms. Constitutive exons are shown in gray, sequences found mainly at high temperatures in red, and sequences found mainly at low temperatures in blue. Close-ups of the exons surrounding each non-canonical isoform are shown in rectangles. Alternative stop codons (STOP) and cleavage and polyadenylation sites in these isoforms are also indicated.
+                          (C) Quantification of the relative amounts of tim-sc (dark blue), tim-cold (light blue), tim-M (red), and tim-L (gray) isoforms based on the data shown in panel (A). To quantify the different isoforms, we counted the relative number of spliced junctions that are specific for each isoform.
+                          (D) Quantification of the relative amount of spliced per (blue) and unspliced per (red) RNAs at the three assayed temperatures.   -Figure 2. Anduaga et al., 2019
+                        </figcaption>
+                      </figure>
+                    </>
                   )}
                 </div>
               </div>
