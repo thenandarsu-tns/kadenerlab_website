@@ -173,7 +173,7 @@ export default function ResearchDetail() {
                           data-testid="img-figure-circadian-3"
                         />
                         <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-3">
-                          Lawf1 ZT15 maximum projection (caption details to be added).
+                          Expression of Lawf1 Gal4 driver and overlap with tim expressing cells. Cells were visualized by GFP in Lawf1(1)-Gal4; UAS-eGFP flies. Tim expression as visualized by in situ hybridization using probes against tim coding region. Image was taken at ZT15 time point.   -in preparation, Patop et al.
                         </figcaption>
                       </figure>
                     </>
