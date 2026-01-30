@@ -350,7 +350,151 @@ export const people = [
     image: "member-placeholder",
     email: "",
     category: "Undergrad"
-  }
+  },
+  {
+    id: "alum-jonathan-garrity",
+    name: "Jonathan Garrity",
+    role: "Undergrad Researcher (2023-2025)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-ane-martin-anduaga",
+    name: "Ane Martin Anduaga",
+    role: "Postdoctoral Researcher (2018-2024)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-teddy-rashkover",
+    name: "Teddy Rashkover",
+    role: "Master Student (2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-ken-kirio",
+    name: "Ken Kirio",
+    role: "Undergrad Researcher (2021-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-claire-martel",
+    name: "Claire Martel",
+    role: "Undergrad Researcher (2020-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-ines-lucia-patop",
+    name: "Ines Lucia Patop",
+    role: "Graduate Student (2018-2022)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-michela-zaffagni",
+    name: "Michela Zaffagni",
+    role: "Graduate Student (2018-2022)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-jenna-harris",
+    name: "Jenna Harris",
+    role: "Graduate Student (2018-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-sinead-ngyuen",
+    name: "Sinead Ngyuen",
+    role: "Lab Manager (2017-2023)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-aarti-jajoo",
+    name: "Aarti Jajoo",
+    role: "Postdoctoral Researcher (2019-2020)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-mor-hanan",
+    name: "Mor Hanan",
+    role: "Postdoctoral Researcher (2017-2019)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-stanislaus-wuest",
+    name: "Stanislaus Wuest",
+    role: "Postdoctoral Researcher (2018-2019)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-andres-velaz-lopez",
+    name: "Andres Velaz-Lopez",
+    role: "Lab Technician (2017-2019)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-nagarjuna-reddy-pamudurti",
+    name: "Nagarjuna Reddy Pamudurti",
+    role: "Postdoctoral Researcher (2015-2018)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-reut-ashwal-fluss",
+    name: "Reut Ashwal-Fluss",
+    role: "Postdoctoral Researcher (2013-2017)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
+  {
+    id: "alum-osnat-bartok",
+    name: "Osnat Bartok",
+    role: "Postdoctoral Researcher (2013-2017)",
+    bio: "",
+    image: "member-placeholder",
+    email: "",
+    category: "Alumni"
+  },
 ];
 
 export const alumni = [
