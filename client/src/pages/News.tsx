@@ -30,9 +30,8 @@ export default function News() {
               viewport={{ once: true }}
               className="glass-card p-6 rounded-xl flex flex-col h-full hover:bg-white/5 transition-colors"
             >
-              <div className="flex items-center gap-2 text-sm text-primary mb-3">
+              <div className="flex items-center gap-2 text-sm text-primary mb-3" data-testid="row-news-date-icon">
                 <Calendar className="w-4 h-4" />
-                <time>{new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
               </div>
               
               <h3 className="text-xl font-bold mb-3 leading-tight">
