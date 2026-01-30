@@ -34,7 +34,9 @@ export default function ResearchDetail() {
       <div className="pt-32 pb-20 container mx-auto px-4 text-center">
         <h1 className="text-4xl font-bold mb-6">Topic Not Found</h1>
         <Link href="/research">
-          <Button>Return to Research</Button>
+          <Button asChild>
+            <a data-testid="link-return-research">Return to Research</a>
+          </Button>
         </Link>
       </div>
     );
@@ -54,8 +56,10 @@ export default function ResearchDetail() {
       <div className="container mx-auto px-4 pb-20">
         <div className="mb-8">
           <Link href="/research">
-            <Button variant="ghost" className="pl-0 hover:pl-2 transition-all">
-              <ArrowLeft className="mr-2 w-4 h-4" /> Back to Research Overview
+            <Button asChild variant="ghost" className="pl-0 hover:pl-2 transition-all">
+              <a data-testid="link-back-research-overview">
+                <ArrowLeft className="mr-2 w-4 h-4" /> Back to Research Overview
+              </a>
             </Button>
           </Link>
         </div>

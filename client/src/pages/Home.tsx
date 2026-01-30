@@ -41,13 +41,15 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/research">
-                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
-                  Explore Research <ArrowRight className="ml-2 w-4 h-4" />
+                <Button asChild variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
+                  <a data-testid="button-hero-research">
+                    Explore Research <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10" data-testid="button-hero-contact">
-                  Contact Us
+                <Button asChild variant="outline" size="lg" className="text-base h-12 px-8 backdrop-blur-sm bg-white/5 border-white/20 text-white hover:bg-white/10">
+                  <a data-testid="button-hero-contact">Contact Us</a>
                 </Button>
               </Link>
             </div>
@@ -87,7 +89,10 @@ export default function Home() {
                 {theme.shortDescription}
               </p>
               <Link href={`/research#${theme.id}`}>
-                <a className="text-primary text-sm font-medium hover:underline inline-flex items-center">
+                <a
+                  className="text-primary text-sm font-medium hover:underline inline-flex items-center"
+                  data-testid={`link-research-area-learn-more-${theme.id}`}
+                >
                   Learn more <ArrowRight className="ml-1 w-3 h-3" />
                 </a>
               </Link>
@@ -104,8 +109,10 @@ export default function Home() {
             <p className="text-muted-foreground">Recent highlights from our work</p>
           </div>
           <Link href="/publications">
-            <Button variant="ghost" className="hidden sm:inline-flex">
-              View All <ArrowRight className="ml-2 w-4 h-4" />
+            <Button asChild variant="ghost" className="hidden sm:inline-flex">
+              <a data-testid="link-publications-view-all">
+                View All <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
             </Button>
           </Link>
         </div>
@@ -132,8 +139,10 @@ export default function Home() {
         
         <div className="mt-8 text-center sm:hidden">
            <Link href="/publications">
-            <Button variant="ghost">
-              View All Publications <ArrowRight className="ml-2 w-4 h-4" />
+            <Button asChild variant="ghost">
+              <a data-testid="link-publications-view-all-bottom">
+                View All Publications <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
             </Button>
           </Link>
         </div>
