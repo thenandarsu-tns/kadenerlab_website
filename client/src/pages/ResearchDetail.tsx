@@ -15,7 +15,7 @@ import spatialImage from '@assets/generated_images/spatial_transcriptomics_map_o
 import circRnaFigure from "@/assets/images/Ines-circrna_1769802663088.png";
 import mblFigure from '@assets/mbl_1769716903421.jpg';
 import tempFigure from "@/assets/images/age_1769802132731.png";
-import clkNatureCommFigure from "@/assets/images/clk_naturecomm_1769806398982.png";
+import timFigure from "@/assets/images/tim_1769807187243.png";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -136,8 +136,8 @@ export default function ResearchDetail() {
                   {theme.id === "circadian-clocks" && (
                     <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circadian-1">
                       <img
-                        src={clkNatureCommFigure}
-                        alt="Circadian clock gene regulation figure"
+                        src={timFigure}
+                        alt="Temperature-responsive Tim expression heatmaps"
                         className="w-full h-auto"
                         data-testid="img-figure-circadian-1"
                       />
