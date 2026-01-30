@@ -17,6 +17,7 @@ import mblFigure from '@assets/mbl_1769716903421.jpg';
 import tempFigure from "@/assets/images/age_1769802132731.png";
 import timFigure from "@/assets/images/tim_1769807187243.png";
 import timSplicingFigure from "@/assets/images/tim_splicing_1769807333418.jpg";
+import lawfMicroscopyFigure from "@/assets/images/lawf1_zt15_1769809304720.jpg";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -161,6 +162,18 @@ export default function ResearchDetail() {
                           (B) A schematic of the alternatively spliced tim isoforms. Constitutive exons are shown in gray, sequences found mainly at high temperatures in red, and sequences found mainly at low temperatures in blue. Close-ups of the exons surrounding each non-canonical isoform are shown in rectangles. Alternative stop codons (STOP) and cleavage and polyadenylation sites in these isoforms are also indicated.
                           (C) Quantification of the relative amounts of tim-sc (dark blue), tim-cold (light blue), tim-M (red), and tim-L (gray) isoforms based on the data shown in panel (A). To quantify the different isoforms, we counted the relative number of spliced junctions that are specific for each isoform.
                           (D) Quantification of the relative amount of spliced per (blue) and unspliced per (red) RNAs at the three assayed temperatures.   -Figure 2. Anduaga et al., 2019
+                        </figcaption>
+                      </figure>
+
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-circadian-3">
+                        <img
+                          src={lawfMicroscopyFigure}
+                          alt="Fluorescence microscopy of Drosophila brain (maximum projection)"
+                          className="w-full h-auto"
+                          data-testid="img-figure-circadian-3"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circadian-3">
+                          Lawf1 ZT15 maximum projection (caption details to be added).
                         </figcaption>
                       </figure>
                     </>
