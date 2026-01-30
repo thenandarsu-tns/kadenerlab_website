@@ -78,8 +78,7 @@ Using single cell sequencing data, our lab has identified neurons that express c
     image: circadianTheme,
     points: [
       "Post-transcriptional Regulation",
-      "Temperature Compensation",
-      "Neural Network & Remote Clocks"
+      "Temperature Compensation"
     ]
   },
   {
