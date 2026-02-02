@@ -44,7 +44,11 @@ export default function Research() {
                   <div className="p-8 flex flex-col flex-grow">
                     <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" data-testid={`text-research-title-${theme.id}`}>{theme.title}</h2>
                     <p className="text-muted-foreground mb-6 flex-grow leading-relaxed line-clamp-3" data-testid={`text-research-description-${theme.id}`}>
-                      {theme.shortDescription}
+                      {theme.shortDescription.split("Drosophila melanogaster").reduce<React.ReactNode[]>((acc, part, i, arr) => {
+                        acc.push(part);
+                        if (i < arr.length - 1) acc.push(<em key={`dm-${theme.id}-${i}`}>Drosophila melanogaster</em>);
+                        return acc;
+                      }, [])}
                     </p>
                     
                     <div className="flex items-center text-primary font-medium text-sm mt-auto" data-testid={`text-research-cta-${theme.id}`}>

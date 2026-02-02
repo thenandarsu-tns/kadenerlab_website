@@ -85,7 +85,11 @@ export default function ResearchDetail() {
               return (
                 <div key={idx} className="space-y-6">
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    {section}
+                    {section.split("Drosophila melanogaster").reduce<React.ReactNode[]>((acc, part, i, arr) => {
+                      acc.push(part);
+                      if (i < arr.length - 1) acc.push(<em key={`dm-${theme.id}-${idx}-${i}`}>Drosophila melanogaster</em>);
+                      return acc;
+                    }, [])}
                   </p>
                 </div>
               );

@@ -37,7 +37,13 @@ export default function Home() {
               Welcome to the <br /> Kadener Lab!
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-              {labInfo.mission}
+              <span className="whitespace-pre-line" data-testid="text-home-mission">
+                {labInfo.mission.split("Drosophila melanogaster").reduce<React.ReactNode[]>((acc, part, i, arr) => {
+                  acc.push(part);
+                  if (i < arr.length - 1) acc.push(<em key={`dm-${i}`}>Drosophila melanogaster</em>);
+                  return acc;
+                }, [])}
+              </span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/research">
