@@ -95,6 +95,14 @@ Our work emphasizes reproducibility, careful normalization, and explicit modelin
       "Reproducibility & Normalization"
     ]
   },
+  {
+    id: "testing",
+    title: "Testing",
+    shortDescription: "Work in progress!",
+    description: "Work in progress!",
+    image: standardsImage,
+    points: []
+  },
 ];
 
 export const people = [
