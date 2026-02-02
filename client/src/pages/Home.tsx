@@ -81,7 +81,7 @@ export default function Home() {
             <h2 className="text-3xl font-display font-bold mb-4">Research Areas</h2>
           </div>
           
-          {researchThemes.slice(0, 4).map((theme, i) => (
+          {researchThemes.filter((t) => t.id !== "spatial-omics").slice(0, 4).map((theme, i) => (
             <motion.div
               key={theme.id}
               whileHover={{ y: -5 }}

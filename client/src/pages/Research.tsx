@@ -19,7 +19,7 @@ export default function Research() {
 
       <div className="container mx-auto px-4 pb-20">
         <div className="grid md:grid-cols-2 gap-8">
-          {researchThemes.map((theme, index) => (
+          {researchThemes.filter((t) => t.id !== "spatial-omics").map((theme, index) => (
             <Link key={theme.id} href={`/research/${theme.id}`} data-testid={`link-research-${theme.id}`}>
               <motion.div 
                 whileHover={{ y: -5 }}

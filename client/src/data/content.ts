@@ -95,14 +95,6 @@ Our work emphasizes reproducibility, careful normalization, and explicit modelin
       "Reproducibility & Normalization"
     ]
   },
-  {
-    id: "spatial-omics",
-    title: "Spatial Transcriptomics",
-    shortDescription: "Work in progress!",
-    description: "Work in progress!",
-    image: spatialOmicsTheme,
-    points: []
-  }
 ];
 
 export const people = [
