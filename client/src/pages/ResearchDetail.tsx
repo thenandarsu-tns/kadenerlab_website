@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/custom-button";
-import ReactMarkdown from "react-markdown";
 
 // Import generated images
 import circImage from '@assets/generated_images/mechanism_of_circular_rna_biogenesis_and_back-splicing.png';
@@ -85,9 +84,9 @@ export default function ResearchDetail() {
               
               return (
                 <div key={idx} className="space-y-6">
-                  <div className="prose prose-invert max-w-none prose-p:my-0 prose-strong:text-foreground">
-                    <ReactMarkdown>{section}</ReactMarkdown>
-                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                    {section}
+                  </p>
                 </div>
               );
             })}

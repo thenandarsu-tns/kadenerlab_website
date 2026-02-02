@@ -2,7 +2,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { researchThemes } from "@/data/content";
 import { motion } from "framer-motion";
-import { ArrowRight, Microscope, Clock, Dna, FlaskConical } from "lucide-react";
+import { ArrowRight, Microscope, Clock, Dna, FlaskConical, LayoutGrid } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/custom-button";
 
@@ -31,12 +31,12 @@ export default function Research() {
                     <img 
                       src={theme.image} 
                       alt={theme.title}
-                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${(theme.id === 'circrnas' || theme.id === 'genomics' || theme.id === 'testing') ? 'object-contain bg-[#e8e4dc]' : 'object-cover'}`}
+                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${(theme.id === 'circrnas' || theme.id === 'genomics' || theme.id === 'spatial-omics') ? 'object-contain bg-[#e8e4dc]' : 'object-cover'}`}
                       data-testid={`img-research-thumbnail-${theme.id}`}
                     />
                     <div className="absolute bottom-4 left-4 z-20">
                       <div className="w-10 h-10 rounded-lg bg-primary/20 backdrop-blur-md flex items-center justify-center text-primary border border-white/10" data-testid={`icon-research-${theme.id}`}>
-                        {index === 0 ? <Dna /> : index === 1 ? <Clock /> : index === 2 ? <Microscope /> : <FlaskConical />}
+                        {index === 0 ? <Dna /> : index === 1 ? <Clock /> : index === 2 ? <LayoutGrid /> : <Microscope />}
                       </div>
                     </div>
                   </div>

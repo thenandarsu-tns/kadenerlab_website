@@ -12,7 +12,6 @@ import People from "@/pages/People";
 import Publications from "@/pages/Publications";
 import News from "@/pages/News";
 import Contact from "@/pages/Contact";
-import Resources from "@/pages/Resources";
 import AdminGuide from "@/pages/AdminGuide";
 
 function Router() {
@@ -25,7 +24,6 @@ function Router() {
         <Route path="/people" component={People} />
         <Route path="/publications" component={Publications} />
         <Route path="/news" component={News} />
-        <Route path="/resources" component={Resources} />
         <Route path="/contact" component={Contact} />
         <Route path="/admin-guide" component={AdminGuide} />
         <Route component={NotFound} />
