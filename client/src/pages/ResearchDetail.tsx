@@ -32,6 +32,22 @@ export default function ResearchDetail() {
   
   const theme = researchThemes.find(t => t.id === themeId);
 
+  if (themeId === "spatial-omics") {
+    return (
+      <div className="pt-32 pb-20 container mx-auto px-4 text-center">
+        <h1 className="text-4xl font-bold mb-6" data-testid="heading-spatial-moved">Spatial Transcriptomics</h1>
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-8" data-testid="text-spatial-moved">
+          This section has moved to the Resources page.
+        </p>
+        <Link href="/resources">
+          <Button asChild>
+            <a data-testid="link-go-resources">Go to Resources</a>
+          </Button>
+        </Link>
+      </div>
+    );
+  }
+
   if (!theme) {
     return (
       <div className="pt-32 pb-20 container mx-auto px-4 text-center">

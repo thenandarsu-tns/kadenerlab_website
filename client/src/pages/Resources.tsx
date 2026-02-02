@@ -1,8 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { researchThemes } from "@/data/content";
-import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Microscope } from "lucide-react";
+import { Microscope } from "lucide-react";
 
 export default function Resources() {
   const spatial = researchThemes.find((t) => t.id === "spatial-omics");
@@ -23,7 +22,7 @@ export default function Resources() {
             className="glass-card p-8 rounded-2xl border border-white/5"
             data-testid="section-resources-spatial"
           >
-            <div className="flex items-start justify-between gap-6 flex-col md:flex-row">
+            <div className="flex items-start justify-between gap-6">
               <div>
                 <div
                   className="inline-flex items-center gap-2 text-xs font-medium text-primary/90 bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full mb-4"
@@ -42,22 +41,9 @@ export default function Resources() {
                   className="text-muted-foreground mt-3 leading-relaxed max-w-3xl"
                   data-testid="text-resources-spatial-description"
                 >
-                  {spatial?.shortDescription ??
-                    "Work in progress!"}
+                  {spatial?.shortDescription ?? "Work in progress!"}
                 </p>
               </div>
-
-              {spatial && (
-                <Link
-                  href={`/research/${spatial.id}`}
-                  className="shrink-0"
-                  data-testid="link-resources-spatial"
-                >
-                  <a className="inline-flex items-center text-primary font-medium text-sm hover:underline">
-                    Open details <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
-                </Link>
-              )}
             </div>
 
             {spatial?.image && (
