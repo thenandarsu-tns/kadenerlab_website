@@ -1375,22 +1375,12 @@ export const news = [
 export const resources = {
   sections: [
     {
-      title: "External Resources",
+      title: "Spatial Transcriptomics",
       items: [
         {
-          title: "FlyBase",
-          description: "Comprehensive database for Drosophila genetics and molecular biology",
-          url: "https://flybase.org"
-        },
-        {
-          title: "NCBI Gene Expression Omnibus",
-          description: "Public functional genomics data repository",
-          url: "https://www.ncbi.nlm.nih.gov/geo/"
-        },
-        {
-          title: "CircBase",
-          description: "Database of circular RNAs in multiple organisms",
-          url: "http://www.circbase.org/"
+          title: "Spatial Transcriptomics",
+          description: "Explore our Spatial Transcriptomics research area.",
+          url: "/research/spatial-omics"
         }
       ]
     },
