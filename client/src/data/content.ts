@@ -1371,7 +1371,7 @@ export const resources = {
       items: [
         {
           title: "Spatial Transcriptomics",
-          description: "Explore our Spatial Transcriptomics research area.",
+          description: "Work in progress! Stay tuned!",
           url: "/research/spatial-omics"
         }
       ]
