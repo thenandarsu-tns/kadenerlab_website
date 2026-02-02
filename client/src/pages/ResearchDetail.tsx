@@ -87,12 +87,32 @@ export default function ResearchDetail() {
           {/* Main Content Area */}
           <div className="lg:col-span-2 space-y-12">
             {sections.map((section, idx) => {
+              const colonIndex = section.indexOf(':');
+              const hasSubtitle = colonIndex > 0 && colonIndex < 80;
+
+              if (hasSubtitle) {
+                const subtitle = section.slice(0, colonIndex + 1);
+                const body = section.slice(colonIndex + 1).trimStart();
+
+                return (
+                  <div key={idx} className="space-y-6" data-testid={`section-research-paragraph-${idx}`}>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed" data-testid={`text-research-paragraph-${idx}`}>
+                      <strong className="text-foreground">{subtitle}</strong> {body}
+                    </p>
+                  </div>
+                );
+              }
+
               // Check if section is a header (short line)
               const isHeader = section.length < 50 && !section.includes('.');
-              
+
               if (isHeader) {
                 return (
-                  <h2 key={idx} className="text-2xl font-bold text-primary mt-8 mb-4 border-b border-white/10 pb-2">
+                  <h2
+                    key={idx}
+                    className="text-2xl font-bold text-primary mt-8 mb-4 border-b border-white/10 pb-2"
+                    data-testid={`heading-research-subsection-${idx}`}
+                  >
                     {section}
                   </h2>
                 );
