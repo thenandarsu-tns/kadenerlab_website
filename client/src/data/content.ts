@@ -1383,21 +1383,6 @@ export const resources = {
           url: "/research/spatial-omics"
         }
       ]
-    },
-    {
-      title: "Lab Protocols",
-      items: [
-        {
-          title: "RNA Extraction Protocol",
-          description: "Standard protocol for extracting high-quality RNA from Drosophila tissues",
-          url: "#"
-        },
-        {
-          title: "circRNA Detection Pipeline",
-          description: "Computational pipeline for identifying and quantifying circular RNAs",
-          url: "#"
-        }
-      ]
     }
   ]
 };
