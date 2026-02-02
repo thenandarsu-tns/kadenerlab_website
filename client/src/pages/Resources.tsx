@@ -90,35 +90,6 @@ export default function Resources() {
               </div>
             </div>
 
-            <div className="mt-6 grid md:grid-cols-3 gap-4" data-testid="grid-resources-srcp">
-              <div className="rounded-xl border border-white/10 bg-white/5 p-4" data-testid="card-resources-srcp-feature-1">
-                <div className="text-sm font-semibold" data-testid="text-resources-srcp-feature-title-1">Annotation</div>
-                <div className="mt-1 text-sm text-muted-foreground" data-testid="text-resources-srcp-feature-body-1">
-                  Produces a consistent circRNA reference for downstream analysis.
-                </div>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-white/5 p-4" data-testid="card-resources-srcp-feature-2">
-                <div className="text-sm font-semibold" data-testid="text-resources-srcp-feature-title-2">Quantification</div>
-                <div className="mt-1 text-sm text-muted-foreground" data-testid="text-resources-srcp-feature-body-2">
-                  Accurate circRNA abundance estimates with clear, reproducible outputs.
-                </div>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-white/5 p-4" data-testid="card-resources-srcp-feature-3">
-                <div className="text-sm font-semibold" data-testid="text-resources-srcp-feature-title-3">Reproducibility</div>
-                <div className="mt-1 text-sm text-muted-foreground" data-testid="text-resources-srcp-feature-body-3">
-                  Designed for transparent, end-to-end analysis across datasets.
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 bg-white/5" data-testid="frame-resources-srcp-image">
-              <img
-                src={srcpImage}
-                alt="SRCP pipeline visualization"
-                className="w-full h-auto object-contain"
-                data-testid="img-resources-srcp"
-              />
-            </div>
           </motion.section>
 
           <div className="max-w-3xl">
