@@ -97,7 +97,7 @@ Our work emphasizes reproducibility, careful normalization, and explicit modelin
   },
   {
     id: "testing",
-    title: "Testing",
+    title: "circRNA in Aging and Neurodegeneration",
     shortDescription: "Work in progress!",
     description: "Work in progress!",
     image: standardsImage,
