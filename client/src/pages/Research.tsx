@@ -31,7 +31,7 @@ export default function Research() {
                     <img 
                       src={theme.image} 
                       alt={theme.title}
-                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${(theme.id === 'circrnas' || theme.id === 'genomics') ? 'object-contain bg-[#e8e4dc]' : 'object-cover'}`}
+                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${(theme.id === 'circrnas' || theme.id === 'genomics' || theme.id === 'testing') ? 'object-contain bg-[#e8e4dc]' : 'object-cover'}`}
                       data-testid={`img-research-thumbnail-${theme.id}`}
                     />
                     <div className="absolute bottom-4 left-4 z-20">
