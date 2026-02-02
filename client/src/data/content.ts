@@ -9,6 +9,7 @@ import circRnaTheme from '@assets/circrna_1769717249956.png';
 import circadianTheme from "@/assets/images/circadian_thumb_1769810286142.jpg";
 import genomicsTheme from "@/assets/images/heatmap_1769802867782.png";
 import spatialOmicsTheme from "@/assets/images/spatial_1769809881416.png";
+import agingNeuroTheme from "@/assets/images/aging-neuro-thumb.jpg";
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
 import nandarImage from '@assets/Nandar_1767740032236.jpeg';
@@ -100,7 +101,7 @@ Our work emphasizes reproducibility, careful normalization, and explicit modelin
     title: "circRNA in Aging and Neurodegeneration",
     shortDescription: "Work in progress!",
     description: "Work in progress!",
-    image: standardsImage,
+    image: agingNeuroTheme,
     points: []
   },
 ];
