@@ -1373,41 +1373,5 @@ export const news = [
 ];
 
 export const resources = {
-  sections: [
-    {
-      title: "External Resources",
-      items: [
-        {
-          title: "FlyBase",
-          description: "Comprehensive database for Drosophila genetics and molecular biology",
-          url: "https://flybase.org"
-        },
-        {
-          title: "NCBI Gene Expression Omnibus",
-          description: "Public functional genomics data repository",
-          url: "https://www.ncbi.nlm.nih.gov/geo/"
-        },
-        {
-          title: "CircBase",
-          description: "Database of circular RNAs in multiple organisms",
-          url: "http://www.circbase.org/"
-        }
-      ]
-    },
-    {
-      title: "Lab Protocols",
-      items: [
-        {
-          title: "RNA Extraction Protocol",
-          description: "Standard protocol for extracting high-quality RNA from Drosophila tissues",
-          url: "#"
-        },
-        {
-          title: "circRNA Detection Pipeline",
-          description: "Computational pipeline for identifying and quantifying circular RNAs",
-          url: "#"
-        }
-      ]
-    }
-  ]
+  sections: []
 };
