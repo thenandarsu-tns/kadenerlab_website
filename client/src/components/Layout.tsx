@@ -25,6 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { href: "/people", label: "Team" },
     { href: "/publications", label: "Publications" },
     { href: "/news", label: "News" },
+    { href: "/resources", label: "Resources" },
     { href: "/contact", label: "Contact" },
   ];
 
