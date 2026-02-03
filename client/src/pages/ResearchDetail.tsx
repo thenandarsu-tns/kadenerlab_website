@@ -19,6 +19,7 @@ import timFigure from "@/assets/images/tim_1769807187243.png";
 import timSplicingFigure from "@/assets/images/tim_splicing_1769807333418.jpg";
 import lawfMicroscopyFigure from "@/assets/images/lawf1_zt15_1769809304720.jpg";
 import slc8a1Figure from "@/assets/images/fig4_slc8a1.png";
+import slc8a1Fig5 from "@/assets/images/fig5_slc8a1.png";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -197,6 +198,26 @@ export default function ResearchDetail() {
                           <strong>E.</strong> No difference in circSLC8A1 levels in females and males, t‐test P = 0.583 for control and P = 0.262 for PD. n = 15 females and 16 males. The box is drawn from Q1 to Q3 with a horizontal line drawn in the middle to denote the median and x marks the average. Whiskers mark minimum or maximum values.
                           <br/><br/>
                           Figure 4. Hanan et al., 2020
+                        </figcaption>
+                      </figure>
+
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-aging-neuro-2">
+                        <img
+                          src={slc8a1Fig5}
+                          alt="CircSLC8A1 reduced under neuroprotection"
+                          className="w-full h-auto"
+                          data-testid="img-figure-aging-neuro-2"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-aging-neuro-2">
+                          CircSLC8A1 is reduced under neuroprotection
+                          <br/><br/>
+                          <strong>A.</strong> qPCR measurements of circSLC8A1 and SLC8A1 mRNA after SH‐SY treatment of statins or the PF LRRK2 inhibitor, t‐test **P = 0.007 and **P = 0.01 for PF‐06447475 and *P = 0.047 and *P = 0.0136 for statins for cirSLC8A1 and SLC8A1 mRNA, respectively, n = 3 biological replicas for each condition. Data presented as mean ± SD.
+                          <br/>
+                          <strong>B, C.</strong> Protein gel and quantification of SLC8A1 and Tubulin as a loading control in statin and PF‐treated neuronal cell cultures, t‐test *P = 0.027 for statins and *P = 0.011 for PF‐06447475, n = 3 biological replicas for each condition. Data presented as mean ± SD.
+                          <br/>
+                          <strong>D.</strong> SLC8A1 immunostaining of statin‐treated SH‐SY cells.
+                          <br/><br/>
+                          Figure 5. Hanan et al., 2020
                         </figcaption>
                       </figure>
                     </>
