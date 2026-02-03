@@ -120,7 +120,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <img 
               src={brandeisLogo} 
               alt="Brandeis University Logo" 
-              className="h-24 w-auto mix-blend-screen filter invert grayscale brightness-200 opacity-90 hover:opacity-100 transition-opacity rounded" 
+              className="h-24 w-auto opacity-90 hover:opacity-100 transition-opacity rounded" 
             />
           </div>
           
