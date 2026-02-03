@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { labInfo } from "@/data/content";
-import brandeisLogo from "@/assets/images/brandeis-logo.jpg";
+import brandeisLogo from "@/assets/images/brandeis-logo-stacked.png";
 import { ChatWidget } from "./ChatWidget";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
