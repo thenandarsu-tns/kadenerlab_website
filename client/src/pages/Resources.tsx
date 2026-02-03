@@ -92,16 +92,6 @@ export default function Resources() {
 
           </motion.section>
 
-          <div className="max-w-3xl">
-            <div className="glass-card p-8 rounded-2xl border border-white/10" data-testid="card-resources-empty">
-              <h2 className="text-2xl font-display font-bold mb-2" data-testid="heading-resources-empty">
-                More resources coming soon
-              </h2>
-              <p className="text-muted-foreground leading-relaxed" data-testid="text-resources-empty">
-                We’re curating lab resources and links. Check back soon.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
