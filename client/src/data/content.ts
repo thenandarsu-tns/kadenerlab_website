@@ -116,7 +116,7 @@ Using single cell sequencing data, our lab has identified neurons that express c
 export const resources = [
   {
     id: "spatial-omics",
-    title: "Spatial Transcriptomics",
+    title: "Spatial Transcriptomics of the D. melanogaster heads",
     shortDescription: "Work in progress. Stay tuned!",
     description: `Work in progress. Stay tuned!`,
     image: spatialOmicsTheme,
