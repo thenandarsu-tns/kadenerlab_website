@@ -44,7 +44,13 @@ export default function Resources() {
                   </div>
 
                   <div className="p-8 flex flex-col flex-grow">
-                    <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" data-testid={`text-resource-title-${resource.id}`}>{resource.title}</h2>
+                    <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" data-testid={`text-resource-title-${resource.id}`}>
+                      {resource.title.split("D. melanogaster").reduce<React.ReactNode[]>((acc, part, i, arr) => {
+                        acc.push(part);
+                        if (i < arr.length - 1) acc.push(<em key={`dm-title-${i}`} className="italic">D. melanogaster</em>);
+                        return acc;
+                      }, [])}
+                    </h2>
                     <p className="text-muted-foreground mb-6 flex-grow leading-relaxed line-clamp-3" data-testid={`text-resource-description-${resource.id}`}>
                       {resource.shortDescription}
                     </p>

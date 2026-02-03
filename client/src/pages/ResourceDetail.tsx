@@ -49,7 +49,11 @@ export default function ResourceDetail() {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-6xl font-display font-bold text-white max-w-4xl"
           >
-            {resource.title}
+            {resource.title.split("D. melanogaster").reduce<React.ReactNode[]>((acc, part, i, arr) => {
+              acc.push(part);
+              if (i < arr.length - 1) acc.push(<em key={`dm-detail-${i}`} className="italic">D. melanogaster</em>);
+              return acc;
+            }, [])}
           </motion.h1>
         </div>
       </motion.div>
