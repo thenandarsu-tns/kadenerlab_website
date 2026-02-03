@@ -18,6 +18,7 @@ import tempFigure from "@/assets/images/age_1769802132731.png";
 import timFigure from "@/assets/images/tim_1769807187243.png";
 import timSplicingFigure from "@/assets/images/tim_splicing_1769807333418.jpg";
 import lawfMicroscopyFigure from "@/assets/images/lawf1_zt15_1769809304720.jpg";
+import slc8a1Figure from "@/assets/images/fig4_slc8a1.png";
 
 const imageMap: Record<string, string> = {
   "theme-circ": circImage,
@@ -131,7 +132,7 @@ export default function ResearchDetail() {
               );
             })}
 
-            {(theme.id === "circrnas" || theme.id === "circadian-clocks") && (
+            {(theme.id === "circrnas" || theme.id === "circadian-clocks" || theme.id === "circrna-aging-neurodegeneration") && (
               <div className="pt-4">
                 <h3 className="text-sm font-semibold tracking-wide text-white/80 uppercase" data-testid="heading-figures">Figures</h3>
                 <div className="mt-4 space-y-6" data-testid="section-figures">
@@ -170,6 +171,30 @@ export default function ResearchDetail() {
                         />
                         <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-circrna-3">
                           circRNAs increase linearly with age in Drosophila heads. Shown above are total number of DESeq2 normalized circRNA and linear reads at each time point across life in female flies, represented by green/circles and blue/triangles, respectively.    -Figure 1. Kirio et al., 2025
+                        </figcaption>
+                      </figure>
+                    </>
+                  )}
+
+                  {theme.id === "circrna-aging-neurodegeneration" && (
+                    <>
+                      <figure className="rounded-xl overflow-hidden border border-white/10 bg-white/5" data-testid="figure-aging-neuro-1">
+                        <img
+                          src={slc8a1Figure}
+                          alt="CircSLC8A1 expression in PD brain and PQ exposure"
+                          className="w-full h-auto"
+                          data-testid="img-figure-aging-neuro-1"
+                        />
+                        <figcaption className="px-4 py-3 text-sm text-muted-foreground leading-relaxed border-t border-white/10 bg-black/10" data-testid="caption-figure-aging-neuro-1">
+                          CircSLC8A1 increases in the PD brain and upon PQ exposure are accompanied by suppression of the SLC8A1 protein.
+                          <br/><br/>
+                          <strong>A.</strong> Graphic representation of circSLC8A1 and its post‐transcriptional regulation in PD and under PQ exposure.
+                          <br/>
+                          <strong>B, C.</strong> CircSLC8A1 and linear SLC8A1 levels in the SN of control and PD brains, t‐test P = 0.025, P = 0.118, respectively.
+                          <br/>
+                          <strong>D.</strong> qPCR validations of circSLC8A1 and SLC8A1 mRNA changes in the SN
+                          <br/>
+                          <strong>E.</strong> No difference in circSLC8A1 levels in females and males, t‐test P = 0.583 for control and P = 0.262 for PD. n = 15 females and 16 males. The box is drawn from Q1 to Q3 with a horizontal line drawn in the middle to denote the median and x marks the average. Whiskers mark minimum or maximum values.
                         </figcaption>
                       </figure>
                     </>
