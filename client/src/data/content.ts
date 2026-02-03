@@ -21,6 +21,13 @@ import nathanImage from '@assets/Nathan_1767801861147.jpeg';
 import jazminImage from '@assets/Jazmin_1767802264089.jpg';
 import yingshiImage from '@assets/Yingshi_1769714873900.jpg';
 
+import lawf1Image from "@/assets/images/lawf1_zt15_1769809304720.jpg";
+import timSplicingImage from "@/assets/images/tim_splicing_1769807333418.jpg";
+import tempImage1 from "@/assets/images/temp_1769726468923.jpg";
+import tempImage2 from "@/assets/images/temp_1769727105168.jpg";
+import inesCircRnaImage from "@/assets/images/Ines-circrna_1769802663088.png";
+
+
 // Centralized content store for easy updates by the user.
 // Editing this file updates the website content.
 
@@ -1409,3 +1416,37 @@ export const news = [
     content: "Sayan presented at GSA conference."
   }
 ];
+
+export const labPhotos = [
+  {
+    id: 1,
+    src: lawf1Image,
+    alt: "Lab Work - Lawf1 ZT15",
+    caption: "Immunostaining of clock neurons"
+  },
+  {
+    id: 2,
+    src: timSplicingImage,
+    alt: "tim splicing diagram",
+    caption: "Research on timeless splicing"
+  },
+  {
+    id: 3,
+    src: tempImage1,
+    alt: "Lab Photo 1",
+    caption: "Lab members at work"
+  },
+  {
+    id: 4,
+    src: tempImage2,
+    alt: "Lab Photo 2",
+    caption: "Collaboration in the lab"
+  },
+  {
+    id: 5,
+    src: inesCircRnaImage,
+    alt: "Ines circRNA Data",
+    caption: "circRNA visualization data"
+  }
+];
+

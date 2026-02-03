@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { people } from "@/data/content";
+import { people, labPhotos } from "@/data/content";
 import { motion } from "framer-motion";
 import { GraduationCap, Mail } from "lucide-react";
 import { useState } from "react";
@@ -223,6 +223,38 @@ export default function People() {
                     {alum.role}
                   </span>
                 </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {labPhotos.length > 0 && (
+          <Section className="mb-20">
+            <h3 className="text-2xl font-display font-bold mb-8 border-b border-white/10 pb-4" data-testid="heading-photos">
+              Photos
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-testid="grid-photos">
+              {labPhotos.map((photo) => (
+                <motion.div
+                  key={photo.id}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="glass-card rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-4 bg-background/50 backdrop-blur-md">
+                    <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      {photo.caption}
+                    </p>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </Section>
