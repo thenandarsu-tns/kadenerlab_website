@@ -96,7 +96,7 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Kadener Lab Location"
               data-testid="iframe-google-map"
-              className="grayscale hover:grayscale-0 transition-all duration-500 opacity-90 hover:opacity-100"
+              className="grayscale-0 opacity-100"
             />
           </div>
 
