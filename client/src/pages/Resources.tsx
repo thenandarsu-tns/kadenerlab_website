@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { researchThemes } from "@/data/content";
 import { motion } from "framer-motion";
-import { Microscope, Workflow } from "lucide-react";
+import { Microscope, Workflow, Map } from "lucide-react";
 import srcpImage from "@assets/generated_images/bioinformatics_pipeline_data_visualization.png";
 
 export default function Resources() {
@@ -90,6 +90,38 @@ export default function Resources() {
               </div>
             </div>
 
+          </motion.section>
+
+          <motion.section
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="glass-card p-8 rounded-2xl border border-white/5"
+            data-testid="section-resources-drosophila-atlas"
+          >
+            <div className="flex items-start justify-between gap-6">
+              <div>
+                <div
+                  className="inline-flex items-center gap-2 text-xs font-medium text-primary/90 bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full mb-4"
+                  data-testid="badge-resources-drosophila-atlas"
+                >
+                  <Map className="w-3.5 h-3.5" />
+                  Atlas
+                </div>
+                <h2
+                  className="text-2xl md:text-3xl font-display font-bold"
+                  data-testid="heading-resources-drosophila-atlas"
+                >
+                  Drosophila Atlas
+                </h2>
+                <p
+                  className="text-muted-foreground mt-3 leading-relaxed max-w-3xl"
+                  data-testid="text-resources-drosophila-atlas-description"
+                >
+                  Work in progress!
+                </p>
+              </div>
+            </div>
           </motion.section>
 
         </div>
