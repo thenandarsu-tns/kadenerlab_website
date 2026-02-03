@@ -1418,7 +1418,7 @@ export const labPhotos = [
     id: 1,
     src: groupPhotoDavid,
     alt: "Kadener Lab Group Photo",
-    caption: "The Kadener Lab"
+    caption: "Chaotic group photo taken after Nathan's defense party."
   }
 ];
 
