@@ -117,7 +117,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <img 
               src={brandeisLogo} 
               alt="Brandeis University Logo" 
-              className="h-24 w-auto -ml-6 opacity-90 hover:opacity-100 transition-opacity rounded" 
+              className="h-16 md:h-24 w-auto -ml-4 md:-ml-6 opacity-90 hover:opacity-100 transition-opacity rounded" 
             />
           </div>
           
