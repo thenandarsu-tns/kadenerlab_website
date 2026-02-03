@@ -107,7 +107,7 @@ export const resources = [
   {
     id: "spatial-omics",
     title: "Spatial Transcriptomics",
-    shortDescription: "Spatially resolved gene expression mapping in Drosophila brain tissue using 10x Visium and other cutting-edge technologies.",
+    shortDescription: "Work in progress. Stay tuned!",
     description: `Work in progress. Stay tuned!`,
     image: spatialOmicsTheme,
     points: [
