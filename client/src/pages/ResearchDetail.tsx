@@ -195,6 +195,8 @@ export default function ResearchDetail() {
                           <strong>D.</strong> qPCR validations of circSLC8A1 and SLC8A1 mRNA changes in the SN
                           <br/>
                           <strong>E.</strong> No difference in circSLC8A1 levels in females and males, t‐test P = 0.583 for control and P = 0.262 for PD. n = 15 females and 16 males. The box is drawn from Q1 to Q3 with a horizontal line drawn in the middle to denote the median and x marks the average. Whiskers mark minimum or maximum values.
+                          <br/><br/>
+                          Figure 4. Hanan et al., 2020
                         </figcaption>
                       </figure>
                     </>
