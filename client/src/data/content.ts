@@ -108,7 +108,7 @@ export const resources = [
     id: "spatial-omics",
     title: "Spatial Transcriptomics",
     shortDescription: "Spatially resolved gene expression mapping in Drosophila brain tissue using 10x Visium and other cutting-edge technologies.",
-    description: `We are employing spatial transcriptomics technologies (10x Visium) to map gene expression in the Drosophila brain with high spatial resolution. By retaining the spatial context of gene expression, we can better understand how different brain regions and cell types coordinate their functions, particularly in the context of circadian rhythms and aging. This approach allows us to visualize complex gene expression patterns that are lost in standard bulk or single-cell sequencing methods.`,
+    description: `Work in progress. Stay tuned!`,
     image: spatialOmicsTheme,
     points: [
       "10x Visium Platform",
