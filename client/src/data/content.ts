@@ -140,7 +140,7 @@ export const resources = [
   },
   {
     id: "drosophila-atlas",
-    title: "Drosophila Atlas",
+    title: "circRNA Atlas",
     shortDescription: "Work in progress! A comprehensive atlas of gene expression and RNA regulation in the Drosophila brain.",
     description: `Work in progress! We are building a comprehensive atlas of gene expression in the Drosophila brain, integrating single-cell RNA-seq, spatial transcriptomics, and circRNA profiling. This resource will serve as a reference for the community to explore gene regulation in specific neuronal populations and brain regions.`,
     image: drosophilaClipart,
