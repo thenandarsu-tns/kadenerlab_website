@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { labInfo } from "@/data/content";
 import brandeisLogo from "@/assets/images/brandeis-logo-stacked.png";
-import { ChatWidget } from "./ChatWidget";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -110,8 +109,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className="flex-grow pt-16">
         {children}
       </main>
-
-      <ChatWidget />
 
       <footer className="border-t border-white/5 bg-black/20 py-12 mt-20">
         <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
