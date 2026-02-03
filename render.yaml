@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: kadenerlab-website
+    env: node
+    branch: main
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
