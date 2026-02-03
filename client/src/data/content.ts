@@ -50,7 +50,13 @@ Another interest of our lab is how circRNAs can be used as biomarkers for aging 
 
 Due to the stability of the circRNAs, we are also curious to know if they can be used as unique experience markers of prior physiological states. We have shown that specific circRNAs respond to changes in temperature, light conditions, metabolic stress, and other environmental stresses, and that these changes can persist long after the stimulus is removed. From this, we are exploring how these properties can be used to reconstruct past exposures and physiological states from the RNA profiles.
 
-Additionally, altered circRNA profiles have been observed in multiple neurodegenerative diseases, cancer, metabolic diseases, and many more. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. We are exploring circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.`,
+Additionally, altered circRNA profiles have been observed in multiple neurodegenerative diseases, cancer, metabolic diseases, and many more. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. We are exploring circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.
+
+circRNA in Aging and Neurodegeneration
+
+CircRNAs and Neurodegenerative Disease (PD): The Kadener Lab utilizes our RNA expertise to explore how RNA profiles change in disorders such as Parkinson’s. In a collaborative study (EMBO Molecular Medicine 2020), we created a comprehensive Parkinson’s Disease circRNA resource by sequencing brains of PD patients versus healthy controls. An important finding was that in the healthy aging brain (specifically the substantia nigra region), circRNA levels normally increase with age, but in Parkinson’s patients this age-related accumulation is disrupted. PD patients had an overall reduction in circRNA abundance in the substantia nigra compared to age-matched controls, suggesting circRNA biogenesis or stability is altered in disease. Intriguingly, in other brain regions of PD patients, circRNA levels increased, indicating region-specific differences.
+
+Specific CircRNA as a PD Biomarker: From that study, one circRNA in particular, circSLC8A1, stood out. We found circSLC8A1 is significantly upregulated in the substantia nigra of individuals with Parkinson’s disease. This circRNA carries multiple binding sites for miR-128, a microRNA involved in neuronal oxidative stress responses, and was shown to bind strongly to the Argonaute protein (which suggests it sequesters miR-128). Consistently, the mRNA targets of miR-128 were found to be increased in PD brains, implying that when circSLC8A1 levels rise, it might sponge miR-128 and thereby dysregulate oxidative stress pathways. We also demonstrated in cell experiments that circSLC8A1 levels increase under oxidative stress (e.g. when cells are exposed to toxin) and decrease with an antioxidant treatment. Together, these results link circSLC8A1 to the oxidative stress aspect of Parkinson’s and suggest it could be a marker or even contributor to the disease process. This kind of finding is valuable for understanding neurodegeneration and potentially identifying new therapeutic targets or biomarkers.`,old_string:
     image: circRnaTheme,
     points: [
       "Circular RNA Biosynthesis",
@@ -95,16 +101,6 @@ Our work emphasizes reproducibility, careful normalization, and explicit modelin
       "Computational pipelines",
       "Reproducibility & Normalization"
     ]
-  },
-  {
-    id: "testing",
-    title: "circRNA in Aging and Neurodegeneration",
-    shortDescription: "",
-    description: `CircRNAs and Neurodegenerative Disease (PD): The Kadener Lab utilizes our RNA expertise to explore how RNA profiles change in disorders such as Parkinson’s. In a collaborative study (EMBO Molecular Medicine 2020), we created a comprehensive Parkinson’s Disease circRNA resource by sequencing brains of PD patients versus healthy controls. An important finding was that in the healthy aging brain (specifically the substantia nigra region), circRNA levels normally increase with age, but in Parkinson’s patients this age-related accumulation is disrupted. PD patients had an overall reduction in circRNA abundance in the substantia nigra compared to age-matched controls, suggesting circRNA biogenesis or stability is altered in disease. Intriguingly, in other brain regions of PD patients, circRNA levels increased, indicating region-specific differences.
-
-Specific CircRNA as a PD Biomarker: From that study, one circRNA in particular, circSLC8A1, stood out. We found circSLC8A1 is significantly upregulated in the substantia nigra of individuals with Parkinson’s disease. This circRNA carries multiple binding sites for miR-128, a microRNA involved in neuronal oxidative stress responses, and was shown to bind strongly to the Argonaute protein (which suggests it sequesters miR-128). Consistently, the mRNA targets of miR-128 were found to be increased in PD brains, implying that when circSLC8A1 levels rise, it might sponge miR-128 and thereby dysregulate oxidative stress pathways. We also demonstrated in cell experiments that circSLC8A1 levels increase under oxidative stress (e.g. when cells are exposed to toxin) and decrease with an antioxidant treatment. Together, these results link circSLC8A1 to the oxidative stress aspect of Parkinson’s and suggest it could be a marker or even contributor to the disease process. This kind of finding is valuable for understanding neurodegeneration and potentially identifying new therapeutic targets or biomarkers.`,
-    image: agingNeuroTheme,
-    points: []
   },
 ];
 
