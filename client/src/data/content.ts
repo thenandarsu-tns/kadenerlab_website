@@ -129,7 +129,7 @@ export const resources = [
   {
     id: "srcp",
     title: "SRCP Pipeline",
-    shortDescription: "A comprehensive computational pipeline for accurate annotation and quantification of circular RNAs from RNA-seq data.",
+    shortDescription: "",
     description: `SRCP (Short Read CircRNA Pipeline) is a comprehensive computational workflow developed in our lab for the accurate identification and quantification of circular RNAs from high-throughput sequencing data. The pipeline integrates multiple detection algorithms to reduce false positives and provides robust normalization methods. It is designed to be user-friendly and scalable, allowing researchers to process large datasets efficiently.`,
     image: srcpTheme,
     points: [
