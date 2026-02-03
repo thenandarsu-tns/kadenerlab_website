@@ -90,13 +90,13 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.844287826338!2d-71.26127022346616!3d42.36839553600649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3831139454181%3A0xc3f6089304381387!2sRosenstiel%20Basic%20Medical%20Sciences%20Research%20Center!5e0!3m2!1sen!2sus!4v1709400000000!5m2!1sen!2sus&mode=dark"
               width="100%"
               height="100%"
-              style={{ border: 0, minHeight: "400px", filter: "invert(90%) hue-rotate(180deg)" }}
+              style={{ border: 0, minHeight: "400px" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Kadener Lab Location"
               data-testid="iframe-google-map"
-              className="grayscale hover:grayscale-0 transition-all duration-500 opacity-80 hover:opacity-100"
+              className="grayscale hover:grayscale-0 transition-all duration-500 opacity-90 hover:opacity-100"
             />
           </div>
 
