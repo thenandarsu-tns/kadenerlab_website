@@ -60,7 +60,7 @@ export default function ResourceDetail() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="lg:col-span-2 space-y-8"
+            className="col-span-3 space-y-8"
           >
             <div className="glass-card p-8 md:p-12 rounded-2xl border border-white/10 bg-background/50 backdrop-blur-xl">
               <div className="prose prose-invert max-w-none">
@@ -72,28 +72,6 @@ export default function ResourceDetail() {
                   }, [])}
                 </p>
               </div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="space-y-6"
-          >
-            <div className="glass-card p-6 rounded-2xl border border-white/5 bg-white/5">
-              <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                <Microscope className="w-5 h-5 text-primary" />
-                Key Features
-              </h3>
-              <ul className="space-y-3">
-                {resource.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </motion.div>
         </div>
