@@ -11,7 +11,7 @@ export default function Resources() {
     <div>
       <PageHeader
         title="Resources"
-        description="Tools, datasets, and protocols developed by the Kadener Lab for the scientific community."
+        description="Resources developed by the Kadener lab and our collaborators."
       />
 
       <div className="container mx-auto px-4 pb-20">
