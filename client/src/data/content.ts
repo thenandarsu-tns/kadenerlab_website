@@ -45,20 +45,14 @@ export const researchThemes = [
     title: "Circular RNA Biology",
     shortDescription: "Circular RNAs (circRNAs) are highly stable RNA molecules enriched in the brain. We study how circRNAs are generated, how they function in cis and trans, and how their exceptional stability allows them to accumulate over time, and use them as biomarkers.",
     description: `CircRNAs are produced by a non-canonical splicing event known as back-splicing, in which a downstream 5’ splice site is joined to an upstream 3’ splice site. This process competes directly with linear splicing and is influenced by multiple factors, including intronic features and RNA-binding proteins. Our work has shown that circRNA biogenesis is tightly coupled to transcription and canonical splicing, which in turn can influence gene expression. 
-
+    
 A major focus of the lab is discovering the role of RNA-binding proteins, in particular the Muscleblind (MBNL) family proteins, in regulating circRNA formation. These proteins can either promote or inhibit circularization itself, establishing feedback relationships between RNA processing and gene regulation.
 
 Another interest of our lab is how circRNAs can be used as biomarkers for aging and how they contribute to the aging process itself. Research has shown that circRNAs are exceptionally stable molecules due to their covalently closed structure, which makes them resistant to exonuclease-mediated degradation. They are mainly found enriched in post-mitotic tissues such as the brain. Our work has demonstrated that circRNAs that increase with age are driven primarily by accumulation rather than increased transcription. This allows circRNAs to serve as accurate biomarkers of chronological age in neuronal tissues. Importantly, circRNA accumulation is not uniform across genes or cell types, suggesting production regulation and functional relevance rather than passive buildup.
 
 Due to the stability of the circRNAs, we are also curious to know if they can be used as unique experience markers of prior physiological states. We have shown that specific circRNAs respond to changes in temperature, light conditions, metabolic stress, and other environmental stresses, and that these changes can persist long after the stimulus is removed. From this, we are exploring how these properties can be used to reconstruct past exposures and physiological states from the RNA profiles.
 
-Additionally, altered circRNA profiles have been observed in multiple neurodegenerative diseases, cancer, metabolic diseases, and many more. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. We are exploring circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.
-
-circRNA in Aging and Neurodegeneration
-
-CircRNAs and Neurodegenerative Disease (PD): The Kadener Lab utilizes our RNA expertise to explore how RNA profiles change in disorders such as Parkinson’s. In a collaborative study (EMBO Molecular Medicine 2020), we created a comprehensive Parkinson’s Disease circRNA resource by sequencing brains of PD patients versus healthy controls. An important finding was that in the healthy aging brain (specifically the substantia nigra region), circRNA levels normally increase with age, but in Parkinson’s patients this age-related accumulation is disrupted. PD patients had an overall reduction in circRNA abundance in the substantia nigra compared to age-matched controls, suggesting circRNA biogenesis or stability is altered in disease. Intriguingly, in other brain regions of PD patients, circRNA levels increased, indicating region-specific differences.
-
-Specific CircRNA as a PD Biomarker: From that study, one circRNA in particular, circSLC8A1, stood out. We found circSLC8A1 is significantly upregulated in the substantia nigra of individuals with Parkinson’s disease. This circRNA carries multiple binding sites for miR-128, a microRNA involved in neuronal oxidative stress responses, and was shown to bind strongly to the Argonaute protein (which suggests it sequesters miR-128). Consistently, the mRNA targets of miR-128 were found to be increased in PD brains, implying that when circSLC8A1 levels rise, it might sponge miR-128 and thereby dysregulate oxidative stress pathways. We also demonstrated in cell experiments that circSLC8A1 levels increase under oxidative stress (e.g. when cells are exposed to toxin) and decrease with an antioxidant treatment. Together, these results link circSLC8A1 to the oxidative stress aspect of Parkinson’s and suggest it could be a marker or even contributor to the disease process. This kind of finding is valuable for understanding neurodegeneration and potentially identifying new therapeutic targets or biomarkers.`,
+Additionally, altered circRNA profiles have been observed in multiple neurodegenerative diseases, cancer, metabolic diseases, and many more. Our work has contributed to the identification and characterization of circRNAs associated with oxidative stress and Parkinson’s disease in human samples. We are exploring circRNAs as informative biomarkers and mechanistic entry points for understanding disease-associated RNA dysregulation.`,
     image: circRnaTheme,
     points: [
       "Circular RNA Biosynthesis",
@@ -69,11 +63,26 @@ Specific CircRNA as a PD Biomarker: From that study, one circRNA in particular, 
     ]
   },
   {
+    id: "circrna-aging-neurodegeneration",
+    title: "circRNA in Aging and Neurodegeneration",
+    shortDescription: "Exploring how RNA profiles change in disorders such as Parkinson’s Disease and identifying specific circRNAs as biomarkers and therapeutic targets.",
+    description: `CircRNAs and Neurodegenerative Disease (PD): The Kadener Lab utilizes our RNA expertise to explore how RNA profiles change in disorders such as Parkinson’s. In a collaborative study (EMBO Molecular Medicine 2020), we created a comprehensive Parkinson’s Disease circRNA resource by sequencing brains of PD patients versus healthy controls. An important finding was that in the healthy aging brain (specifically the substantia nigra region), circRNA levels normally increase with age, but in Parkinson’s patients this age-related accumulation is disrupted. PD patients had an overall reduction in circRNA abundance in the substantia nigra compared to age-matched controls, suggesting circRNA biogenesis or stability is altered in disease. Intriguingly, in other brain regions of PD patients, circRNA levels increased, indicating region-specific differences.
+
+Specific CircRNA as a PD Biomarker: From that study, one circRNA in particular, circSLC8A1, stood out. We found circSLC8A1 is significantly upregulated in the substantia nigra of individuals with Parkinson’s disease. This circRNA carries multiple binding sites for miR-128, a microRNA involved in neuronal oxidative stress responses, and was shown to bind strongly to the Argonaute protein (which suggests it sequesters miR-128). Consistently, the mRNA targets of miR-128 were found to be increased in PD brains, implying that when circSLC8A1 levels rise, it might sponge miR-128 and thereby dysregulate oxidative stress pathways. We also demonstrated in cell experiments that circSLC8A1 levels increase under oxidative stress (e.g. when cells are exposed to toxin) and decrease with an antioxidant treatment. Together, these results link circSLC8A1 to the oxidative stress aspect of Parkinson’s and suggest it could be a marker or even contributor to the disease process. This kind of finding is valuable for understanding neurodegeneration and potentially identifying new therapeutic targets or biomarkers.`,
+    image: agingNeuroTheme,
+    points: [
+      "Parkinson’s Disease Biomarkers",
+      "circSLC8A1 & miR-128",
+      "Oxidative Stress Mechanisms",
+      "Neurodegeneration Pathways"
+    ]
+  },
+  {
     id: "circadian-clocks",
     title: "Circadian Biology",
     shortDescription: "Circadian rhythms are internal, autonomous biological clocks which organize cellular, physiological, and behavioral timing into 24-hour cycles. Our lab works with the model organism Drosophila melanogaster to understand several aspects of the molecular clock.",
     description: `The cellular basis of circadian rhythms lies in cell autonomous molecular clocks located in many tissues throughout the body, but notably in so-called “clock neurons” which act as the master pacemaker cells organizing circadian physiological and behavioral adaptations. The molecular clock itself consists of a transcription-translation feedback loop subject to complex regulations at the molecular and network level which allow the maintenance of 24-hour rhythms despite stochastic molecular changes, and also permits certain environmental cues to alter the timing of the clock. Our lab works with the model organism Drosophila melanogaster to understand several aspects of the molecular clock:
-
+    
 - How does alternative splicing and different isoforms of clock genes affect the timing and plasticity of the clock?
 - What is the neural and molecular basis of temperature adaptation of the clock?
 - What proteins and non-coding RNAs play a role in the instability of several core clock genes? What is the mechanism of their action?
@@ -862,140 +871,139 @@ export const publications: Publication[] = [
   },
   {
     id: 26,
-    title: "Past, present and future of circRNAs",
-    authors: "Patop I., Wust S. and Kadener S.",
-    journal: "EMBO Journal",
-    year: 2019,
-    tags: ["Circular RNAs", "Review"]
+    title:
+      "High-accuracy determination of internal circadian time from a single blood sample",
+    authors:
+      "Wittenbrink N., Ananthasubramaniam B., Münch M., Koller B., Maier B., Wriebel C., de Zeeuw J., Nowozin C., Wahnschaffe A., Lang D., Loat A., Kunz D., Shlomi T., Levi F., Herzel H., Kramer A. and Kadener S.",
+    journal: "J Clin Invest.",
+    year: 2018,
+    tags: ["Circadian Biology", "Methodology"]
   },
   {
     id: 27,
-    title: "Craving for Introns",
-    authors: "Zaffagni M. and Kadener S.",
-    journal: "Molecular Cell",
-    year: 2019,
-    tags: ["Commentary"]
+    title:
+      "Circadian regulation of the protein folding environment in the endoplasmic reticulum of Drosophila melanogaster",
+    authors: "Guan X., Kadener S. and Nawathean P.",
+    journal: "PLoS Genetics",
+    year: 2017,
+    tags: ["Circadian Biology"]
   },
   {
     id: 28,
     title:
-      "Transcription of a plasticity gene is activated by neuronal hyperpolarization",
-    authors: "Zhu Z., Ortiz T., Mezan S., Kadener S. and Blau J.",
-    journal: "bioRxiv",
-    year: 2019,
-    tags: ["Neuronal Plasticity"]
+      "Detection of circular RNAs using RNA-seq data with CIRI2",
+    authors: "Gao Y., Zhang J. and Zhao F.",
+    journal: "Briefings in Bioinformatics",
+    year: 2017,
+    tags: ["Circular RNAs", "Methodology"]
   },
   {
     id: 29,
     title:
-      "High-accuracy determination of internal circadian time from a single blood sample",
+      "Translation of circRNAs",
     authors:
-      "Wittenbrink N., Ananthasubramaniam B., Münch M., Koller B., Maier B., Weschke C., Bes F., de Zeeuw J., Nowozin C., Wahnschaffe A., Wisniewski S., Zaleska M., Bartok O., Ashwal-Fluss R., Lammert H., Herzel H., Hummel M., Kadener S., Kunz D., Kramer A.",
-    journal: "The Journal of Clinical Investigation",
-    year: 2018,
-    tags: ["Circadian Biology", "Clinical"]
-  },
-  {
-    id: 30,
-    title:
-      "Reconfiguration of a Multi-oscillator Network by Light in the Drosophila Circadian Clock",
-    authors:
-      "Chatterjee A., Lamaze A., De J., Mena W., Chélot E., Martin B., Hardin P., Kadener S., Emery P., Rouyer F.",
-    journal: "Current Biology",
-    year: 2018,
-    tags: ["Circadian Biology"]
-  },
-  {
-    id: 31,
-    title: "circRNAs in Cancer",
-    authors: "Patop I. and Kadener S.",
-    journal: "Curr. Opin Genet Dev.",
-    year: 2018,
-    tags: ["Circular RNAs", "Cancer", "Review"]
-  },
-  {
-    id: 32,
-    title: "CircRNAs in the brain",
-    authors: "Hanan M., Soreq H. and Kadener S.",
-    journal: "RNA Biology",
-    year: 2017,
-    tags: ["Circular RNAs", "Review"]
-  },
-  {
-    id: 33,
-    title: "Dynamic hyper-editing underlies temperature adaptation in Drosophila",
-    authors:
-      "Buchumenski I, Bartok O, Ashwal-Fluss R, Pandey V, Porath HT, Levanon EY, Kadener S.",
-    journal: "PLoS Genetics",
-    year: 2017,
-    tags: ["RNA Editing", "Genomics"]
-  },
-  {
-    id: 34,
-    title:
-      "Defining the 5’ and 3’ landscape of the Drosophila transcriptome with ExoCAGE and RNaseH-seq",
-    authors:
-      "Afik S. 1, Bartok O. 1, Artyomov M., Shishkin A., Kadri S., Zhu X., Gutman M., Garber M.* and Kadener S.*",
-    journal: "Nucleic Acids Research",
-    year: 2017,
-    tags: ["Transcriptomics", "Methodology"]
-  },
-  {
-    id: 35,
-    title: "Clonally stable VK allelic choice instructs IgK repertoire",
-    authors:
-      "Levin-Klein R., Fraenkel S., Lichtenstein M., Matheson L., Bartok O., Nevo Y., Kadener S., Corcoran A., Cedar H., Bergman Y.",
-    journal: "Nature Communications",
-    year: 2017,
-    tags: ["Immunology"]
-  },
-  {
-    id: 36,
-    title: "Translation of circRNAs",
-    authors:
-      "Pamudurti N., Bartok O., Jens O., Ashwal-Fluss R., Stottmeister C., Ruhe L., Hanan M., Wyler E., Perez-Hernandez D., Ramberger E., Shenzis S., Samson M., Dittmar G., Landthaler M., Chekulaeva M., Rajewsky N. and Kadener S.",
+      "Pamudurti N.R., Bartok O., Jens M., Ashwal-Fluss R., Stottmeister C., Ruhe L., Hanan M., Wyler E., Perez-Hernandez D., Ramberger E., Shenzis S., Samson M., Dittmar G., Landthaler M., Chekulaeva M., Rajewsky N. and Kadener S.",
     journal: "Molecular Cell",
     year: 2017,
     tags: ["Circular RNAs", "Translation"]
   },
   {
-    id: 37,
+    id: 30,
     title:
-      "Marked differences in C9orf72 methylation status and isoform expression between C9/ALS human embryonic and induced pluripotent stem cells",
-    authors:
-      "Cohen-Hadad Y., Altarescu G., Eldar-Geva T., Levi-Lahad E., Zhang M., Rogaeva, E. Gotkine M., Bartok O., Ashwal-Fluss R., Kadener S., Epsztejn-Litman S., Eiges R.",
-    journal: "Stem Cell Reports",
-    year: 2016,
-    tags: ["ALS", "Stem Cells"]
-  },
-  {
-    id: 38,
-    title:
-      "PDF signaling is an integral part of the Drosophila circadian molecular oscillator",
-    authors: "Mezan S., Feuz JD, Deplancke B. and Kadener S.",
-    journal: "Cell Reports",
+      "Timeless Analysis of Circadian Biology",
+    authors: "Engelen E. and Kadener S.",
+    journal: "Journal of Molecular Biology",
     year: 2016,
     tags: ["Circadian Biology"]
   },
   {
+    id: 31,
+    title:
+      "Specific functions of circular RNAs in the brain",
+    authors: "Hanan M., Lunger I. and Kadener S.",
+    journal: "Wired RNA",
+    year: 2016,
+    tags: ["Circular RNAs", "Review"]
+  },
+  {
+    id: 32,
+    title:
+      "Circular RNAs: a new class of transcripts with unknown functions",
+    authors: "Ashwal-Fluss R. and Kadener S.",
+    journal: "IUBMB Life",
+    year: 2016,
+    tags: ["Circular RNAs", "Review"]
+  },
+  {
+    id: 33,
+    title:
+      "Identifying circular RNAs using RNA-seq data",
+    authors: "Ashwal-Fluss R., Meyer M., Pamudurti N.R. and Kadener S.",
+    journal: "Methods in Molecular Biology",
+    year: 2016,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 34,
+    title:
+      "Detecting circular RNAs by RNA sequencing",
+    authors: "Rybak-Wolf A., Ashwal-Fluss R., Bartok O. and Kadener S.",
+    journal: "Methods",
+    year: 2016,
+    tags: ["Circular RNAs", "Methodology"]
+  },
+  {
+    id: 35,
+    title:
+      "Functional roles of circular RNAs",
+    authors: "Bartok O., Ashwal-Fluss R. and Kadener S.",
+    journal: "Non-coding RNA",
+    year: 2016,
+    tags: ["Circular RNAs", "Review"]
+  },
+  {
+    id: 36,
+    title:
+      "The role of splicing in the control of circadian rhythms",
+    authors: "Nakatani Y. and Kadener S.",
+    journal: "Adv Exp Med Biol.",
+    year: 2015,
+    tags: ["Circadian Biology", "Splicing", "Review"]
+  },
+  {
+    id: 37,
+    title:
+      "Post-transcriptional regulation of the circadian clock",
+    authors: "Beckwith E.J. and Kadener S.",
+    journal: "Curr Opin Insect Sci.",
+    year: 2015,
+    tags: ["Circadian Biology", "Review"]
+  },
+  {
+    id: 38,
+    title:
+      "Circular RNAs: biogenesis, expression and function",
+    authors: "Ashwal-Fluss R. and Kadener S.",
+    journal: "Fly",
+    year: 2015,
+    tags: ["Circular RNAs", "Review"]
+  },
+  {
     id: 39,
     title:
-      "End Sequence Analysis Toolkit (ESAT) expands the extractable information from single-cell RNA-seq data",
-    authors:
-      "Derr A, Yang C, Zilionis R, Sergushichev A, Blodgett DM, Redick S, Bortell R, Luban J, Harlan DM, Kadener S, Greiner DL, Klein A, Artyomov MN, Garber M.",
-    journal: "Genome Research",
-    year: 2016,
-    tags: ["Methodology", "Single-cell RNA-seq"]
+      "Genome-wide identification of RNA-binding protein targets",
+    authors: "Hanan M. and Kadener S.",
+    journal: "Methods in Enzymology",
+    year: 2015,
+    tags: ["Methodology", "Genomics"]
   },
   {
     id: 40,
-    title:
-      "Pseudouridylation in Trypanosoma brucei rRNA is developmentally regulated in positions critical for ribosome function",
-    authors:
-      "Chikne V.*, Doniger T.*, Bartok O.*, Eliaz D.*, Cohen Chalamish S., Tschudi C., Unger R., Hashem Y., Kadener S. and Michaeli S.",
-    journal: "Scientific Reports",
-    year: 2016,
-    tags: ["RNA Modification"]
+    title: "The role of miRNAs in the circadian clock",
+    authors: "Kadener S. and Rosbash M.",
+    journal: "Cold Spring Harbor Perspectives in Biology",
+    year: 2015,
+    tags: ["Circadian Biology", "miRNA"]
   },
   {
     id: 41,
@@ -1408,4 +1416,3 @@ export const news = [
     content: "Sayan presented at GSA conference."
   }
 ];
-
