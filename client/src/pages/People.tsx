@@ -233,14 +233,14 @@ export default function People() {
             <h3 className="text-2xl font-display font-bold mb-8 border-b border-white/10 pb-4" data-testid="heading-photos">
               Photos
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-testid="grid-photos">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-testid="grid-photos">
               {labPhotos.map((photo) => (
                 <motion.div
                   key={photo.id}
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="glass-card rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300"
+                  className="glass-card rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300 md:col-span-2"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
