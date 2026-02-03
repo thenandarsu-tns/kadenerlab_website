@@ -26,7 +26,7 @@ export default function Resources() {
                     <img 
                       src={resource.image} 
                       alt={resource.title}
-                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${resource.id === 'spatial-omics' || resource.id === 'srcp' || resource.id === 'drosophila-atlas' ? 'object-contain bg-black/20' : 'object-cover'}`}
+                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${resource.id === 'spatial-omics' || resource.id === 'srcp' ? 'object-contain bg-black/20' : 'object-cover'}`}
                       data-testid={`img-resource-thumbnail-${resource.id}`}
                     />
                     <div className="absolute bottom-4 left-4 z-20">
