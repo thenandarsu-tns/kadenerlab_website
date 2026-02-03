@@ -12,6 +12,7 @@ import spatialOmicsTheme from "@/assets/images/spatial_1769809881416.png";
 import agingNeuroTheme from "@/assets/images/PD_full.png";
 import srcpTheme from "@/assets/images/srcp_full.webp";
 import atlasTheme from "@/assets/images/atlas-thumb.jpg";
+import drosophilaClipart from "@/assets/images/drosophila_clipart.png";
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
 import nandarImage from '@assets/Nandar_1767740032236.jpeg';
@@ -142,7 +143,8 @@ export const resources = [
     title: "Drosophila Atlas",
     shortDescription: "Work in progress! A comprehensive atlas of gene expression and RNA regulation in the Drosophila brain.",
     description: `Work in progress! We are building a comprehensive atlas of gene expression in the Drosophila brain, integrating single-cell RNA-seq, spatial transcriptomics, and circRNA profiling. This resource will serve as a reference for the community to explore gene regulation in specific neuronal populations and brain regions.`,
-    image: atlasTheme,
+    image: drosophilaClipart,
+    credit: "Image credit: Clipartmax.com",
     points: [
       "Brain Atlas",
       "Gene Expression Map",

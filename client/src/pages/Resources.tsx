@@ -34,6 +34,13 @@ export default function Resources() {
                         {resource.id === 'spatial-omics' ? <Microscope /> : resource.id === 'srcp' ? <Workflow /> : <Map />}
                       </div>
                     </div>
+                    {/* @ts-ignore */}
+                    {resource.credit && (
+                      <div className="absolute bottom-2 right-2 z-20 text-[10px] text-white/60 bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
+                        {/* @ts-ignore */}
+                        {resource.credit}
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-8 flex flex-col flex-grow">
