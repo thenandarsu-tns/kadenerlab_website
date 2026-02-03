@@ -372,15 +372,6 @@ export const people = [
     category: "Undergrad"
   },
   {
-    id: "sherren",
-    name: "Sherren",
-    role: "Undergraduate",
-    bio: "",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
-  {
     id: "aa",
     name: "Anjali Amin",
     role: "Undergraduate",
