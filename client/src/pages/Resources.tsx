@@ -1,12 +1,10 @@
 import { PageHeader } from "@/components/ui/PageHeader";
-import { researchThemes } from "@/data/content";
+import { resources } from "@/data/content";
 import { motion } from "framer-motion";
-import { Microscope, Workflow, Map } from "lucide-react";
-import srcpImage from "@assets/generated_images/bioinformatics_pipeline_data_visualization.png";
+import { ArrowRight, Microscope, Workflow, Map } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Resources() {
-  const spatial = researchThemes.find((t) => t.id === "spatial-omics");
-
   return (
     <div>
       <PageHeader
@@ -15,115 +13,43 @@ export default function Resources() {
       />
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="max-w-7xl mx-auto space-y-10">
-          <motion.section
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="glass-card p-8 rounded-2xl border border-white/5"
-            data-testid="section-resources-spatial"
-          >
-            <div className="flex items-start justify-between gap-6">
-              <div>
-                <div
-                  className="inline-flex items-center gap-2 text-xs font-medium text-primary/90 bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full mb-4"
-                  data-testid="badge-resources-spatial"
-                >
-                  <Microscope className="w-3.5 h-3.5" />
-                  Spatial Transcriptomics
+        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          {resources.map((resource, index) => (
+            <Link key={resource.id} href={`/resources/${resource.id}`} data-testid={`link-resource-${resource.id}`}>
+              <motion.div 
+                whileHover={{ y: -5 }}
+                className="group cursor-pointer h-full"
+              >
+                <div className="glass-card h-full rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                  <div className="relative h-64 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
+                    <img 
+                      src={resource.image} 
+                      alt={resource.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      data-testid={`img-resource-thumbnail-${resource.id}`}
+                    />
+                    <div className="absolute bottom-4 left-4 z-20">
+                      <div className="w-10 h-10 rounded-lg bg-primary/20 backdrop-blur-md flex items-center justify-center text-primary border border-white/10" data-testid={`icon-resource-${resource.id}`}>
+                        {resource.id === 'spatial-omics' ? <Microscope /> : resource.id === 'srcp' ? <Workflow /> : <Map />}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-8 flex flex-col flex-grow">
+                    <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" data-testid={`text-resource-title-${resource.id}`}>{resource.title}</h2>
+                    <p className="text-muted-foreground mb-6 flex-grow leading-relaxed line-clamp-3" data-testid={`text-resource-description-${resource.id}`}>
+                      {resource.shortDescription}
+                    </p>
+                    
+                    <div className="flex items-center text-primary font-medium text-sm mt-auto" data-testid={`text-resource-cta-${resource.id}`}>
+                      Explore Resource <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
                 </div>
-                <h2
-                  className="text-2xl md:text-3xl font-display font-bold"
-                  data-testid="heading-resources-spatial"
-                >
-                  {spatial?.title ?? "Spatial Transcriptomics"}
-                </h2>
-                <p
-                  className="text-muted-foreground mt-3 leading-relaxed max-w-3xl"
-                  data-testid="text-resources-spatial-description"
-                >
-                  {spatial?.shortDescription ?? "Work in progress!"}
-                </p>
-              </div>
-            </div>
-
-            {spatial?.image && (
-              <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
-                <img
-                  src={spatial.image}
-                  alt="Spatial Transcriptomics thumbnail"
-                  className="w-full h-auto object-contain"
-                  data-testid="img-resources-spatial"
-                />
-              </div>
-            )}
-          </motion.section>
-
-          <motion.section
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="glass-card p-8 rounded-2xl border border-white/5"
-            data-testid="section-resources-srcp"
-          >
-            <div className="flex items-start justify-between gap-6">
-              <div>
-                <div
-                  className="inline-flex items-center gap-2 text-xs font-medium text-primary/90 bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full mb-4"
-                  data-testid="badge-resources-srcp"
-                >
-                  <Workflow className="w-3.5 h-3.5" />
-                  circRNA pipeline
-                </div>
-                <h2
-                  className="text-2xl md:text-3xl font-display font-bold"
-                  data-testid="heading-resources-srcp"
-                >
-                  SRCP
-                </h2>
-                <p
-                  className="text-muted-foreground mt-3 leading-relaxed max-w-3xl"
-                  data-testid="text-resources-srcp-description"
-                >
-                  A comprehensive pipeline for accurate annotation and quantification of circRNAs.
-                </p>
-              </div>
-            </div>
-
-          </motion.section>
-
-          <motion.section
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="glass-card p-8 rounded-2xl border border-white/5"
-            data-testid="section-resources-drosophila-atlas"
-          >
-            <div className="flex items-start justify-between gap-6">
-              <div>
-                <div
-                  className="inline-flex items-center gap-2 text-xs font-medium text-primary/90 bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full mb-4"
-                  data-testid="badge-resources-drosophila-atlas"
-                >
-                  <Map className="w-3.5 h-3.5" />
-                  Atlas
-                </div>
-                <h2
-                  className="text-2xl md:text-3xl font-display font-bold"
-                  data-testid="heading-resources-drosophila-atlas"
-                >
-                  Drosophila Atlas
-                </h2>
-                <p
-                  className="text-muted-foreground mt-3 leading-relaxed max-w-3xl"
-                  data-testid="text-resources-drosophila-atlas-description"
-                >
-                  Work in progress!
-                </p>
-              </div>
-            </div>
-          </motion.section>
-
+              </motion.div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

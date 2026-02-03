@@ -10,6 +10,8 @@ import circadianTheme from "@/assets/images/circadian_thumb_1769810286142.jpg";
 import genomicsTheme from "@/assets/images/heatmap_1769802867782.png";
 import spatialOmicsTheme from "@/assets/images/spatial_1769809881416.png";
 import agingNeuroTheme from "@/assets/images/aging-neuro-thumb.jpg";
+import srcpTheme from "@/assets/images/srcp-thumb.jpg";
+import atlasTheme from "@/assets/images/atlas-thumb.jpg";
 
 import irisImage from '@assets/Iris_1767739801837.jpg';
 import nandarImage from '@assets/Nandar_1767740032236.jpeg';
@@ -99,6 +101,45 @@ Using single cell sequencing data, our lab has identified neurons that express c
       "Computational pipelines"
     ]
   },
+];
+
+export const resources = [
+  {
+    id: "spatial-omics",
+    title: "Spatial Transcriptomics",
+    shortDescription: "Spatially resolved gene expression mapping in Drosophila brain tissue using 10x Visium and other cutting-edge technologies.",
+    description: `We are employing spatial transcriptomics technologies (10x Visium) to map gene expression in the Drosophila brain with high spatial resolution. By retaining the spatial context of gene expression, we can better understand how different brain regions and cell types coordinate their functions, particularly in the context of circadian rhythms and aging. This approach allows us to visualize complex gene expression patterns that are lost in standard bulk or single-cell sequencing methods.`,
+    image: spatialOmicsTheme,
+    points: [
+      "10x Visium Platform",
+      "Spatially Resolved Expression",
+      "Brain Mapping"
+    ]
+  },
+  {
+    id: "srcp",
+    title: "SRCP Pipeline",
+    shortDescription: "A comprehensive computational pipeline for accurate annotation and quantification of circular RNAs from RNA-seq data.",
+    description: `SRCP (Short Read CircRNA Pipeline) is a comprehensive computational workflow developed in our lab for the accurate identification and quantification of circular RNAs from high-throughput sequencing data. The pipeline integrates multiple detection algorithms to reduce false positives and provides robust normalization methods. It is designed to be user-friendly and scalable, allowing researchers to process large datasets efficiently.`,
+    image: srcpTheme,
+    points: [
+      "circRNA Detection",
+      "Quantification & Normalization",
+      "High-throughput Analysis"
+    ]
+  },
+  {
+    id: "drosophila-atlas",
+    title: "Drosophila Atlas",
+    shortDescription: "Work in progress! A comprehensive atlas of gene expression and RNA regulation in the Drosophila brain.",
+    description: `Work in progress! We are building a comprehensive atlas of gene expression in the Drosophila brain, integrating single-cell RNA-seq, spatial transcriptomics, and circRNA profiling. This resource will serve as a reference for the community to explore gene regulation in specific neuronal populations and brain regions.`,
+    image: atlasTheme,
+    points: [
+      "Brain Atlas",
+      "Gene Expression Map",
+      "Multi-omics Integration"
+    ]
+  }
 ];
 
 export const people = [
@@ -1368,6 +1409,3 @@ export const news = [
   }
 ];
 
-export const resources = {
-  sections: []
-};

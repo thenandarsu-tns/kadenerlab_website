@@ -8,6 +8,7 @@ import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Research from "@/pages/Research";
 import ResearchDetail from "@/pages/ResearchDetail";
+import ResourceDetail from "@/pages/ResourceDetail";
 import People from "@/pages/People";
 import Publications from "@/pages/Publications";
 import News from "@/pages/News";
@@ -26,6 +27,7 @@ function Router() {
         <Route path="/publications" component={Publications} />
         <Route path="/news" component={News} />
         <Route path="/resources" component={Resources} />
+        <Route path="/resources/:id" component={ResourceDetail} />
         <Route path="/contact" component={Contact} />
         <Route path="/admin-guide" component={AdminGuide} />
         <Route component={NotFound} />
