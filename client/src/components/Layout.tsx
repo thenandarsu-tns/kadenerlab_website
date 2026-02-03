@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { labInfo } from "@/data/content";
+import brandeisLogo from "@/assets/images/brandeis-logo.jpg";
 import { ChatWidget } from "./ChatWidget";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -116,6 +117,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <h3 className="font-display font-bold text-xl mb-4 text-white">Kadener Lab</h3>
+            <img 
+              src={brandeisLogo} 
+              alt="Brandeis University Logo" 
+              className="h-16 w-auto opacity-90 hover:opacity-100 transition-opacity rounded bg-white/5 p-2" 
+            />
           </div>
           
           <div>
