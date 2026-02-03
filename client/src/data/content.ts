@@ -9,7 +9,7 @@ import circRnaTheme from '@assets/circrna_1769717249956.png';
 import circadianTheme from "@/assets/images/circadian_thumb_1769810286142.jpg";
 import genomicsTheme from "@/assets/images/heatmap_1769802867782.png";
 import spatialOmicsTheme from "@/assets/images/spatial_1769809881416.png";
-import agingNeuroTheme from "@/assets/images/aging-neuro-thumb.jpg";
+import agingNeuroTheme from "@/assets/images/PD_full.png";
 import srcpTheme from "@/assets/images/srcp-thumb.jpg";
 import atlasTheme from "@/assets/images/atlas-thumb.jpg";
 
