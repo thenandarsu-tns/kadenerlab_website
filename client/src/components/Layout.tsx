@@ -120,7 +120,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <img 
               src={brandeisLogo} 
               alt="Brandeis University Logo" 
-              className="h-16 w-auto opacity-90 hover:opacity-100 transition-opacity rounded bg-white/5 p-2" 
+              className="h-24 w-auto opacity-90 hover:opacity-100 transition-opacity rounded" 
             />
           </div>
           
