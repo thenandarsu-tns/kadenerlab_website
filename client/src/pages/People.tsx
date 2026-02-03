@@ -18,7 +18,7 @@ const alumniEndYearFromRole = (role: string) => {
 export default function People() {
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", "PI", "Postdoc", "Grad Student", "Undergrad", "Staff", "Alumni"];
+  const categories = ["All", "PI", "Postdoc", "Grad Student", "Undergrad", "Staff", "Alumni", "Photos"];
 
   const filteredPeople =
     filter === "All" ? people : people.filter((p) => p.category === filter);
@@ -228,7 +228,7 @@ export default function People() {
           </Section>
         )}
 
-        {labPhotos.length > 0 && (
+        {labPhotos.length > 0 && (filter === "All" || filter === "Photos") && (
           <Section className="mb-20">
             <h3 className="text-2xl font-display font-bold mb-8 border-b border-white/10 pb-4" data-testid="heading-photos">
               Photos
@@ -260,7 +260,7 @@ export default function People() {
           </Section>
         )}
 
-        {members.length === 0 && undergrads.length === 0 && alumni.length === 0 && filter !== "PI" && (
+        {members.length === 0 && undergrads.length === 0 && alumni.length === 0 && filter !== "PI" && filter !== "Photos" && (
           <div className="text-center py-20 text-muted-foreground" data-testid="text-empty">
             No members found in this category.
           </div>
