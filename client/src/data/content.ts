@@ -96,8 +96,7 @@ Using single cell sequencing data, our lab has identified neurons that express c
     image: genomicsTheme,
     points: [
       "Bulk and single-cell RNA-seq",
-      "Computational pipelines",
-      "Reproducibility & Normalization"
+      "Computational pipelines"
     ]
   },
 ];
