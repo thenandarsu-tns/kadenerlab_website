@@ -22,6 +22,7 @@ import jazminImage from '@assets/Jazmin_1767802264089.jpg';
 import yingshiImage from '@assets/Yingshi_1769714873900.jpg';
 
 import groupPhotoDavid from "@/assets/images/lab_group_photo_david.jpeg";
+import kenGraduationPhoto from "@/assets/images/ken_graduation_party.jpeg";
 
 
 // Centralized content store for easy updates by the user.
@@ -1419,6 +1420,12 @@ export const labPhotos = [
     src: groupPhotoDavid,
     alt: "Kadener Lab Group Photo",
     caption: "Chaotic group photo taken after Nathan's defense party."
+  },
+  {
+    id: 2,
+    src: kenGraduationPhoto,
+    alt: "Ken Graduation Party",
+    caption: "With Ken on his graduation party!"
   }
 ];
 
