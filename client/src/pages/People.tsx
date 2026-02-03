@@ -240,7 +240,7 @@ export default function People() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="glass-card rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300 md:col-span-2"
+                  className="glass-card rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
