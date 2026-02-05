@@ -123,7 +123,7 @@ export const resources = [
     title: "Coming soon!",
     shortDescription: "Work in progress. Stay tuned!",
     description: `Work in progress. Stay tuned!`,
-    image: spatialOmicsTheme,
+    image: null,
     points: [
       "10x Visium Platform",
       "Spatially Resolved Expression",
