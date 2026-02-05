@@ -1,6 +1,7 @@
 import srcpImage from '@assets/generated_images/bioinformatics_pipeline_data_visualization.png';
 import knockdownImage from '@assets/generated_images/rna_interference_shrna_mechanism.png';
 import catalogsImage from '@assets/generated_images/scientific_database_network.png';
+import spatialImage from '@assets/generated_images/spatial_transcriptomics_brain_map.png';
 import standardsImage from '@assets/generated_images/scientific_standards_documentation.png';
 
 // New Research Theme Images
