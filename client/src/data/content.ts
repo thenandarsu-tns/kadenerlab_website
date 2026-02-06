@@ -350,7 +350,7 @@ export const people = [
   },
   {
     id: "hyk",
-    name: "Han-yin Ku",
+    name: "Han-yun Ku",
     role: "Undergraduate",
     bio: "",
     image: "member-placeholder",
