@@ -23,6 +23,7 @@ import yingshiImage from '@assets/Yingshi_1769714873900.jpg';
 
 import groupPhotoDavid from "@/assets/images/lab_group_photo_david.jpeg";
 import kenGraduationPhoto from "@/assets/images/ken_graduation_party.jpeg";
+import japhyKat from "@/assets/images/Japhy_Kat.jpeg";
 
 
 // Centralized content store for easy updates by the user.
@@ -198,11 +199,11 @@ export const people = [
   {
     id: "sb",
     name: "Sayan (Shaun) Biswas",
-    role: "Ph.D Candidate",
+    role: "Grad Researcher (2022-2026)",
     bio: "Sayan is originally from India where he completed his undergraduate training in Electrical Enginering at Jadavpur University, Kolkata. Prior to coming to Brandeis, Sayan worked in the Bangalore Life Science Cluster, India as a research fellow. He is a graduate student in the Molecular and Cell Biology program at Brandeis, and he is investigating the role of circRNA in aging and neurodegeneration.",
     image: "member-placeholder",
     email: "",
-    category: "Grad Student"
+    category: "Alumni"
   },
   {
     id: "mc",
@@ -261,20 +262,20 @@ export const people = [
   {
     id: "jt",
     name: "Japhy Theobald",
-    role: "Undergraduate",
+    role: "Undergrad Researcher (2023-2026)",
     bio: "circRNAs and aging",
     image: "member-placeholder",
     email: "",
-    category: "Undergrad"
+    category: "Alumni"
   },
   {
     id: "kc",
     name: "Kat Chin",
-    role: "Undergraduate",
+    role: "Undergrad Researcher (2023-2026)",
     bio: "[PLACEHOLDER BIO]",
     image: "member-placeholder",
     email: "",
-    category: "Undergrad"
+    category: "Alumni"
   },
   {
     id: "shj",
@@ -312,24 +313,24 @@ export const people = [
     email: "",
     category: "Undergrad"
   },
-  {
-    id: "vj",
-    name: "Vincent Jared",
-    role: "Undergraduate",
-    bio: "",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
-  {
-    id: "lug",
-    name: "Leila Uwamungu Gasaro",
-    role: "Undergraduate",
-    bio: "",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
+  // {
+  //   id: "vj",
+  //   name: "Vincent Jared",
+  //   role: "Undergraduate",
+  //   bio: "",
+  //   image: "member-placeholder",
+  //   email: "",
+  //   category: "Undergrad"
+  // },
+  // {
+  //   id: "lug",
+  //   name: "Leila Uwamungu Gasaro",
+  //   role: "Undergraduate",
+  //   bio: "",
+  //   image: "member-placeholder",
+  //   email: "",
+  //   category: "Undergrad"
+  // },
   {
     id: "hc",
     name: "Helen Chen",
@@ -366,24 +367,24 @@ export const people = [
     email: "",
     category: "Undergrad"
   },
-  {
-    id: "zh",
-    name: "Zena Hu",
-    role: "Undergraduate",
-    bio: "",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
-  {
-    id: "aa",
-    name: "Anjali Amin",
-    role: "Undergraduate",
-    bio: "",
-    image: "member-placeholder",
-    email: "",
-    category: "Undergrad"
-  },
+  // {
+  //   id: "zh",
+  //   name: "Zena Hu",
+  //   role: "Undergraduate",
+  //   bio: "",
+  //   image: "member-placeholder",
+  //   email: "",
+  //   category: "Undergrad"
+  // },
+  // {
+  //   id: "aa",
+  //   name: "Anjali Amin",
+  //   role: "Undergraduate",
+  //   bio: "",
+  //   image: "member-placeholder",
+  //   email: "",
+  //   category: "Undergrad"
+  // },
   {
     id: "shc",
     name: "Shi Hao Chen/Jack",
@@ -1426,6 +1427,12 @@ export const labPhotos = [
     src: kenGraduationPhoto,
     alt: "Ken Graduation Party",
     caption: "With Ken on his graduation party!"
+  },
+  {
+    id: 3,
+    src: japhyKat,
+    alt: "Japhy and Kat's graduation celebration",
+    caption: "Japhy and Kat's graduation celebration."
   }
 ];
 
