@@ -620,6 +620,16 @@ export const publications: Publication[] = [
   {
     id: 1,
     title:
+      "Comprehensive Analysis of Factors Affecting Subcellular RNA Localization",
+    authors:
+      "Kat Chin., Sydney McFarland., Sebastian Kadener. and Ane Martin Anduaga.",
+    journal: "Brandeis Scholar Works",
+    year: 2026,
+    tags: ["Circular RNAs"]
+  },
+  {
+    id: 1.5,
+    title:
       "Neuronal activity-dependent gene expression is stimulus-specific and changes with neuronal maturation",
     authors:
       "Lukin J., Beckel M.S., Pedroncini O., Giusti S.A., Di Mauro G., Linenberg I.M., Patop I.L., Chernomoretz A., Marin-Burgin A., Kadener S., Refojo D.",
